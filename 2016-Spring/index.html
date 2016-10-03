@@ -35,7 +35,7 @@
         <h3><span class="room">[Room A+B+C+D]</span><br><a href="http://www.java-users.jp/?page_id=2396#keynote-1" target="_blank">基調講演1 : JJUG運営の戦略と戦術</a><br>by <a href="http://www.java-users.jp/?page_id=2424#keynote-1" target="_blank">鈴木雄介(日本Javaユーザーグループ)</a> <span class="hashtag">#ccc_keynote1</span></h3>
         <div>
 <span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #5cb85c;">初心者向け / Beginner</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #00ced1;">Community</span>
-<p><a href="http://www.java-users.jp/?page_id=2424#keynote-1">鈴木　雄介</a><br />
+<p><a href="#keynote-1" class="speaker">鈴木　雄介</a><br />
 JJUGメンバーは昨年の3300人から4500人超に増加しました。イベントをやればすぐに席はうまり、多くのスポンサーが応援をしてくれています。<br />
 若者、女子部、地方など参加者の幅もひろがってきました。<br />
 オワコンといわれて久しいJavaのコミュニティが、なぜ成長し続けているのでしょうか？<br />
@@ -649,7 +649,15 @@ JVM上で動作するストリーム処理基盤としてかつてはS4、Storm�
   <span style="font-style:bold;">このページは、非公式です。</span><br>
   お気づきの点は <a href="https://twitter.com/YujiSoftware">@YujiSoftware</a> までご連絡いただくか、または <a href="https://github.com/YujiSoftware/jjug-ccc/tree/gh-pages/2016-Spring">この GitHub に Pull Request</a> をお願いいたします。
   </p>
-  
+
+  <div id="keynote-1" class="dialog" title="鈴木　雄介 (日本Javaユーザーグループ">
+    <p>エンタープライズ業界のITアーキテクト。「ソフトウェアアーキテクトが知るべき97のこと」（オライリー）監訳、その他寄稿対数。<br />
+    グロースエクスパートナーズ株式会社 執行役員。<br />
+    2013年より日本Javaユーザーグループ 会長。</p>
+    <p>Blog: <a href="http://arclamp.hatenablog.com/">http://arclamp.hatenablog.com/</a><br />
+    Twitter: <a href="https://twitter.com/yusuke_arclamp">@yusuke_arclamp</a></p>
+  </div>
+
   <script src="jquery.min.js"></script>
   <script src="jquery-ui.min.js"></script>
   <script>
@@ -657,6 +665,27 @@ JVM上で動作するストリーム処理基盤としてかつてはS4、Storm�
         heightStyle: "content",
         collapsible: true,
         active: false
+    });
+    
+    $(".dialog").hide();
+    $(".speaker").click(function(){
+      $(this.hash).dialog({
+        modal: true,
+        show: { 
+          effect: "fade",
+          duration: 200
+        },
+        hide: { 
+          effect: "fade",
+          duration: 200
+        },
+        buttons: {
+          Ok: function() {
+            $( this ).dialog( "close" );
+          }
+        }
+      })
+      return false;
     });
   </script>
 </body>
