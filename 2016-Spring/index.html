@@ -1015,7 +1015,9 @@ JVM上で動作するストリーム処理基盤としてかつてはS4、Storm�
     
     $(".dialog").hide();
     $(".speaker").click(function(){
-      $(this.hash).dialog({
+      var self = this;
+      
+      $(self.hash).dialog({
         modal: true,
         resizable: false,
         width: Math.min($(window).width() * 0.9, 500), 
@@ -1027,14 +1029,11 @@ JVM上で動作するストリーム処理基盤としてかつてはS4、Storm�
           effect: "fade",
           duration: 200
         },
-        buttons: [
-          {
-            text: "OK",
-            click: function() {
-              $( this ).dialog( "close" );
-            }
-          }
-        ]
+        open: function( event, ui ) {
+          $(".ui-widget-overlay").click(function(){
+            $(self.hash).dialog( "close" );
+          });
+        }
       })
       return false;
     });
