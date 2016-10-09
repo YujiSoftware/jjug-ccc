@@ -1033,9 +1033,7 @@ JVM上で動作するストリーム処理基盤としてかつてはS4、Storm�
     
     $(".dialog").hide();
     $(".speaker").click(function(){
-      var self = this;
-      
-      $(self.hash).dialog({
+      $(this.hash).dialog({
         modal: true,
         resizable: false,
         width: Math.min($(window).width() * 0.9, 500),
@@ -1045,16 +1043,20 @@ JVM上で動作するストリーム処理基盤としてかつてはS4、Storm�
         },
         open: function( event, ui ) {
           $(".ui-widget-overlay").click(function(){
-            $(self.hash).dialog( "close" );
+            $(event.target).dialog( "close" );
           });
-          $(".ui-dialog img[data-src]").each(function(){
+          
+          // 画像の遅延ロード
+          $("img[data-src]", event.target).each(function(){
             $(this).attr("src", $(this).attr("data-src"));
           });
           
+          // CSS Transition 用のクラスを追加
           $(".ui-widget-overlay").addClass("ui-open");
           $(event.target.parentElement).addClass("ui-open");
         },
         beforeClose: function(event, ui){
+          // CSS Transition 用のクラスを削除
           $(event.target.parentElement).removeClass("ui-open");
         }
       })
