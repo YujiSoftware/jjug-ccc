@@ -23,8 +23,21 @@
     }
     .ui-widget-overlay {
         background-color: black;
-        opacity: 0.5;
+        opacity: 0;
         cursor: pointer;
+        transition: opacity 0.3s;
+    }
+    .ui-widget-overlay.ui-open {
+        opacity: 0.5;
+        transition: opacity 0.3s;
+    }
+    .ui-dialog {
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    .ui-dialog.ui-open{
+        opacity: 1;
+        transition: opacity 0.3s;
     }
   </style>
 </head>
@@ -1025,14 +1038,10 @@ JVM上で動作するストリーム処理基盤としてかつてはS4、Storm�
       $(self.hash).dialog({
         modal: true,
         resizable: false,
-        width: Math.min($(window).width() * 0.9, 500), 
-        show: { 
-          effect: "fade",
-          duration: 200
-        },
-        hide: { 
-          effect: "fade",
-          duration: 200
+        width: Math.min($(window).width() * 0.9, 500),
+        hide: {
+          effect: "none",
+          delay: 300
         },
         open: function( event, ui ) {
           $(".ui-widget-overlay").click(function(){
@@ -1041,6 +1050,12 @@ JVM上で動作するストリーム処理基盤としてかつてはS4、Storm�
           $(".ui-dialog img[data-src]").each(function(){
             $(this).attr("src", $(this).attr("data-src"));
           });
+          
+          $(".ui-widget-overlay").addClass("ui-open");
+          $(event.target.parentElement).addClass("ui-open");
+        },
+        beforeClose: function(event, ui){
+          $(event.target.parentElement).removeClass("ui-open");
         }
       })
       return false;
