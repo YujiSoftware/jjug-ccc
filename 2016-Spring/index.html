@@ -1057,7 +1057,9 @@ JVM上で動作するストリーム処理基盤としてかつてはS4、Storm�
           $(".ui-widget-overlay").addClass("ui-open");
           $(event.target.parentElement).addClass("ui-open");
           
-          history.pushState(hash, null, hash);
+          if(history.state == null){
+            history.pushState(hash, null, hash);
+          }
         },
         beforeClose: function(event, ui){
           // CSS Transition 用のクラスを削除
@@ -1073,6 +1075,8 @@ JVM上で動作するストリーム処理基盤としてかつてはS4、Storm�
     $(window).on('popstate', function(e){
       if(history.state == null){
         $(".dialog.ui-dialog-content.ui-widget-content").dialog("close");
+      }else{
+        $("a[href='" + history.state +"']").trigger("click");
       }
     });
   </script>
