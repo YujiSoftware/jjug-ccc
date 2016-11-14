@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JJUG CCC 2016 Spring - Timetable (非公式)</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,user-scalable=0">
+  <link href="jquery-ui.min.css" rel="stylesheet">
+  <style type="text/css">
+    div.timetable > div.ui-accordion-content{
+      margin: 0px;
+      padding: 0.5em !important;
+    }
+    div.session > div.ui-accordion-content{
+      margin: 0px;
+      padding: 1em !important;
+    }
+    span.room{
+      font-size: small;
+    }
+    span.hashtag{
+      font-size: small;
+      text-decoration: underline;
+    }
+    .ui-widget-overlay {
+        background-color: black;
+        opacity: 0;
+        cursor: pointer;
+        transition: opacity 0.3s;
+    }
+    .ui-widget-overlay.ui-open {
+        opacity: 0.5;
+        transition: opacity 0.3s;
+    }
+    .ui-dialog {
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    .ui-dialog.ui-open{
+        opacity: 1;
+        transition: opacity 0.3s;
+    }
+  </style>
+</head>
+<body>
+  <h1>JJUG CCC 2016 Spring - Timetable (非公式)</h1>
+  <div class="accordion timetable">
+    <h3>9:30-10:00</h3>
+    <div><span class="room">[Room A+B+C+D]</span><br>日本Javaユーザーグループ定例総会<br>by 鈴木雄介(日本Javaユーザーグループ 会長) <span class="hashtag">#ccc_soukai</span></div>
+    
+    <h3>10:00-11:00</h3>
+    <div>
+      <div class="accordion session">
+        <h3><span class="room">[Room A+B+C+D]</span><br><a href="http://www.java-users.jp/?page_id=2396#keynote-1" target="_blank">基調講演1 : JJUG運営の戦略と戦術</a><br>by <a href="http://www.java-users.jp/?page_id=2424#keynote-1" target="_blank">鈴木雄介(日本Javaユーザーグループ)</a> <span class="hashtag">#ccc_keynote1</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #5cb85c;">初心者向け / Beginner</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #00ced1;">Community</span>
+<p><a href="#keynote-1" class="speaker">鈴木　雄介</a><br />
+JJUGメンバーは昨年の3300人から4500人超に増加しました。イベントをやればすぐに席はうまり、多くのスポンサーが応援をしてくれています。<br />
+若者、女子部、地方など参加者の幅もひろがってきました。<br />
+オワコンといわれて久しいJavaのコミュニティが、なぜ成長し続けているのでしょうか？<br />
+ナイトセミナー、1日イベント、スポンサー募集、幹事運営など、この3年間の取り組みについて会長が語ります</p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room E]</span><br><a href="http://www.java-users.jp/?page_id=2396#E-1" target="_blank">テスト自動化のまわりみち</a><br>by <a href="http://www.java-users.jp/?page_id=2424#E-1" target="_blank">irof</a> <span class="hashtag">#ccc_e1</span></h3>
+<div><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #f0ad4e;">中級者向け / Intermediate</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #5bc0de;">Java SE</span>
+<p><a href="#E-1" class="speaker">irof</a></p>
+<p>Javaでの自動テストをあたりまえにしたいと思って、いちプログラマがやってきたあれこれ。</p>
+<p>主にテストコーディングについて。使用しているツールやライブラリの紹介や個人的な感想、困ったことやつまづいたこと、うまくいっていないことを話そうと思います。<br />
+「まわりみち」と題している通り、成功事例やうまくいく方法ではありません。</p>
+<p>&#8211; 対象<br />
+&#8211; 自動テストに取り組もうとしている<br />
+&#8211; 自動テストで試行錯誤している<br />
+&#8211; 対象外<br />
+&#8211; JUnitを触ったことがない<br />
+&#8211; 現場で自動テストがうまくできている</p>
+<p>参考）前回のセッションで「踏み込まない」としていた部分になります。</p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room F]</span><br><a href="http://www.java-users.jp/?page_id=2396#F-1" target="_blank">広告システム刷新の舞台裏ーPHPからJavaに変えてみました</a><br>by <a href="http://www.java-users.jp/?page_id=2424#F-1" target="_blank">森下　大介</a> <span class="hashtag">#ccc_f1</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #f0ad4e;">中級者向け / Intermediate</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #337ab7;">Java EE or Server Side Java</span>
+<p><a href="#F-1" class="speaker">森下　大介</a></p>
+<p>ビジネスの成長と共に、当初の道具が合わない規模になっていったプロモーション広告業務系プラットフォーム。<br />
+大規模システムが売上を支えつつも改修コストや技術負債を増やしていく現実を前に、<br />
+今のままではテストも満足にしかけられないと危機感をもった開発部門がプログラミング言語、<br />
+アプリケーション・アーキテクチャ、ツール、開発の進め方など色々変えてみた事例をお話します。</p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room G+H]</span><br><a href="http://www.java-users.jp/?page_id=2396#GH-1" target="_blank">Type Annotation for Static Program Analysis</a><br>by <a href="http://www.java-users.jp/?page_id=2424#GH-1" target="_blank">櫻庭　祐一</a> <span class="hashtag">#ccc_gh1</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #f0ad4e;">中級者向け / Intermediate</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #5bc0de;">Java SE</span>
+<p><a href="#GH-1" class="speaker">櫻庭　祐一</a></p>
+<p>Java SE 8ではProject LambdaやDate &amp; Time APIが注目されていますが、アノテーションも大きく変化しました。最も大きな変化は、型に対してアノテーションが書けるようになったことです。たとえば、ジェネリクスの型パラメータなどにもアノテーションが書けるようになったのです。<br />
+型に対するアノテーションを導入することで、プログラムにさまざまな制約を記述することができるようになりました。これを利用したのが静的コード解析ツールです。本セッションでは静的コード解析ツールのChecker Frameworkを題材に、新しいアノテーションの活用方法をご紹介します。</p>
+        </div>
+      </div>
+    </div>
+    
+    <h3>11:00-12:00</h3>
+    <div>
+      <div class="accordion session">
+        <h3><span class="room">[Room A+B+C+D]</span><br><a href="http://www.java-users.jp/?page_id=2396#keynote-2" target="_blank">基調講演2： Raspberry Pi with Java</a><br>by <a href="http://www.java-users.jp/?page_id=2424#keynote-2" target="_blank">Stephen Chin(Oracle Corporation)</a> <span class="hashtag">#ccc_keynote2</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #f0ad4e;">中級者向け / Intermediate</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #4169e1;">Java ME or Embedded Java</span>
+<p><a href="#keynote-2" class="speaker">Stephen Chin (Oracle Corporation)</a><br />
+セッションでは、「レトロ・ハンドヘルド・コンソール」をどうやって作るか、から話を始めます。<br />
+このデバイスは3Ｄプリンタで作ったボックス の中の Raspberry Pi上でJavaが動作します。これを使ったいくつかのトピックをご紹介していきます：<br />
+• Raspberry Pi上へのJava実装<br />
+• Pi4Jによる入力デバイス装備<br />
+• JVMパフォーマンスチューニング<br />
+• なぜあなたの上司に3Dプリンタを買ってもらう必要があるのか？！<br />
+そして、もちろんあなたのレトロゲームへの（過去の）情熱を持ってテストを行えます。<br />
+8ビットや16ビットのコンソールのホコリをはらって準備運動しておいてください。<br />
+このプレゼンテーションは、セッションとして&#8221;work&#8221;することを合理的に理解してもらえるでしょう。<br />
+このセッションによって皆さんが、皆 さん自身 の&#8221;work&#8221;するものを現実の世界の中でJavaとRaspberry Piを使って実現されることを期待しています。</p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room E]</span><br><a href="http://www.java-users.jp/?page_id=2396#E-2" target="_blank">ブラウザテストをサクサク進めるためのGeb実践入門</a><br>by <a href="http://www.java-users.jp/?page_id=2424#E-2" target="_blank">@PoohSunny(高橋 陽太郎)</a> <span class="hashtag">#ccc_e2</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #5cb85c;">初心者向け / Beginner</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #0000cd;">JVM Languages</span>
+<p><a href="#E-2" class="speaker">@PoohSunny(高橋　陽太郎)</a></p>
+<p>本セッションでは、Gebを業務のプロジェクトで利用できるようにする、というのをテーマに、<br />
+・導入前の試用する際<br />
+・実際に導入する際<br />
+・導入してから<br />
+それぞれで気をつけるべきポイントと、その対処法を私の経験を交えてご紹介します。</p>
+<p>Gebとは、Groovy製のブラウザオートメーションツールで、<br />
+ソフトウェアテストに多く利用されています。同様のツールとしてSeleniumが有名ですが、<br />
+GebはSeleniumに比べ簡潔な記述が可能です。<br />
+ただし、Gebを実際に利用する際には気をつけるべきポイントがあり、それが業務プロジェクトへの導入を妨げることがあります。<br />
+本セッションで気をつけるべきポイントへの対処法を知ることで、<br />
+「Gebの業務利用（実践）待ったなし！」という状態になっていただけると思います。</p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room F]</span><br><a href="http://www.java-users.jp/?page_id=2396#F-2" target="_blank">Thymeleaf 3 を使ってみよう！</a><br>by <a href="http://www.java-users.jp/?page_id=2424#F-2" target="_blank">椎葉 光行</a> <span class="hashtag">#ccc_f2</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #5cb85c;">初心者向け / Beginner</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #337ab7;">Java EE or Server Side Java</span>
+<p><a href="#F-2" class="speaker">椎葉　光行</a></p>
+<p>Thymeleaf(タイムリーフ)はJava用のテンプレートエンジンです。ナチュラルテンプレートという手法を採用していて、<br />
+テンプレートをそのままブラウザで表示することができるので、<br />
+プロトタイプとして見せることができたり、デザイナーさんとの作業をスムーズに進めることができたりします。</p>
+<p>2016年2月にThymeleaf 3.0.0の最後のBETA版である3.0.0.BETA02がリリースされ、<br />
+ついに3.0.0の機能が出揃いました！なんか色々変わってるみたいですね。</p>
+<p>このセッションではThymeleafの基本的な機能の紹介と、3.0.0の新機能の紹介をしたいと思います。<br />
+Thymeleafを使ってみたいなと思っている方も、既に2.xを使ったことがある方も、Thymeleaf 3を使ってみましょう！</p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room G+H]</span><br><a href="http://www.java-users.jp/?page_id=2396#GH-2" target="_blank">Eclipse Collectionsで学ぶコード品質向上の勘所</a><br>by <a href="http://www.java-users.jp/?page_id=2424#GH-2" target="_blank">伊藤博志</a> <span class="hashtag">#ccc_gh2</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #f0ad4e;">中級者向け / Intermediate</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #5bc0de;">Java SE</span>
+<p><a href="#GH-2" class="speaker">伊藤　博志</a></p>
+<p>昨年サンフランシスコで開催されたJavaOne 2015、続いて日本のJJUG CCC 2015 Fallにて、<br />
+GS CollectionsがEclipse Foundationへ移行しEclipse Collectionsとして生まれ変わることが発表され、<br />
+2016年の1月に公式リリース(<a href="https://www.eclipse.org/collections/ja/">https://www.eclipse.org/collections/ja/</a>)されました。</p>
+<p>Eclipse Collectionsのコードベースには、コードの品質について学べるベストプラクティスがたくさんつまっています。<br />
+本セッションでは、実際のEclipse Collectionsのコード例やビルドの構成、<br />
+コードレビューのワークフローを紹介します。Java開発における高品質なコード、<br />
+高パフォーマンスな実装を保つ秘訣とコードレビューの実践方法について学び、皆さんの開発に生かしてみてください。</p>
+<p>本セッションでは、下記のポイントをカバーする予定です。<br />
+&#8211; Eclipse Collectionsのコレクション実装から学ぶ実装パターン<br />
+&#8211; プリミティブコレクションの自動コード生成<br />
+&#8211; Findbugs, Checkstyle, IDEA inspectionによるコード品質の静的解析<br />
+&#8211; JMHによるパフォーマンス解析<br />
+&#8211; コレクションのテストを容易にするeclipse-collections-testutilsの紹介<br />
+&#8211; コードレビューのプラクティス</p>
+        </div>
+      </div>
+    </div>
+
+    <h3>12:00-13:30（昼休憩）</h3>
+    <div>昼休憩<br>※12:30-13:30はブースにてスポンサー各社によるショートセッション（15分×4社）<br>アトラシアン株式会社/Elastic/CloudBees/ゴールドマン･サックス（順番は当日決定）</div>
+    
+    <h3>13:30-14:20</h3>
+    <div>
+      <div class="accordion session">
+        <h3><span class="room">[Room A+B]</span><br><a href="http://www.java-users.jp/?page_id=2396#AB-3" target="_blank">Javaでつくる技術ドキュメントのバリデーション環境</a><br>by <a href="http://www.java-users.jp/?page_id=2424#AB-3" target="_blank">伊藤敬彦(株式会社リクルートテクロノジーズ)</a> <span class="hashtag">#ccc_ab3</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #5cb85c;">初心者向け / Beginner</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #00ced1;">Javaを利用したアプリケーション</span>
+<p><a href="#AB-3" class="speaker">伊藤敬彦 (株式会社リクルートテクロノジーズ)</a><br />
+RedPen という弊社で開発中しているオープンソースのドキュメントlintingツールとそのエコシステム（IntelliJ IDEA 、WordPress プラグインなど）、<br />
+および関連ツールについて紹介します。</p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room C+D]</span><br><a href="http://www.java-users.jp/?page_id=2396#CD-3" target="_blank">ローカルでの ID 管理は大丈夫?! よりセキュアでモダンな Java の多要素認証</a><br>by <a href="http://www.java-users.jp/?page_id=2424#CD-3" target="_blank">寺田佳央(日本マイクロソフト株式会社)</a> <span class="hashtag">#ccc_cd3</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #f0ad4e;">中級者向け / Intermediate</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #337ab7;">Java EE or Server Side Java</span>
+<p><a href="#CD-3" class="speaker">寺田　佳央（日本マイクロソフト株式会社）</a><br />
+企業アプリケーションにおいて、ID 管理はとても重要です。企業で個人情報を取り扱うためには細心の注意を払わなければなりません。仮に情報漏洩が発生すると企業に与えるダメージは計り知れません。エンタープライズ向けの Java Web アプリの開発においては、よりセキュアな Web アプリの開発が求められます。そして、今ベストプラクティスとして、多要素認証の利用がオススメです。IDとパスワードに加え、個人が所有する携帯電話のような外部デバイスを認証に利用することで、ID, パスワードだけの認証システムに比べよりセキュアなアプリケーションを実装することができます。スクラッチで多要素認証機能を実現するには大変な労力がかかりますが、本セッションでは簡単に多要素認証を実現するための方法、RBAC ベースの認可の実装方法についてもご紹介します。さらには認証モジュールを独自に作成したい方のために JAAS, JASPIC を利用した認証モジュールの作り方の概要も紹介します。<br />
+本セッションは、既存の Web アプリに極力手を加えず強固な認証・認可を実現するための方法をご紹介します。</p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room E]</span><br><a href="http://www.java-users.jp/?page_id=2396#E-3" target="_blank">Spring Boot で Boot した後に作る Web アプリケーション基盤</a><br>by <a href="http://www.java-users.jp/?page_id=2424#E-3" target="_blank">吉田 朋也(エムスリー株式会社)</a> <span class="hashtag">#ccc_e3</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #f0ad4e;">中級者向け / Intermediate</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #337ab7;">Java EE or Server Side Java</span>
+<p><a href="#E-3" class="speaker">吉田 朋也(エムスリー株式会社)</a></p>
+<p>Spring Boot の登場から早2年が経過し、様々な企業・プロダクトで<br />
+Spring Boot を利用した Web アプリケーションが開発されています。</p>
+<p>しかし、Spring Boot で Boot した後、<br />
+「さぁ設定は一瞬で済んだ、具体的な機能を作る前に土台となるコードを書かないと・・・」というところはなかなか形式化されていません。<br />
+例えば、例外ハンドリングはどうする？DBトランザクションはどう処理する？キャッシュしないと・・・などなど。</p>
+<p>そこで、本セッションでは、Spring Boot を利用した Web アプリケーションで、<br />
+上記のような基盤となる機能を Spring でどう書いているかを弊社の事例を踏まえながら紹介します。</p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room F]</span><br><a href="http://www.java-users.jp/?page_id=2396#F-3" target="_blank">Javaエンジニアに知ってほしい、Springの教科書「TERASOLUNA」</a><br>by <a href="http://www.java-users.jp/?page_id=2424#F-3" target="_blank">倉元　貴一(株式会社エヌ・ティ・ティ・データ)</a> <span class="hashtag">#ccc_f3</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #f0ad4e;">中級者向け / Intermediate</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #337ab7;">Java EE or Server Side Java</span>
+<p><a href="#F-3" class="speaker">倉元　貴一(株式会社エヌ・ティ・ティ・データ)</a></p>
+<p>株式会社NTTデータでは、「TERASOLUNA Server Framework for Java 5(以下、TERA5)」の本格展開を2016年2月24日から開始しました。<br />
+「どうせデータさんの独自フレームワークなんでしょ？」「重厚長大なんだろうな…」というイメージがあるかもしれませんが、それは少し違います。<br />
+TERA5では、従来のNTTデータ独自のフレームワークから脱却し、OSSを極力そのまま活用するための開発ガイドラインとサポートの提供に注力することとなりました。<br />
+TERA5はSpring Frameworkをベースにおきつつ、一部JavaEEの技術とも連携する、サーバーサイドJavaアプリ開発のノウハウが詰まっています。まさに、Springアプリ開発の教科書と言えるでしょう。<br />
+本セッションではTERA5が提供する開発ガイドラインの中身をご紹介します。TERASOLUNAに興味を持っていただくきっかけになればと思います。</p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room G+H]</span><br><a href="http://www.java-users.jp/?page_id=2396#GH-3" target="_blank">Jenkins2.0</a><br>by <a href="http://www.java-users.jp/?page_id=2424#GH-3" target="_blank">川口耕介</a> <span class="hashtag">#ccc_gh3</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #f0ad4e;">中級者向け / Intermediate</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #008b8b;">Development and operations</span>
+<p><a href="#GH-3" class="speaker">川口　耕介</a></p>
+<p>Jenkinsプロジェクトでは、継続的デリバリなどのより大規模な自動化を手間なく実現するために、バージョン2.0を公開しました。<br />
+「Pipeline as Code」と呼ばれるパイプラインの設計をDSLで行う機能や、<br />
+多数のリポジトリを効率的に取り扱う「Organization Folder」の機能や、<br />
+また従来のフリースタイルプロジェクトの機能にも幾つかの改善が加えられています。<br />
+本発表では、プロジェクト初のメジャーアップグレードとなる2.0の狙いや、主な機能、また今後の計画などについて紹介します。</p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room I]</span><br><a href="http://www.java-users.jp/?page_id=2396#I-3" target="_blank">Elasticsearchハンズオン</a><br>by <a href="http://www.java-users.jp/?page_id=2424#I-3" target="_blank">樋口慎</a> <span class="hashtag">#ccc_i3</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #5cb85c;">初心者向け / Beginner</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #00ced1;">Elasticsearch</span>
+<p><a href="#I-3" class="speaker">樋口　慎</a></p>
+<p>注目度急上昇中のJavaベースの全文検索エンジン、 Elasticsearchを使ったデータ分析ハンズオンです。<br />
+Elasticsearch/Logstash/Kibanaのインストールから、ログの投入、データの可視化、分析を行います。</p>
+<p>※このセッションに参加するには準備が必要です。必ず事前にこちらのページをご確認ください：<a href="http://www.java-users.jp/?page_id=2648">事前準備</a></p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room M]</span><br><a href="http://www.java-users.jp/?page_id=2396#M-3" target="_blank">Spring Bootでチャットツールを作りながらWebの仕組みを理解しよう！</a><br>by <a href="http://www.java-users.jp/?page_id=2424#M-3" target="_blank">Java女子部</a> <span class="hashtag">#ccc_m3</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #5cb85c;">初心者向け / Beginner</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #337ab7;">Java EE or Server Side Java</span>
+<p><a href="#M-3" class="speaker">Java女子部</a></p>
+<p>普段使っているwebがどんな仕組みで動いているか気になったことはありませんか？</p>
+<p>このワークショップではSpring Bootでチャットツールを作成しながら、Webの仕組みをわかりやすく説明します。</p>
+<p>また、チャットツールの仕組みとしてWebSocketを採用しており、通常のWebの仕組み(HTTP通信)とリアルタイム通信の違いについても解説します。</p>
+<p>・普段Java書いているけど、Webの仕組みがよくわからない<br />
+・いつもバッチ系のシステムばかりだから、Webの開発してみたい<br />
+・よくわからないけどJavaでチャットツール作ってみたい<br />
+・WebSocket触ってみたい<br />
+という方々、是非参加してみませんか？</p>
+<p>開発環境の準備手順も事前に案内するので、心配せずに参加してください！</p>
+<p>※このセッションに参加するには準備が必要です。必ず事前にこちらのページをご確認ください：<a href="https://github.com/java-women/ChatToolForBeginners/wiki/Spring-Boot%E3%81%A7%E3%83%81%E3%83%A3%E3%83%83%E3%83%88%E3%83%84%E3%83%BC%E3%83%AB%E3%82%92%E4%BD%9C%E3%82%8A%E3%81%AA%E3%81%8C%E3%82%89Web%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF%E3%82%92%E7%90%86%E8%A7%A3%E3%81%97%E3%82%88%E3%81%86%EF%BC%81%E4%BA%8B%E5%89%8D%E6%BA%96%E5%82%99">事前準備</a></p>
+        </div>
+      </div>
+    </div>
+    
+    <h3>14:30-15:20</h3>
+    <div>
+      <div class="accordion session">
+        <h3><span class="room">[Room A+B]</span><br><a href="http://www.java-users.jp/?page_id=2396#AB-4" target="_blank">Introduction to JShell: The Java REPL Tool</a><br>by <a href="http://www.java-users.jp/?page_id=2424#AB-4" target="_blank">bitter_fox (吉田真也)</a> <span class="hashtag">#ccc_ab4</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #5cb85c;">初心者~中級者向け / Beginner</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #5bc0de;">Java SE</span>
+<p><a href="#AB-4" class="speaker">bitter_fox (吉田真也)</a></p>
+<p>REPL(Read-Eval-Print Loop)というツールをご存知でしょうか？<br />
+式や文を一行づつ実行し，評価結果を確認できるツールで，RubyやPythonなどのスクリプト系の言語環境では当たり前のツールです．</p>
+<p>OpenJDK(Java9)ではJava言語のREPLツールであるjshellが実装され，利用できるようになります．<br />
+jshellを使えば，なんとpublic class Hoge{public static void main(String[] args){}}を書かずともJava言語のコードを実行できるのです！<br />
+jshellはAPIの挙動の検証，確認や言語構文の確認など，簡単なプログラムの記述を支援し，開発効率を向上させます．<br />
+また，実行結果がすぐに分かるためプログラマの教育用途にも有用に利用することが出来ます．</p>
+<p>本セッションでは，デモを交えてjshellの使い方を紹介します．<br />
+また，どのようにしてREPL機能が実現されているのかというjshellの裏側もお伝えします．</p>
+<p>(REPLの説明はは初心者向けですが， 裏側の話や，デモでラムダ式やJavaFXなど中級者向けの内容を一部含みます)</p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room C+D]</span><br><a href="http://www.java-users.jp/?page_id=2396#CD-4" target="_blank">ネクストStruts/Seasar2としてのJava EEアクションベースMVC入門 - MVC 1.0、Jersey MVC、RESTEasy HTML -</a><br>by <a href="http://www.java-users.jp/?page_id=2424#CD-4" target="_blank">多田　真敏</a> <span class="hashtag">#ccc_cd4</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #f0ad4e;">中級者向け / Intermediate</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #337ab7;">Java EE or Server Side Java</span>
+<p><a href="#CD-4" class="speaker">多田　真敏</a></p>
+<p>今、Java界隈での大きな話題は「Struts 1やSeasar2の移行先としてどのフレームワークを選ぶべきか？」でしょう。<br />
+そんな中でJava EEは、標準技術であることや、サーバーベンダーのサポートがあることから、注目度が高くなっています。<br />
+本セッションでは、主にStruts 1と比較しながら、Java EE 8の目玉機能であるアクションベースフレームワーク「MVC 1.0」を紹介します。<br />
+また、EE 7時代の現在において、MVC 1.0の代替技術として使える「Jersey MVC」「RESTEasy HTML」を紹介し、<br />
+MVC 1.0への移行コストが最小限になるように、Jersey MVCやRESTEasy HTMLでどう作るべきかを論じます。</p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room E]</span><br><a href="http://www.java-users.jp/?page_id=2396#E-4" target="_blank">テストゼロからイチへ進むための戦略と戦術</a><br>by <a href="http://www.java-users.jp/?page_id=2424#E-4" target="_blank">渡辺 祐</a> <span class="hashtag">#ccc_e4</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #f0ad4e;">中級者向け / Intermediate</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #5bc0de;">Java SE</span>
+<p><a href="#E-4" class="speaker">渡辺　祐</a></p>
+<p>テスト、書いてますか？はい、我々は書いていませんでした。<br />
+しかし今は違います。</p>
+<p>将棋の駒を動かすかのように一手ずつテストを書き進めるための戦術と戦略のようなものを、お話しできればと思います。<br />
+このセッションは同じチームの同僚による昨年秋のセッション「JJUG-CCC 2015 Fall CD-2 Java8移行から始めた技術的負債との戦い」の続編のようなものです。</p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room F]</span><br><a href="http://www.java-users.jp/?page_id=2396#F-4" target="_blank">セットアップをスマートにすればJava開発はもっと速くなる！ </a><br>by <a href="http://www.java-users.jp/?page_id=2424#F-4" target="_blank">桑原雄一</a> <span class="hashtag">#ccc_f4</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #f0ad4e;">中級者向け / Intermediate</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #008b8b;">Development and operations</span>
+<p><a href="#F-4" class="speaker">桑原　雄一</a></p>
+<p>Java Webアプリの実行環境、セットアップするのしんどくないですか？<br />
+DBMS、APサーバーをインストールしてDB作ってデータソース作って、、、<br />
+しかも巷では「DevOps来てるし自動テストもCIも当然やるでしょ」みたいな風潮があるし。。。</p>
+<p>そこで、SIに必要な道具一式の開発を目指すSIToolkitプロジェクトでは、自動テスト・CI環境が簡単にセットアップできるMavenアーキタイプを作りました。<br />
+アーキタイプを展開してMavenコマンドを実行すると、Java EEで作ったサンプルWebアプリを自動テストします。<br />
+この間には、ミドルウェアのインストールからDBマイグレーション、テストエビデンスの取得等を全て自動で行っています。</p>
+<p>E2E自動テストがCIで動く状態から始めたら、Java開発はもっと速くなると思いませんか？</p>
+<p>セッションでは、デモを交えてセットアップをシンプルにする仕組みと工夫したポイントを紹介します。</p>
+<p>関連技術：<br />
+Maven、Derby、Flyway、Hibernate Tools、WAS Liberty、Selenium 、Jenkins、SIToolkit for Application Develpment, SIToolkit for Web Testing</p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room G+H]</span><br><a href="http://www.java-users.jp/?page_id=2396#GH-4" target="_blank">春だからJavaプログラミング再入門</a><br>by <a href="http://www.java-users.jp/?page_id=2424#GH-4" target="_blank">きしだなおき</a> <span class="hashtag">#ccc_gh4</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #5cb85c;">初心者向け / Beginner</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #5bc0de;">Java SE</span>
+<p><a href="#GH-4" class="speaker">きしだなおき</a></p>
+<p>Javaの文法を勉強して、基本ライブラリの使い方を覚えたら、あとはフレームワークの使い方やアプリケーションの作り方を覚えていきます。<br />
+そうするといつのまにか、Javaのプログラムを勉強するということが、ライブラリを組み合わせたり、新しいフレームワークの使い方を覚えたり、環境の設定方法を覚えたりすることになっていくことも多いのではないでしょうか。<br />
+しかし、Javaプログラミングというからには、Javaでのプログラムの組み方そのものの勉強もやっておいたほうがいいのではないかと思います。<br />
+このセッションでは、改めてJavaの文法に立ち戻って、Javaの値や条件分岐、メソッド、型などを見直し、どのようにプログラムを組み上げていくかということを考えていきたいと思います。</p>
+        </div>
+      </div>
+    </div>
+    
+    <h3>15:20-16:00（休憩）</h3>
+    <div>休憩<br/>
+※15:30-16:00はブースにてスポンサー各社によるショートセッション（15分×2社）<br/>
+CloudBees/ゴールドマン･サックス（順番は当日決定）</div>
+    
+    <h3>16:00-16:50</h3>
+    <div>
+      <div class="accordion session">
+        <h3><span class="room">[Room A+B]</span><br><a href="http://www.java-users.jp/?page_id=2396#AB-5" target="_blank">Apache Apexとインメモリー最適化による超高速処理の世界</a><br>by <a href="http://www.java-users.jp/?page_id=2424#AB-5" target="_blank">漆原　茂(ウルシステムズ株式会社 代表取締役社長 兼 エンジニア)</a> <span class="hashtag">#ccc_ab5</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #f0ad4e;">中級者向け / Intermediate</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #00ced1;">システムアーキテクチャ</span>
+<p><a href="#AB-5" class="speaker">漆原　茂(ウルシステムズ株式会社 代表取締役社長 兼 エンジニア)</a></p>
+<p>これからのアーキテクチャは「インメモリー×ストリーミング」が当たり前。<br />
+もはやDB中心は時代遅れかも？<br />
+本セッションではJavaのメモリー使用効率を大幅に高めるミドルウェアやApache Apexによる分散ストリーミング処理などの最先端技術を紹介。<br />
+完全なプッシュ型アーキテクチャによる未来の超高速処理をチラ見せします。</p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room C+D]</span><br><a href="http://www.java-users.jp/?page_id=2396#CD-5" target="_blank">Java EE Web Profileを活用しよう！</a><br>by <a href="http://www.java-users.jp/?page_id=2424#CD-5" target="_blank">蓮沼　賢志</a> <span class="hashtag">#ccc_cd5</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #f0ad4e;">中級者向け / Intermediate</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #337ab7;">Java EE or Server Side Java</span>
+<p><a href="#CD-5" class="speaker">蓮沼　賢志</a></p>
+<p>Java EE 6からWeb Profileという概念が導入されましたが、皆さん活用されていますか？<br />
+このセッションではJava EE 7 Web Profileの概要について振り返り、Web Profileの主な活用シーン、Full Profile との比較などについて考えてゆきたいと思います。</p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room E]</span><br><a href="http://www.java-users.jp/?page_id=2396#E-5" target="_blank">Docker on A.* ～開発から運用まで～</a><br>by <a href="http://www.java-users.jp/?page_id=2424#E-5" target="_blank">高橋裕也(株式会社オープンストリーム)</a> <span class="hashtag">#ccc_e5</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #f0ad4e;">中級者向け / Intermediate</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #008b8b;">Development and operations</span>
+<p><a href="#E-5" class="speaker">高橋裕也(株式会社オープンストリーム)</a></p>
+<p>「Dockerって流行ってるみたいだけど使ったことない」<br />
+「Docker使っているけどイマイチ本システムとして開発・運用が上手くいかない」<br />
+などなどDocker利用において困ったことはありませんか。本セッションでは、今流行りのAWS / Azure とDockerを用いたシステムの設計・開発から運用までのヒントを事例を交えてお話しします。</p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room F]</span><br><a href="http://www.java-users.jp/?page_id=2396#F-5" target="_blank">Javaプログラマーももう逃げられない。マイクロサービスとAPIの世界。</a><br>by <a href="http://www.java-users.jp/?page_id=2424#F-5" target="_blank">田中 孝清（日本IBM）</a> <span class="hashtag">#ccc_f5</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #337ab7;">Java EE or Server Side Java</span>
+<p><a href="#F-5" class="speaker">田中 孝清（日本IBM）</a></p>
+<p>変化の早いモバイルやモダンブラウザに対応するため、またビジネスの変化に迅速に対応するため、マイクロサービスの考え方が広く支持されるようになっています。比較的変化が遅く、モノリシックなWebアプリケーションが多かったサーバーサイドJavaの世界も、そのトレンドから逃げられなくなりつつあります。このセッションでは改めてマイクロサービス・アーキテクチャーが評価されている理由を掘り下げると共に、Javaの世界でAPIとサービスを実現する方法についてご紹介します。また、IBMのAPIエコノミーへの取り組みについてもお知らせします。</p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room G+H]</span><br><a href="http://www.java-users.jp/?page_id=2396#GH-5" target="_blank">Spring Framework/Bootの最新情報とPivotalが進めるクラウドネイティブなアプローチ</a><br>by <a href="http://www.java-users.jp/?page_id=2424#GH-5" target="_blank">槙 俊明 (Pivotalジャパン株式会社)</a> <span class="hashtag">#ccc_gh5</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #f0ad4e;">中級者向け / Intermediate</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #337ab7;">Java EE or Server Side Java</span>
+<p><a href="#GH-5" class="speaker">槙 俊明 (Pivotalジャパン株式会社)</a></p>
+<p>月間300万以上ダウンロードされている大人気フレームワークのSpring Bootのバージョン1.4のリリースが近づいています。<br />
+本セッションの前半では、Spring Boot 1.4および、それと対応するSpring Framework 4.3の新機能をいち早く解説します。<br />
+また、2017年頭にメジャーバージョンアップ予定のでSpring Framework 5で計画されている魅力的な新機能についても一部紹介します。</p>
+<p>後半ではPivotalが推進するクラウドネイティブアプリケーションとは何か、何がメリットなのかをお伝えし、<br />
+Spring Boot、Spring CloudやCloud Foundry、Concourse CIがどのようにこのアプローチを支えるかをご紹介します。</p>
+<p>時間が残れば、紹介したテクノロジーを使ったデモでクラウドネイティブなメリットをお見せします。</p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room I]</span><br><a href="http://www.java-users.jp/?page_id=2396#I-5" target="_blank">JavaデスクトッププログラムをふつーのWindowsプログラムのように配布・実行する方法とPCの動きが重くならないよう気を付けること</a><br>by <a href="http://www.java-users.jp/?page_id=2424#I-5" target="_blank">高橋 徹</a> <span class="hashtag">#ccc_i5</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #5cb85c;">初心者向け / Beginner</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #5bc0de;">Java SE</span>
+<p><a href="#I-5" class="speaker">高橋　徹</a></p>
+<p>Windows OS上で、Javaで作ったプログラムをJDK標準搭載ツールjavapackagerを使って、<br />
+Windowsインストーラ(MSIファイル)として作成し、<br />
+ふつうのプログラムのようにインストールし、<br />
+メニューやショートカットから実行し、アンインストール・アップデートが簡単にできるようにする方法を紹介します。<br />
+また、多数のJavaプログラムを同時に動かした際に、<br />
+Javaが使用するCPU・メモリリソースを控え目にするよう設定をすることで「JavaのせいでPCが重い！」と言われないようにするコツを合わせて紹介します。</p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room M]</span><br><a href="http://www.java-users.jp/?page_id=2396#M-5" target="_blank">Python + GDB = Javaデバッガ</a><br>by <a href="http://www.java-users.jp/?page_id=2424#M-5" target="_blank">数村憲治</a> <span class="hashtag">#ccc_m5</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #d9534f;">上級者向け / Advanced</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #000080;">Java VMs</span>
+<p><a href="#M-5" class="speaker">数村　憲治</a></p>
+<p>Javaコードのデバッグは、jdbのようなラインデバッガから<br />
+NetBeansのようなGUIデバッガまで、さまざまなツールを使うことができます。<br />
+一方で、Java VM自身はC++等で書かれているため、<br />
+そのデバッグは、GDB等のネイティブ言語用デバッガを使う必要があります。</p>
+<p>しかし、実際にデバッグする際に、Javaコードのデバッグツールと<br />
+JVMのデバッグツールを別々に用意して、同時に使用することは実用的ではありません。</p>
+<p>本セッションでは、一つの解決方法として、Python-enabled GDBを紹介します。<br />
+Python-enabled GDBでは、Pythonスクリプトを使用しGDBを拡張することで、<br />
+Javaコード、ネイティブコード、JVMコードを透過的にデバッグできるようになります。</p>
+<p>また、拡張用スクリプトを書くにあたって必要となる、<br />
+Java VMの構造や、コーリングコンベンション、<br />
+Javaオブジェクトの内部データ構造等、<br />
+HotSpot VMの実装解説もあわせて行います。</p>
+        </div>
+      </div>
+    </div>
+    
+    <h3>17:00-17:50</h3>
+    <div>
+      <div class="accordion session">
+        <h3><span class="room">[Room A+B]</span><br><a href="http://www.java-users.jp/?page_id=2396#AB-6" target="_blank"> ビッグデータじゃなくても使えるSpark☆Streaming</a><br>by <a href="http://www.java-users.jp/?page_id=2424#AB-6" target="_blank">島本 多可子(株式会社ビズリーチ)</a> <span class="hashtag">#ccc_ab6</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #5cb85c;">初心者向け / Beginner</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #008b8b;">Development and operations</span>
+<p><a href="#AB-6" class="speaker">島本 多可子(株式会社ビズリーチ)</a></p>
+<p>Apache Sparkって聞いたことありますか？<br />
+最近話題でキラキラしていて使いたいと思ったことはありませんか？<br />
+中でもSpark Streamingは「手軽に」ストリーム処理を実現できるとして注目を集めており、弊社のサービスでも利用しています。</p>
+<p>一方でSparkのアーキテクチャはいわゆる大規模クラスタを想定したものとも言われており、<br />
+弊社のように中・小規模には過剰であるのも事実です。</p>
+<p>では、なぜSpark Streamingを使っているか？どんなところに利用できるのか？</p>
+<p>このセッションでは、弊社の求人検索サービス「スタンバイ」での利用事例、<br />
+およびさほどビックでもないデータにおけるSparkの使いドコロについてお話します。</p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room C+D]</span><br><a href="http://www.java-users.jp/?page_id=2396#CD-6" target="_blank">SmartNews のニュース配信を支えるサーバ技術</a><br>by <a href="http://www.java-users.jp/?page_id=2424#CD-6" target="_blank">瀬良 和弘(スマートニュース株式会社)</a> <span class="hashtag">#ccc_cd6</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #f0ad4e;">中級者向け / Intermediate</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #5bc0de;">Java SE</span>
+<p><a href="#CD-6" class="speaker">瀬良 和弘(スマートニュース株式会社)</a></p>
+<p>SmartNews のニュースを配信するサーバはAmazon Web Services (AWS) のマネージドサービスと JVM 上で動作するアプリケーション群で構成されており、サービスの成長に対応するために常に変化を続けています。</p>
+<p>このセッションでは、SmartNews のニュース配信について、システム構成における設計思想や構成要素、機械学習やそれを支えるプラットフォーム、今後の展望などを中心に紹介いたします。</p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room E]</span><br><a href="http://www.java-users.jp/?page_id=2396#E-6" target="_blank">大規模映像配信サービスのJava8による全面リニューアルの裏側</a><br>by <a href="http://www.java-users.jp/?page_id=2424#E-6" target="_blank">秋穂 賢(株式会社U-NEXT)</a> <span class="hashtag">#ccc_e6</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #5cb85c;">初心者向け / Beginner</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #337ab7;">Java EE or Server Side Java</span>
+<p><a href="#E-6" class="speaker">秋穂 賢(株式会社U-NEXT)</a></p>
+<p>映像配信サービス2007年から開始しているU-NEXTを昨年の10月に全面リニューアルしました。<br />
+リニューアルではレガシーなシステムを捨てて、1年弱の期間でほんの一部のシステムを除いて全てを1から作り直しました。<br />
+本セッションではU-NEXTリニューアルの中でもサーバサイドAPIをJava8 / DBFluteを用いて作り直した事例のご紹介をします。<br />
+日々発生するDB変更やサービス要求を実現するAPIを迅速に開発し、<br />
+大きな障害なくリニューアルを迎えることが出来た事例から皆様のお役に立つことをお伝えしたいと思います。</p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room F]</span><br><a href="http://www.java-users.jp/?page_id=2396#F-6" target="_blank">人工知能型ERP「HUE」の開発裏話。本当に起こった速度問題とチューニング事例を一挙公開</a><br>by <a href="http://www.java-users.jp/?page_id=2424#F-6" target="_blank">東 卓弥(株式会社ワークスアプリケーションズ　HUE Div)</a> <span class="hashtag">#ccc_f6</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #f0ad4e;">中級者向け / Intermediate</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #337ab7;">Java EE or Server Side Java</span>
+<p><a href="#F-6" class="speaker">東 卓弥(株式会社ワークスアプリケーションズ　HUE Div)</a></p>
+<p>業務×人工知能で「働く」を大きく変えようとしている製品「HUE」。<br />
+まさに働き方を変えるほど、利便性の高い機能が多く開発されていますが、<br />
+これらの機能は「圧倒的な応答速度（0.1秒）」があるからこそ、実用的になります。</p>
+<p>今回のセッションでは、どんなサービス・アプリケーションでも重要となる「速度」にフォーカスを当てています。<br />
+特に今回は、普段話にあげづらいHUE開発で起こった問題事例をありのままご紹介します。<br />
+結果だけを見れば難しくはない泥臭い内容ですが、<br />
+実際の事例を解説しますので、今後の問題解決・速度改善に役立てていただければと思っています。</p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room G+H]</span><br><a href="http://www.java-users.jp/?page_id=2396#GH-6" target="_blank">Seasar2で作った俺たちのサービスの今</a><br>by <a href="http://www.java-users.jp/?page_id=2424#GH-6" target="_blank">阪田 浩一</a> <span class="hashtag">#ccc_gh6</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #f0ad4e;">中級者向け / Intermediate</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #337ab7;">Java EE or Server Side Java</span>
+<p><a href="#GH-6" class="speaker">阪田　浩一</a></p>
+<p>2011年にリリースした弊社のサービスは、Seasar2ファミリーで構築しました。利用者数は1000万人以上となり、今もサービスとして成長しています。2016/9/26にSeasar2がサポートを終了するというアナウンスを受け、私たちもアクションを起こしました。</p>
+<p>サービスには絶え間なく機能改善、機能追加の要件があり、その対応をしながらSeasar2から移行するという前提条件を考慮すると、選択肢は限られます。Scalaなど言語自体を変えることはなく、Javaのままとしました。新規アプリケーションを作成すると監視対象とするアプリケーションの数が増え、様々なコストが増えると考えたため新規とはしませんでした。こういったさまざまな条件のもと、まずはSeasar2で動作している機能から、まずリスクが小さい機能を新フレームワークで置き換え（ユニットテストも書き換え受け入れテストもし直し）てリリースしました。そして機能追加と並行して置き換えを進めています。</p>
+<p>技術的には、移行対象としてはSpringを選択しました。Seasar2にある機能がそのままある場合もあれば、コードを書いて対応したものもあります。他に、S2DaoでのRDBMSへのアクセスを含んだビジネスロジックも、移行コストを最低限にするために資産としてSpringのコードからも利用できるようにしました。ユニットテストについてもS2TestCase とdjUnitから、単純作業として書き換えやすかったjMockitに移行しました。</p>
+<p>セッションでは、こういった判断に至った経緯やその実現手法、メンバーへレクチャーなど移行のスタートから現時点のリリースまでにあるさまざまなことを話します。すばらしい判断でもなければすごい技術力で解決したわけでもない、普通なプロジェクトの現場で実際にやったことならではのリアルさを感じていただけると思います。</p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room I, 17:00-17:20]</span><br><a href="http://www.java-users.jp/?page_id=2396#I-6_1" target="_blank">Beatsシリーズでお手軽メトリック収集可視化</a><br>by <a href="http://www.java-users.jp/?page_id=2424#I-6_1" target="_blank">Jun Ohtani (Elastic)</a> <span class="hashtag">#ccc_i61</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #5cb85c;">初心者向け / Beginner</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #008b8b;">Development and operations</span>
+<p><a href="#I-6_1" class="speaker">Jun Ohtani</a></p>
+<p>Elastic社が提供しているGo言語で書かれたOSSのBeatsシリーズの紹介とデモ、また新しい機能を持ったBeatの作り方などの説明を行います。<br />
+Beatsシリーズには、パケット（HTTP、MySQL、PostgreSQL、Redisなど）をキャプチャして性能情報を取り出すPacketBeatや、WindowsのEventLogを解析するWinlogbeatなどがあります。<br />
+デモを交えて、既存のBeatを利用するとどのような解析が行えるかをご紹介します。<br />
+また、BeatはLibbeatと呼ばれる共有ライブラリも提供しています。この共有ライブラリを使用して新しい機能を持ったBeatの作成方法の注意点などについても説明します。</p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room I, 17:30-17:50]</span><br><a href="http://www.java-users.jp/?page_id=2396#I-6_2" target="_blank">OpenJDK コミュニティに参加してみよう</a><br>by <a href="http://www.java-users.jp/?page_id=2424#I-6_2" target="_blank">KUBOTA Yuji</a> <span class="hashtag">#ccc_i62</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #5cb85c;">初心者向け / Beginner</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #00ced1;">Community</span>
+<p><a href="#I-6_2" class="speaker">KUBOTA Yuji</a></p>
+<p>OpenJDK は OSS です。もちろんパッチを書いて貢献や、自分好みの機能を取り入れてもらうことも、もしかしたらできるかも知れません。</p>
+<p>どうやってパッチを書いて送るのか、ここの改善をしたいのだけどどうやればいいのか？方法は幾つもありますが、個人的な経験を交えて OpenJDK コミュニティへの参加方法をご紹介します。</p>
+<p>一緒に OpenJDK を改善していきませんか？</p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room M, 17:00-17:20]</span><br><a href="http://www.java-users.jp/?page_id=2396#M-6_1" target="_blank">十徳ナイフとしてのGradle</a><br>by <a href="http://www.java-users.jp/?page_id=2424#M-6_1" target="_blank">@grimrose</a> <span class="hashtag">#ccc_m61</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #f0ad4e;">中級者向け / Intermediate</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #0000cd;">JVM Languages</span>
+<p><a href="#M-6_1" class="speaker">@grimrose</a></p>
+<p>Gradle wrapperを使って、Gradleのタスクを作りながら手作業でやっていた作業を自動化する方法をお教えします。</p>
+<p>公開されているGradleのPluginの一部の使い方を交えてJavaユーザでもGroovyを使えるコツや、普段の業務に役立つと思われるその他のPluginを紹介します。</p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room M, 17:30-17:50]</span><br><a href="http://www.java-users.jp/?page_id=2396#M-6_2" target="_blank">もう知らないとは言わせない！Play Frameworkはじめの一歩</a><br>by <a href="http://www.java-users.jp/?page_id=2424#M-6_2" target="_blank">松村翔子 / しょこ</a> <span class="hashtag">#ccc_m62</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #5cb85c;">初心者向け / Beginner</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #337ab7;">Java EE or Server Side Java</span>
+<p><a href="#M-6_2" class="speaker">松村　翔子 / しょこ</a></p>
+<p>ScalaとJavaベースで書かれたPlay Frameworkの最新情報や，ほかのフレームワークとの違い，使いどころを中心にお伝えします。<br />
+特に「名前は知ってるけどいまいち何かわからない」「Springだけ知ってればいいよね」という方，おすすめです。</p>
+        </div>
+      </div>
+    </div>
+    
+    <h3>17:50-18:30（休憩）</h3>
+    <div>休憩<br/>
+※18:00-18:30はブースにてスポンサー各社によるショートセッション（15分×2社）<br/>
+アトラシアン株式会社/Elastic（順番は当日決定）</div>
+    
+    <h3>18:30-19:20</h3>
+    <div>
+      <div class="accordion session">
+        <h3><span class="room">[Room A+B]</span><br><a href="http://www.java-users.jp/?page_id=2396#AB-7" target="_blank">若者にJavaの好きなところ嫌いなところきいてみた</a><br>by <a href="http://www.java-users.jp/?page_id=2424#AB-7" target="_blank">つっちー / bitter_fox / いわたん / あや / よこな</a> <span class="hashtag">#ccc_ab7</span></h3>
+        <div>
+<p><a href="#AB-7" class="speaker">つっちー / bitter_fox / いわたん / あや / よこな</a></p>
+<p>（提供）ウルシステムズ株式会社</p>
+<p>みなさん、Javaって好きですか？それとも苦手ですか？</p>
+<p>このセッションでは、Javaを利用する上で「こういうところ好きです！」<br />
+や「こういうことろちょっと苦手かも・・・」と思うところを、若者に<br />
+訊いてみようという内容を予定しています。</p>
+<p>会場にお越しの皆様にも「この技術好きなんだったらこっちも良いよ！」や<br />
+「実はこんな機能があってだな・・・？」みたいなご意見やアドバイスを<br />
+求めるかも・・・？！</p>
+<p>登壇する若者達と一緒にわいわいやりましょう！</p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room C+D]</span><br><a href="http://www.java-users.jp/?page_id=2396#CD-7" target="_blank">マイクロフレームワーク enkan(とkotowari)ではじめるREPL駆動開発</a><br>by <a href="http://www.java-users.jp/?page_id=2424#CD-7" target="_blank">川島 義隆</a> <span class="hashtag">#ccc_cd7</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #f0ad4e;">中級者向け / Intermediate</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #337ab7;">Java EE or Server Side Java</span>
+<p><a href="#CD-7" class="speaker">川島　義隆</a></p>
+<p>きたるJava 9時代に向けて、新しいJavaのマイクロフレームワークenkanを作りました。<br />
+http://github.com/kawasima/enkan</p>
+<p>多々特長はありますが起動の速さとREPL駆動開発が最大のウリです。クラススキャンをせずServlet APIにも依存しないenkanは、REPLからサーバを起動し、HTTPリクエストをacceptし始めるのに3秒しかかかりません。そして起動中のアプリケーションをREPLから操作し、動的に挙動を変えることも可能です。詳しくはQiitaをご覧ください。 http://qiita.com/kawasima/items/723646eb30a91d724352</p>
+<p>本セッションでは、enkan(とkotowari)のコンセプトや特長だけでなく、その中で使われているJava8 / 9の活用の仕方についてもお話したいと思います。</p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room G+H]</span><br><a href="http://www.java-users.jp/?page_id=2396#GH-7" target="_blank">Java Pazzler</a><br>by <a href="http://www.java-users.jp/?page_id=2424#GH-7" target="_blank">寺田佳央 / 櫻庭祐一</a> <span class="hashtag">#ccc_gh7</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #f0ad4e;">中級者向け / Intermediate</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #5bc0de;">Java SE</span>
+<p><a href="#GH-7" class="speaker">寺田　佳央　&amp;　櫻庭　祐一</a></p>
+<p>Java Puzzlersが帰ってきた！ Javaを使う上で陥りやすい罠や落とし穴をクイズにしたJava Puzzlers。<br />
+ぜひ、みなさまも一緒にJavaのパズルに一緒に参加しましょう。</p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room I, 18:30-18:50]</span><br><a href="http://www.java-users.jp/?page_id=2396#I-7_1" target="_blank">新人エンジニアが北海道からでてきてコミュニティについて想うこと</a><br>by <a href="http://www.java-users.jp/?page_id=2424#I-7_1" target="_blank">まっさん</a> <span class="hashtag">#ccc_i71</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #5cb85c;">初心者向け / Beginner</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #00ced1;">ポエム</span>
+<p><a href="#I-7_1" class="speaker">まっさん</a></p>
+<p>新卒1年目でコミュニティ活動に参加して、感じたこと、良かったこと、悪かったことを紹介します。<br />
+私たちが生きるコミュニティは、会社だけではありません。<br />
+さまざまな技術をきっかけに集い、知識を共有する、会話する･･･私は北海道から新入社員として関東にでてきてコミュニティーの持つパワーに驚きました。</p>
+<p>コミュニティで出会った友人や業界のスターとSNSでつながれば、困っている時に助けてくれるかもしれません。<br />
+時に会社で、同期や先輩に聞きずらい、質問しずらいという状況になるでしょう。<br />
+人間関係が理由で、技術が好きになれなかったり、仕事がつまらなくなるというは残念すぎる。<br />
+外に目を向けて、自分にぴったりのスキルレベルの友人、その分野でのスターを見つけて、少しずつ、一歩ずつ成長していけばいいのではないでしょうか。</p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room I, 19:00-19:20]</span><br><a href="http://www.java-users.jp/?page_id=2396#I-7_2" target="_blank">SpringBoot+Kotlin 劇的ビフォーアフター</a><br>by <a href="http://www.java-users.jp/?page_id=2424#I-7_2" target="_blank">俺九番</a> <span class="hashtag">#ccc_i72</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #5cb85c;">初心者向け / Beginner</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #0000cd;">JVM Languages</span>
+<p><a href="#I-7_2" class="speaker">俺九番</a></p>
+<p>3月からSpring InitializerでKotlinが選択できるようになりました。<br />
+選択できるようになったけれど、SpringBoot+Kotlinってどうなの？落とし穴とか大丈夫？のような疑問や、SpringBootでKotlinを使ってみてよかった点などを紹介します。</p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room M, 18:30-18:50]</span><br><a href="http://www.java-users.jp/?page_id=2396#M-7_1" target="_blank">古のJavaを使うということ</a><br>by <a href="http://www.java-users.jp/?page_id=2424#M-7_1" target="_blank">ぜろゆ</a> <span class="hashtag">#ccc_m71</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #5cb85c;">初心者向け / Beginner</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #008b8b;">Development and operations</span>
+<p><a href="#M-7_1" class="speaker">ぜろゆ</a></p>
+<p>― 研修を終えて配属されたプロダクトは、J2SE1.4で動いていた。<br />
+テストは画面を叩くのみ、大人の事情でJavaバージョンアップ不可、そもそもプログラミングのスキルは重視されていない環境でどうやって製品を作り、育てていくのか？ そもそも製品を作り育てる際にJavaのバージョンはどう関係するのか？<br />
+レガシーの中のレガシーで2年間足掻いてきた軌跡を最大限公開します。</p>
+<p>話す予定のこと<br />
+・配属直後 &#8211; J2SE1.4との出会い<br />
+・まずは読めるコードを &#8211; コメントアウトコード撲滅作戦<br />
+・1行変更するのにかかるコスト &#8211; 画面テストとJUnitの戦い<br />
+・挫折 &#8211; 技術的に優れていることとプロダクトとして優れていることの差<br />
+・まとめ &#8211; プロダクトを作り育てることとJavaとJ2SE1.4</p>
+        </div>
+      </div>
+
+      <div class="accordion session">
+        <h3><span class="room">[Room M, 19:00-19:20]</span><br><a href="http://www.java-users.jp/?page_id=2396#M-7_2" target="_blank">JVM上でのストリーム処理エンジンの変遷</a><br>by <a href="http://www.java-users.jp/?page_id=2424#M-7_2" target="_blank">木村宗太郎</a> <span class="hashtag">#ccc_m72</span></h3>
+        <div>
+<span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #5cb85c;">初心者向け / Beginner</span><span style="display: inline; margin-left: 5px; padding: .2em .6em .3em; font-size: 50%; font-family: sans-serif; font-weight: bold; line-height: 1; color: #fff; text-align: center; white-space: nowrap; vertical-align: baseline; border-radius: .25em; background-color: #0000cd;">JVM Languages</span>
+<p><a href="#M-7_2" class="speaker">木村　宗太郎</a></p>
+<p>昨今、完了したデータの解析や処理を行うバッチ処理でなく、『今何が起こっているか？』を把握するためのストリーム処理の需要が高まってきています。<br />
+JVM上で動作するストリーム処理基盤としてかつてはS4、Storm等のプロダクトが有名でした。<br />
+ですが、その後Spark Streaming、Flink、Gearpumpのような新たなプロダクトの登場や、Apache Beamのような複数の実行エンジン上で実行可能とする抽象化したDSLも登場してきています。<br />
+それらのプロダクトの変遷やアーキテクチャを振り返り比較するとともに、最近のプロダクトを用いたストリーム処理の実装方法について紹介します。</p>
+        </div>
+      </div>
+    </div>
+    
+    <h3>19:30-21:30</h3>
+    <div>懇親会(Room E+F)</div>
+  </div>
+  <p>
+  <span style="font-style:bold;">このページは、非公式です。</span><br>
+  お気づきの点は <a href="https://twitter.com/YujiSoftware">@YujiSoftware</a> までご連絡いただくか、または <a href="https://github.com/YujiSoftware/jjug-ccc/tree/gh-pages/2016-Spring">この GitHub に Pull Request</a> をお願いいたします。
+  </p>
+
+  <div id="keynote-1" class="dialog" title="鈴木　雄介 (日本Javaユーザーグループ">
+    <p>エンタープライズ業界のITアーキテクト。「ソフトウェアアーキテクトが知るべき97のこと」（オライリー）監訳、その他寄稿対数。<br />
+    グロースエクスパートナーズ株式会社 執行役員。<br />
+    2013年より日本Javaユーザーグループ 会長。</p>
+    <p>Blog: <a href="http://arclamp.hatenablog.com/" target="_blank">http://arclamp.hatenablog.com/</a><br />
+    Twitter: <a href="https://twitter.com/yusuke_arclamp" target="_blank">@yusuke_arclamp</a></p>
+  </div>
+  
+  <div id="keynote-2" class="dialog" title="Stephen Chin (Oracle Corporation)">
+      <p><img class="alignnone wp-image-2093" data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2016/05/javaone-stephen-chin-1844273.jpg" alt="" width="250" height="250" /></p>
+    <p>Stephen Chin is the lead Java community manager at Oracle, author of Raspberry Pi with Java, coauthor of Pro JavaFX Platform, and JavaOne content chairperson. He has keynoted numerous Java conferences around the world including JavaOne, where he is a four- time Java Rock Star Award recipient. Chin is an avid motorcyclist who has done several Pan-European evangelism tours, interviewing hackers in their natural habitat, and posting the videos on nighthacking.com. When he is not traveling, Chin enjoys teaching kids how to do embedded and robot programming together with his 11 year-old daughter.</p>
+    <p>Twitter handle: @steveonjava</p>
+  </div>
+
+  <div id="E-1" class="dialog" title="irof (関西Javaエンジニアの会)">
+      <p><img class="alignnone wp-image-2093" data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2015/10/irof.png" alt="irof" width="250" height="250" /></p>
+    <p>ふつうのプログラマです。<br />
+    主に業務Webアプリの開発をやってます。</p>
+    <p>関西Javaエンジニアの会<br />
+    hoge駆動勉強会<br />
+    Blog: <a href="http://irof.hateblo.jp/" target="_blank">http://irof.hateblo.jp/</a><br />
+    Twitter: <a href="https://twitter.com/irof" target="_blank">@irof</a></p>
+  </div>
+
+  <div id="F-1" class="dialog" title="森下　大介 (ヤフー株式会社)">
+      <p><img class="alignnone size-full wp-image-2425" data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2016/04/morishita.jpg" alt="morishita" width="180" height="135" /></p>
+    <p>SIer系からWeb系に36歳で転職したエンジニア。<br />
+    PHPが主流な会社の中であえてJavaをメインに使い、Node.jsやPHPもちょろっと触ったりはします。<br />
+    現在はプロモーション広告業務系システムのバックエンド開発に従事。</p>
+    <p>Facebook: <a href="https://www.facebook.com/daisuke.morishita.77" target="_blank">森下大介</a></p>
+  </div>
+
+  <div id="GH-1" class="dialog" title="櫻庭　祐一 (Java in the Box)">
+      <p><img class="alignnone size-full wp-image-1146" data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2014/04/YuichiSakuraba.jpg" alt="Yuichi Sakuraba" width="125" height="150" /></p>
+    <p>Java一筋20年。</p>
+    <p>Java Champion<br />
+    Web: <a href="http://www.javainthebox.net/" target="_blank">http://www.javainthebox.net/</a><br />
+    Blog: <a href="http://www.javainthebox.com/" target="_blank">http://www.javainthebox.com/</a><br />
+    Twitter: <a href="https://twitter.com/skrb" target="_blank">@skrb</a><br />
+    GitHub: <a href="https://github.com/skrb" target="_blank">skrb</a></p>
+  </div>
+
+  <div id="E-2" class="dialog" title="＠PoohSunny(高橋 陽太郎) (日本Seleniumユーザーコミュニティ)">
+      <p><img class="alignnone wp-image-2428" data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2016/04/PoohSunny.png" alt="PoohSunny" width="250" height="250" /></p>
+    <p>スクラムディベロッパーとして、株式会社リクルートジョブズでWEBサービス開発をしています。<br />
+    好きな言語はGroovy、好きなプラクティスはScrumとTDDで、使うべきポイントで常に使っています！</p>
+    <p>Blog: <a href="http://poohsunny.hatenablog.com/" target="_blank">http://poohsunny.hatenablog.com/</a><br />
+    Twitter: <a href="https://twitter.com/PoohSunny" target="_blank">@PoohSunny</a><br />
+    コミュニティ活動: コミュニティ活動: <a href="http://www.selenium.jp/" target="_blank">日本Seleniumユーザーコミュニティ</a>、<a href="http://devtesting.jp/tddbc/" target="_blank">TDD Boot Camp</a></p>
+  </div>
+
+  <div id="F-2" class="dialog" title="椎葉　光行">
+      <p><img class="alignnone wp-image-2430" data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2016/04/shiiba.jpg" alt="shiiba" width="250" height="249" /></p>
+    <p>Webアプリケーションエンジニアとして大阪で働いてます。Javaと娘が好きです。&#8221;Using Thymeleaf&#8221;の日本語訳をしました。</p>
+    <p>Blog: <a href="http://bufferings.hatenablog.com/" target="_blank">http://bufferings.hatenablog.com/</a><br />
+    Twitter: <a href="hhttps://twitter.com/bufferings" target="_blank">@bufferings</a></p>
+  </div>
+
+  <div id="GH-2" class="dialog" title="伊藤　博志(ゴールドマン・サックス　テクノロジー部　Enterprise Platforms　ヴァイス・プレジデント)">
+      <p><img class="alignnone wp-image-2431" data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2016/04/15612969-300x300.jpeg" alt="15612969" width="250" height="250" /></p>
+    <p>Eclipse Collectionsのプロジェクトリード。ゴールドマン・サックス　テクノロジー部Enterprise Platformsアジアパシフィックチームに所属するJavaエンジニア。2005年ゴールドマン・サックス入社。PARAアジアパシフィックチームのテクニカルアーキテクトを経て、現在ヴァイス・プレジデント。</p>
+    <p><a href="https://github.com/goldmansachs/gs-collections" target="_blank">GS Collections</a>コミッター<br />
+    <a href="https://github.com/eclipse/eclipse-collections" target="_blank">Eclipse Collections</a>プロジェクトリード・コミッター<br />
+    <a href="http://www.goldmansachs.com/gs-collections/presentations/2015-04-08_JavaDayTokyo.pdf" target="_blank">Java Day Tokyo 2015</a><br />
+    <a href="http://www.goldmansachs.com/gs-collections/presentations/2015-04-11_JJUG_CCC.pdf" target="_blank">JJUG CCC 2015 Spring</a><br />
+    <a href="https://published-rs.lanyonevents.com/published/oracleus2015/sessionsFiles/1528/CON10915_2015-10-28%20JavaOne%20-%20EclipseCollectionsByExample.pdf" target="_blank">JavaOne 2015</a><br />
+    <a href="http://www.goldmansachs.com/gs-collections/documents/2015-11-28_JJUG_CCC.pdf" target="_blank">JJUG CCC 2015 Fall</a><br />
+    <a href="http://www.slideshare.net/kanjava-jug/eclipse-collections" target="_blank">JavaOne報告会 in 大阪</a><br />
+    <a href="http://www.infoq.com/jp/author/%E4%BC%8A%E8%97%A4%E5%8D%9A%E5%BF%97" target="_blank">InfoQ 翻訳記事</a></p>
+  </div>
+
+  <div id="AB-3" class="dialog" title="伊藤敬彦(株式会社リクルートテクノロジーズ)">
+      <p><img class="alignnone wp-image-2093" data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2016/05/uBv2jVQW.jpg" alt="" width="250" height="250" /></p>
+    <p>データマイニングが専門です。Java 好きです。</p>
+    <p>Twitter: takahi_i</p>
+  </div>
+
+  <div id="CD-3" class="dialog" title="寺田佳央(日本マイクロソフト株式会社)">
+      <p><img class="alignnone wp-image-2093" data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2016/05/yoshio-dat.png" alt="" width="250" height="250" /></p>
+    <p>前職では、GlassFish、Java のエバンジェリストとして活動し、2015年 7月からマイクロソフトに参加。マイクロソフト・プラットフォームにおける Java の活用に関する啓蒙活動を実施中。</p>
+    <p>日本マイクロソフト株式会社 シニア Java エバンジェリスト<br />
+    Web : <a href="http://yoshio3.com" target="_blank">http://yoshio3.com</A><br />
+    Twitter: <a href="https://twitter.com/yoshioterada" target="_blank">@yoshioterada</A></p>
+  </div>
+
+  <div id="E-3" class="dialog" title="吉田 朋也(エムスリー株式会社)">
+      <p>エムスリー株式会社でソフトウェアエンジニアをしています。</p>
+  </div>
+
+  <div id="F-3" class="dialog" title="倉元　貴一(株式会社エヌ・ティ・ティ・データ)">
+      <p>株式会社NTTデータ勤務のJavaエンジニアです。<br />
+    長年、某金融機関のミッションクリティカルシステム向けJavaフレームワーク開発を担当していました。<br />
+    現在はTERASOLUNAチームでバッチ処理用フレームワークに携わりつつ、社内の様々なプロジェクトのサポートをしています。</p>
+  </div>
+
+  <div id="GH-3" class="dialog" title="川口　耕介(CloudBees, Inc.)">
+      <p><img class="alignnone size-full wp-image-2442" data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2016/04/kohsuke-kawaguchi.jpg" alt="kohsuke-kawaguchi" width="132" height="132" /></p>
+    <p>Sun Micro Systemsに在籍していた際、JAXBやGlassFishなどの開発に携わる傍ら、Jenkinsプロジェクト（当時の名はHudson）を立ち上げる。Jenkinsはオープンソースとして公開され、現在、世界中から多くのコミッタが参加するプロジェクトに育っており、そのコミュニティを運営しながら、CloudBees社のCTOとして更なるJenkinsのエンタープライズ版の開発やサポートなど、プロジェクトの更なる発展へ取組中。</p>
+    <p>Web: <a href="http://kohsuke.org/" target="_blank">http://kohsuke.org/</a>, <a href="http://jenkins.io/" target="_blank">http://jenkins.io/</a><br />
+    Twitter: <a href="https://twitter.com/kohsukekawa" target="_blank">@kohsukekawa</a></p>
+  </div>
+
+  <div id="I-3" class="dialog" title="樋口　慎(Acroquest Technology)">
+      <p><img class="alignnone size-medium wp-image-2509" data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2016/04/樋口慎-s.higuchi_soccer@me.com_-225x300.jpg" alt="樋口慎 s.higuchi_soccer@me.com" width="225" height="300" /></p>
+    <p>Acroquest Technologyのエンジニアです<br />
+    普段はElastic Stackを用いたデータ分析業務に携わっています</p>
+    <p>Facebook : 樋口慎(Shin Higuchi)</p>
+  </div>
+
+  <div id="M-3" class="dialog" title="Java女子部ワークショップチームA (Java女子部)">
+      <p><img class="alignnone size-full wp-image-2433" data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2016/04/java_women.png" alt="java_women" width="200" height="200" /></p>
+    <p>Javaをほとんど触ったことがない初心者から、Javaなら任せろ！というベテランまで様々なメンバーで構成されています。</p>
+    <p>〜メンバー〜<br />
+    ・ちか<br />
+    ・ちひろ<br />
+    ・ゆう</p>
+    <p>※基盤に<a href="https://twitter.com/making" target="_blank">@making</a>さんからお借りしたサンプルコードを使用しています。</p>
+    <p>■母体:<a href="https://twitter.com/java_women" target="_blank">@java_women</a><br />
+    →ワークショップ制作活動として集まったメンバーで構成。<br />
+    ■メンバーTwitter（代表者２名）<br />
+    ・ちか <a href="https://twitter.com/c_h_i_k_a_" target="_blank">@c_h_i_k_a_</a><br />
+    ・ゆう <a href="https://twitter.com/Muhl_s" target="_blank">@Muhl_s</a></p>
+  </div>
+
+  <div id="AB-4" class="dialog" title="bitter_fox (吉田真也) (立命館大学)">
+      <p><img class="alignnone wp-image-2434" data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2016/04/bitter_fox-300x300.jpg" alt="bitter_fox" width="250" height="250" /></p>
+    <p>立命館大学大学院生，関西Javaエンジニアの会．Javaが好きで高校生の頃からOpenJDKに貢献．昨年コミッターに就任し，第10回 日本OSS奨励賞を受賞．主にプログラミング言語，言語処理系，型システムに興味．</p>
+    <p>OpenJDK： shinyafox<br />
+    Blog: <a href="http://d.hatena.ne.jp/bitter_fox/" target="_blank">http://d.hatena.ne.jp/bitter_fox/</a><br />
+    Twitter: <a href="https://twitter.com/bitter_fox" target="_blank">@bitter_fox</a></p>
+  </div>
+
+  <div id="CD-4" class="dialog" title="多田　真敏 (株式会社カサレアル)">
+      <p><img class="alignnone wp-image-2091" data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2015/10/tada.jpeg" alt="tada" width="250" height="250" /></p>
+    <p>Java EEを中心とした研修トレーナー。教育の立場からJava EEの啓蒙・普及のため活動を行っています。<br />
+    Spring FrameworkやSwift(iOS)の研修もやってます。</p>
+    <p>JJUG CCC登壇(2014 Spring, 2014 Fall, 2015 Spring, 2015 Fall)<br />
+    GlassFish勉強会登壇(2015-09-16)<br />
+    Blog: <a href="http://masatoshitada.hatenadiary.jp" target="_blank">http://masatoshitada.hatenadiary.jp</a><br />
+    Twitter: <a href="https://twitter.com/suke_masa" target="_blank">@suke_masa</a></p>
+  </div>
+
+  <div id="E-4" class="dialog" title="渡辺　祐 (株式会社ビズリーチ)">
+      <p><img class="alignnone wp-image-2435" data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2016/04/watanabe.jpeg" alt="watanabe" width="250" height="250" /></p>
+    <p>株式会社ビズリーチ 基盤技術チーム おっさんエンジニア。OSSとしてMixer2というテンプレートエンジンを公開してたりもします。</p>
+    <p>Web: <a href="http://mixer2.org" target="_blank">http://mixer2.org</a>, <a href="http://nabedge.mixer2.org" target="_blank">http://nabedge.mixer2.org</a><br />
+    GitHub: <a href="https://github.com/nabedge" target="_blank">https://github.com/nabedge</a></p>
+  </div>
+
+  <div id="F-4" class="dialog" title="桑原　雄一 (株式会社モノクレア)">
+      <p><img class="alignnone size-medium wp-image-2443" data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2016/04/桑原雄一-yuichi.kuwahara@monocrea.jp_-300x200.jpg" alt="桑原雄一 yuichi.kuwahara@monocrea.jp" width="300" height="200" /></p>
+    <p>ITアーキテクト/ITスペシャリストとしてSIプロジェクトに参画し、アプリケーションアーキテクチャの設計やフレームワーク・ライブラリの構築、自動ビルド・自動テストの導入を行っています。<br />
+    また、開発支援ツール「SIToolkit」をオープンソースとして開発しています。</p>
+    <p>OSS開発 SIToolkit: <a href="http://sitoolkit.org/" target="_blank">http://sitoolkit.org/</a><br />
+    本セッション: <a href="https://github.com/sitoolkit/sit-ad-archetype-javaee7-web" target="_blank">https://github.com/sitoolkit/sit-ad-archetype-javaee7-web</a><br />
+    勉強会(主なテーマ：Java EE, SIToolkit, 自動テスト): <a href="https://sitoolkit.doorkeeper.jp/" target="_blank">https://sitoolkit.doorkeeper.jp/</a><br />
+    Blog: <a href="http://blog.monocrea.co.jp/" target="_blank">http://blog.monocrea.co.jp/</a><br />
+    第３回日本Seleniumユーザーコミュニティ勉強会 登壇: <a href="http://sitoolkit.org/content/20160206_seleniumjp.pdf" target="_blank">http://sitoolkit.org/content/20160206_seleniumjp.pdf</a></p>
+  </div>
+
+  <div id="GH-4" class="dialog" title="きしだ　なおき">
+      <p><img class="alignnone wp-image-2095" data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2015/10/kis.jpeg" alt="kis" width="250" height="250" /></p>
+    <p>Javaでの開発を中心にフリーランスで開発や執筆の活動をつづけ、昨年ようやく会社員に。今年はだいぶ早起きができるようになった。<br />
+    人間に近づいてきている。</p>
+    <p>Blog: <a href="http://d.hatena.ne.jp/nowokay/" target="_blank">http://d.hatena.ne.jp/nowokay/</a><br />
+    Twitter: <a href="https://twitter.com/kis" target="_blank">@kis</a></p>
+  </div>
+
+  <div id="AB-5" class="dialog" title="漆原　茂(ウルシステムズ株式会社 代表取締役社長 兼 エンジニア)">
+      <p><img data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2016/05/C-200x300.jpg" alt="C" width="200" height="300" class="alignnone size-medium wp-image-2712" /></p>
+    <p>シリコンバレーとのリレーションも深く、最先端ITとベンチャーをこよなく愛している。</p>
+  </div>
+
+  <div id="CD-5" class="dialog" title="蓮沼　賢志(GlassFish Users Group Japan)">
+      <p><img class="alignnone size-full wp-image-2444" data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2016/04/khasunuma-square.jpg" alt="khasunuma-square" width="250" height="251" /></p>
+    <p>一部では「Date and Time APIの人」で認知されているようですが、本職？は日本GlassFishユーザー会の会長です。自称「てらだよしおの弟子」、Java EE 7とGlassFish/Payaraの啓蒙活動は半ばライフワークと化しています。<br />
+    海外では、日本人で初めてのPayara Community Contributor（≒コミッタ）として知られているようです。</p>
+    <p>GlassFish Users Group Japan 会長<br />
+    Blog: <a href="http://www.coppermine.jp/docs/programming/" target="_blank">http://www.coppermine.jp/docs/programming/</a><br />
+    Twitter: <a href="https://twitter.com/khasunuma" target="_blank">@khasunuma</a><br />
+    GitHub: <a href="http://www.coppermine.jp/docs/programming/" target="_blank">http://www.coppermine.jp/docs/programming/</a></p>
+  </div>
+
+  <div id="E-5" class="dialog" title="高橋裕也(株式会社オープンストリーム)">
+      <p><img class="alignnone size-full wp-image-2444" data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2016/05/97231.jpg" alt="" width="250" height="250" /></p>
+    <p>AWSやHTML5を中心にJavaなど様々な技術を習得。「興味は広く浅く。知識は狭く深く。」をモットーにしています。最近の興味は機械学習・言語処理・関数型言語のパラダイムなどなど。</p>
+  </div>
+
+  <div id="F-5" class="dialog" title="田中 孝清（日本IBM）">
+      <p><img class="alignnone size-full wp-image-2444" data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2015/10/TakakiyoSQ-300x300.jpg" alt="" width="150" height="150" /></p>
+    <p>1998年日本IBM入社。2000年よりソフトウェア事業で WebSphere Application Server の技術者として日本でのセールス活動に携わっています。</p>
+    <p>Twitter: <a href="https://twitter.com/ttakakiyo" target="_blank">@ttakakiyo</a></p>
+  </div>
+
+  <div id="GH-5" class="dialog" title="槙 俊明 (Pivotalジャパン株式会社)">
+      <p><img class="alignnone wp-image-2095" data-src="https://avatars2.githubusercontent.com/u/106908?v=3&amp;s=250" alt="making" width="250" height="250" /></p>
+    <p>PivotalでシニアソリューションアーキテクトとしてCloud FoundryやSpringの技術支援や啓蒙活動をやっています。サーバーサイドJavaが好きです。</p>
+    <p>著書に「はじめてのSpring Boot」、「パーフェクトJava EE (Coming Soon)」、「Spring Framework徹底入門 (6月？)」など。</p>
+    <p>Blog: <a href="https://blog.ik.am" target="_blank">https://blog.ik.am</a><br />
+    Twitter: <a href="https://twitter.com/making" target="_blank">@making</a><br />
+    GitHub: <a href="https://github.com/making" target="_blank">https://github.com/making</a></p>
+  </div>
+
+  <div id="I-5" class="dialog" title="高橋　徹 (Java読書会BOF)">
+      <p><img class="alignnone size-full wp-image-2436" data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2016/04/takahashi.jpg" alt="takahashi" width="250" height="250" /></p>
+    <p>Javaとの出会いは1996年で、自宅のMac、職場のSolaris、Windowsで同じプログラムを再コンパイルせずに動かせること、ネットワーク機能やGUI機能を簡単に作れること、オブジェクト指向プログラミングの習得と実践ができること、無償で開発環境が手に入ること、などに感動しました。<br />
+    1998年に社外のJavaコミュニティ有志でJava読書会が開催され、そこに参加するようになりました。Java読書会は、開始以来今に至るまで毎月1回のペースで開催を続けています。2000年頃からJava読書会BOF代表を務めています。</p>
+    <p>Java読書家BOF代表<br />
+    Blog: <a href="http://irof.hateblo.jp/" target="_blank">http://d.hatena.ne.jp/torutk/</a><br />
+    Twitter: <a href="https://twitter.com/boochnich" target="_blank">@boochnich</a></p>
+  </div>
+
+  <div id="M-5" class="dialog" title="数村　憲治 (富士通株式会社)">
+      <p><img class="size-full wp-image-2437" data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2016/04/Kenji_Kazumura.jpg" alt="数村M写真" width="102" height="102" /></p>
+    <p>Java VMの開発者。<br />
+    2015年からJCP(Java Community Process)のExecutive Committeメンバ。</p>
+  </div>
+
+  <div id="AB-6" class="dialog" title="島本 多可子(株式会社ビズリーチ)">
+      <p><img class="alignnone wp-image-2093" data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2016/05/bizreach_shimamoto.png" alt="" width="250" height="250" /></p>
+    <p>株式会社ビズリーチに勤務中。技術者でいたいと思い現職へ。ここ数年は「Scala」「オープンソース」をキーワードに、Webアプリケーションの開発に携わってきたが、最近はもっぱらApache Spark StreamingとAWS Kinesisのお世話に追われている。オープンソースのGitHubクローン「GitBucket」の開発も行なう。著書に『Scalaパズル』（翻訳）、『Java逆引きレシピ』『Scala逆引きレシピ』『現場で使えるJavaライブラリ』（いずれも翔泳社刊）。</p>
+  </div>
+
+  <div id="CD-6" class="dialog" title="瀬良 和弘(スマートニュース株式会社)">
+      <p><img class="alignnone wp-image-2093" data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2016/05/sera.jpeg" alt="" width="250" height="250" /></p>
+    <p>SmartNews のサーバサイドとその周辺の全般を担当。通信業界のエンタープライズシステム開発を経て、エムスリー株式会社でヘルスケア・医療に関する様々な Web サービス開発や社内の共通基盤チーム立ち上げに従事した後、SmartNews に入社。より多くの人々に良質な情報を届けるため、サービスのさらなる成長を支えるため、ソフトウェア開発に情熱を持って取り組んでいる。<br />
+    個人ではオープンソースソフトウェア、開発者コミュニティに積極的に関わっており、特にプログラミング言語 Scala のコミュニティにおいてカンファレンスで登壇多数。一児の父。休日は息子と仮面ライダーのアーケードゲームを hack している。</p>
+  </div>
+
+  <div id="E-6" class="dialog" title="秋穂 賢(株式会社U-NEXT)">
+      <p><img class="alignnone wp-image-2093" data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2016/05/twitter.jpg" alt="" width="250" /></p>
+    <p>動画配信サービスのU-NEXTのサーバサイドエンジニア。APIの設計や実装、検索エンジンや開発環境の整備などを担当。<br />
+    Java8 / DBFluteでスピード感を持って日々、心地よく開発をしている</p>
+  </div>
+
+  <div id="F-6" class="dialog" title="東 卓弥(株式会社ワークスアプリケーションズ　HUE Div)">
+      <p><img class="alignnone wp-image-2093" data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2016/05/ワークスアプリケーションズ東.jpg" alt="" width="250" /></p>
+    <p>大学では知能情報工学を専攻。現職では就労・プロジェクト管理のプロダクトを経て、新製品「HUE」のプロジェクト発足当初から開発に関わるエンジニア。</p>
+  </div>
+
+  <div id="GH-6" class="dialog" title="阪田　浩一 (フリュー株式会社 / 関西Javaエンジニアの会)">
+      <p><img class="alignnone size-full wp-image-2445" data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2016/04/sakata.jpeg" alt="sakata" width="250" height="250" /></p>
+    <p>フリュー株式会社にてプリントシール機と連動して撮影画像をインターネットを通じて提供するアプリケーションを開発/運用しています。コミュニティとしては関西Javaエンジニアの会（関ジャバ）の会長！？となっています。<br />
+    技術的な仕事としてはコード書いたりJVMやSQLのチューニングしたり、サーバの設定したりビルドやCIを整えたり、と何でもやっています。<br />
+    JVMが大好きだけどそこに何も貢献できていないことが最近の悩み。</p>
+    <p>コミュニティ: 関西Javaエンジニアの会 会長<br />
+    Blog: <a href="http://jyukutyo.hatenablog.com/" target="_blank">http://jyukutyo.hatenablog.com/</a><br />
+    Twitter: <a href="https://twitter.com/jyukutyo" target="_blank">@jyukutyo</a></p>
+  </div>
+
+  <div id="I-6_1" class="dialog" title="Jun Ohtani (Elastic)">
+      <p><img class="alignnone wp-image-2110" data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2015/10/johtani.png" alt="johtani" width="250" height="250" /></p>
+    <p>elastic.coでTechnical advocateとして、日本でElasticsearch、Logstash、Kibana、BeatsなどElastic Stackを広めるべく活動中。<br />
+    ここ数年は主に全文検索関連に従事し、lucene-gosenのコミッター、「ElasitcSearch Server」の翻訳なども行っている。</p>
+    <p>Blog: <a href="http://blog.johtani.info" target="_blank">http://blog.johtani.info</a><br />
+    Twitter: <a href="https://twitter.com/johtani" target="_blank">@johtani</a><br />
+    elasticsearch勉強会主催: <a href="https://elasticsearch.doorkeeper.jp/events/33631" target="_blank">https://elasticsearch.doorkeeper.jp/events/33631</a></p>
+  </div>
+
+  <div id="I-6_2" class="dialog" title="KUBOTA Yuji (日本電信電話株式会社 OSSセンタ)">
+      <p><img class="alignnone size-medium wp-image-2514" data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2016/04/kubota-300x300.jpeg" alt="kubota" width="300" height="300" /></p>
+    <p>その辺をうろちょろしてる JVM 好き</p>
+    <p>Java 障害解析支援ツールである、ヒーププロファイラ機能などを有する HeapStats の開発もしています<br />
+    <a href="http://icedtea.classpath.org/wiki/HeapStats/jp" target="_blank">http://icedtea.classpath.org/wiki/HeapStats/jp</a><br />
+    <a href="https://github.com/HeapStats/heapstats" target="_blank">https://github.com/HeapStats/heapstats</a></p>
+    <p>IcedTea Committer / OpenJDK Author (jdk9)<br />
+    Blog: <a href="http://cco.hatenablog.jp/" target="_blank">http://cco.hatenablog.jp/</a><br />
+    Twitter: <a href="https://twitter.com/sugarlife" target="_blank">@sugarlife</a><br />
+    Slide Share: <a href="http://www.slideshare.net/YujiKubota/presentations" target="_blank">http://www.slideshare.net/YujiKubota/presentations</a></p>
+  </div>
+
+  <div id="M-6_1" class="dialog" title="@grimrose (Yokohama.groovy)">
+      <p>7年間JavaのWebの業務アプリケーションの開発に従事した後、転職。<br />
+    現在は、人材紹介サービスのマーケティング部門のデータを扱うエンジニアとして従事。<br />
+    アジャイルサムライ横浜道場で知り合った人達と一緒にプログラミングGROOVY読書会としてYokohama.groovyを立ち上げました。<br />
+    読書会終了後は、主催を引き継ぎ、現在2代目の主催者として活動中。</p>
+    <p>Blog: <a href="http://www.grimrose.org/blog" target="_blank">http://www.grimrose.org/blog</a><br />
+    Twitter: <a href="https://twitter.com/grimrose" target="_blank">@grimrose</a></p>
+  </div>
+
+  <div id="M-6_2" class="dialog" title="松村翔子 / しょこ (株式会社ぐるなび)">
+      <p><img class="alignnone size-full wp-image-2446" data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2016/04/gurunavi_matsumura_syoko.jpg" alt="gurunavi_matsumura_syoko" width="170" height="170" /></p>
+    <p>株式会社ぐるなびにてレストラン検索ページの開発に従事。<br />
+    また，コミュニティ活動として，女性エンジニアコミュニティ「Geek Women Japan」「dots.女子部」の運営に携わっています。<br />
+    趣味はテナーサックス演奏と，飲み屋のカウンター席で知らない人と飲むこと。</p>
+    <p>Blog: <a href="http://sd-ts1017.hatenablog.com/" target="_blank">http://sd-ts1017.hatenablog.com/</a><br />
+    Twitter: <a href="https://twitter.com/sd_ts1017" target="_blank">@sd_ts1017</a><br />
+    GitHub: <a href="https://github.com/sd-ts1017" target="_blank">https://github.com/sd-ts1017</a></p>
+  </div>
+
+  <div id="AB-7" class="dialog" title="つっちー">
+      <p>つっちー（ところにより谷本　慎）。SIerでStru・・Javaのような何かに触れてる人。<br />
+    若者達に色々きいてみたかったので、学生から組み込み界隈まで様々なところで活躍する若者にあつまっていただきました。<br />
+    どうぞよろしくお願いいたします！</p>
+    <p>★メンバー<br />
+    ・bitter_fox (吉田真也) / 学生<br />
+    ・あや / Java女子部<br />
+    ・いわたん / 組み込み系企業所属<br />
+    ・よこな / JJUG幹事・Java女子部部長</p>
+  </div>
+
+  <div id="CD-7" class="dialog" title="川島　義隆 (TIS株式会社)">
+      <p><img class="alignnone size-medium wp-image-2447" data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2016/04/kawashima-224x300.jpg" alt="kawashima" width="224" height="300" /></p>
+    <p>Clojure&#x1f493;ですが、今回はPure Javaで勝負します。よろしくおねがいします！</p>
+    <p>Blog: <a href="https://github.com/kawasima" target="_blank">https://github.com/kawasima</a><br />
+    Twitter: <a href="https://twitter.com/kawasima" target="_blank">@kawasima</a><br />
+    Qiita: <a href="https://qiita.com/kawasima" target="_blank">https://qiita.com/kawasima</a><br />
+    Slides: <a href="http://www.slideshare.net/kawasima" target="_blank">http://www.slideshare.net/kawasima</a></p>
+  </div>
+
+  <div id="GH-7" class="dialog" title="櫻庭　祐一(Java in the Box)">
+      <p><img class="alignnone size-full wp-image-1146" data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2014/04/YuichiSakuraba.jpg" alt="Yuichi Sakuraba" width="125" height="150" /></p>
+    <p>Java SEを中心にJavaの普及活動を続けている。</p>
+    <p>Blog: <a href="http://www.javainthebox.com/" target="_blank">http://www.javainthebox.com/</a><br />
+    Twitter: <a href="https://twitter.com/skrb" target="_blank">@skrb</a><br />
+    GitHub: <a href="https://github.com/skrb" target="_blank">skrb</a></p>
+    <h3>寺田　佳央(日本マイクロソフト株式会社 シニア Java テクニカル・エバンジェリスト)</h3>
+    <p>前職では、GlassFish、Java のエバンジェリストとして活動し、2015年 7月からマイクロソフトに参加。<br />
+    マイクロソフト・プラットフォームにおける Java の活用に関する啓蒙活動を実施中。</p>
+    <p>Blog: <a href="http://yoshio3.com" target="_blank">http://yoshio3.com</a><br />
+    Twitter: <a href="https://twitter.com/yoshioterada" target="_blank">@yoshioterada</a></p>
+  </div>
+
+  <div id="I-7_1" class="dialog" title="まっさん (株式会社アットウェア)">
+      <p><img class="alignnone wp-image-2448" data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2016/04/massan-300x300.jpg" alt="massan" width="250" height="250" /></p>
+    <p>公立はこだて未来大学出身のエンジニア2年目。2015年4月から株式会社アットウェアに新卒入社。<br />
+    入社の後、4ヶ月にわたる新人研修（C言語, Java, Servlet/JSP）を経てサーバーサイドエンジニアとして修行中。<br />
+    エンジニアのコミュニティーカルチャーに興味あり。</p>
+    <p>Twitter: <a href="https://twitter.com/toyosge" target="_blank">@toyosge</a></p>
+  </div>
+
+  <div id="I-7_2" class="dialog" title="俺九番">
+      <p>京都の専門学校4年生です。<br />
+    最近はSpringBootとKotlinがマイブーム。</p>
+    <p>Blog: <a href="http://blog.orekyuu.net/" target="_blank">http://blog.orekyuu.net/</a><br />
+    Twitter: <a href="https://twitter.com/orekyuu" target="_blank">@orekyuu</a><br />
+    GitHub: <a href="https://github.com/orekyuu" target="_blank">orekyuu</a></p>
+  </div>
+
+  <div id="M-7_1" class="dialog" title="ぜろゆ">
+      <p><img class="alignnone wp-image-2440" data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2016/04/zer0_u.png" alt="zer0_u" width="250" height="250" /></p>
+    <p>配属されたらJ2SE1.4を書く羽目になった文系出身エンジニアもどき</p>
+    <p>Blog: <a href="http://teafortw0.hatenablog.com/" target="_blank">http://teafortw0.hatenablog.com/</a><br />
+    Twitter: <a href="https://twitter.com/zer0_u" target="_blank">@zer0_u</a><br />
+    GitHub: <a href="https://github.com/zer0-u" target="_blank">zer0-u</a></p>
+  </div>
+
+  <div id="M-7_2" class="dialog" title="木村　宗太郎 (ScalaMatsuri)">
+      <p><img class="alignnone wp-image-2449" data-src="https://jasminesoft.co.jp/wordpress/wp-content/uploads/2016/04/kimuraso-300x300.jpg" alt="kimuraso" width="250" height="250" /></p>
+    <p>ビッグデータ界隈に生息する何でも屋。<br />
+    サーバアプリケーションからフロントエンドまで、技術検証から運用、ドキュメント書きまで何でもやってます。</p>
+    <p>Twitter: <a href="https://twitter.com/kimutansk" target="_blank">@kimutansk</a></p>
+  </div>
+
+  <script src="jquery.min.js"></script>
+  <script src="jquery-ui.min.js"></script>
+  <script>
+    $(".accordion").accordion({
+        heightStyle: "content",
+        collapsible: true,
+        active: false
+    });
+    
+    $(".dialog").hide();
+    $(".speaker").click(function(){
+      var hash = this.hash;
+      
+      $(hash).dialog({
+        modal: true,
+        resizable: false,
+        width: Math.min($(window).width() * 0.9, 500),
+        hide: {
+          effect: "none",
+          delay: 300
+        },
+        open: function( event, ui ) {
+          $(".ui-widget-overlay").click(function(){
+            $(event.target).dialog( "close" );
+          });
+          
+          // 画像の遅延ロード
+          $("img[data-src]", event.target).each(function(){
+            $(this).attr("src", $(this).attr("data-src"));
+          });
+          
+          // CSS Transition 用のクラスを追加
+          $(".ui-widget-overlay").addClass("ui-open");
+          $(event.target.parentElement).addClass("ui-open");
+          
+          if(history.state == null){
+            history.pushState(hash, null, hash);
+          }
+        },
+        beforeClose: function(event, ui){
+          // CSS Transition 用のクラスを削除
+          $(event.target.parentElement).removeClass("ui-open");
+          
+          if(history.state != null){
+            history.back();
+          }
+        }
+      })
+      return false;
+    });
+    $(window).on('popstate', function(e){
+      if(history.state == null){
+        $(".dialog.ui-dialog-content.ui-widget-content").dialog("close");
+      }else{
+        $("a[href='" + history.state +"']").trigger("click");
+      }
+    });
+  </script>
+</body>
+</html>
