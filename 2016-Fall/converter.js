@@ -24,9 +24,9 @@ for(var i = 0; i < scheduleItems.length; i++){
 var text = "";
 for(let item of items){
   text += '<h3>' + item.time + '</h3>\r\n';
-  text += '<div>\r\n';
-  text += '  <div class="accordion session">';
-  text += '<h3><span class="room"[Room ' + item.room + ']</span><br/>' + item.title + ' <span class="hashtag">#ccc_a1</span></h3>\r\n';
+  text += '<div class="accordion session">\r\n';
+  text += '  <h3><span class="room">[Room ' + item.room + ']</span><br/>' + item.title + ' <span class="hashtag">#ccc_a1</span></h3>\r\n';
+  text += '  <div>\r\n';
   text += '<p>' + item.speaker + '</p>\r\n';
   text += item.description + '\r\n';
   text += '  </div>\r\n';
