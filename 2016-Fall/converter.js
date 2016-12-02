@@ -21,6 +21,8 @@ for(var i = 0; i < scheduleItems.length; i++){
   items.push(item);
 }
 
+items.sort((a,b) => a.time > b.time);
+
 var text = "";
 for(let item of items){
   text += '<h3>' + item.time + '</h3>\r\n';
