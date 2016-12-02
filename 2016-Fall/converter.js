@@ -15,7 +15,7 @@ for(var i = 0; i < scheduleItems.length; i++){
     time: scheduleItems[i].getElementsByClassName("time")[0].textContent,
     title: scheduleItems[i].getElementsByClassName("title")[0].textContent,
     speaker: speaker != null ? speaker.innerHTML : null,
-    description: description.textContent
+    description: description.innerHTML
   };
 
   items.push(item);
