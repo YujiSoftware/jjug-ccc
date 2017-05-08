@@ -31,7 +31,9 @@ for(let item of items){
   text += '<div class="accordion session">\r\n';
   text += '  <h3><span class="room">[Room ' + item.room + ']</span><br/>' + item.title + '</h3>\r\n';
   text += '  <div>\r\n';
-  text += '<p>' + item.speaker + '</p>\r\n';
+  if(item.speaker != null){
+    text += '<p>' + item.speaker + '</p>\r\n';
+  }
   text += item.description + '\r\n';
   if(item.hashtag != null){
     text += '<p><a href="https://twitter.com/hashtag/' + item.hashtag.substring(1) + '" target="_blank">' + item.hashtag + '</a></p>\r\n';
