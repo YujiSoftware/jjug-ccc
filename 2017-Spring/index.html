@@ -1160,7 +1160,6 @@ Kirk now specializes in Java™, where he works in all aspects of performance an
       $("div.session > h3").on("mouseup touchend", function(e){
         clearTimeout(pressTimer);
         pressTimer = null;
-        return false;
       }).on("mousedown touchstart", function(e){
         let self = this;
         pressTimer = window.setTimeout(function() { 
@@ -1171,7 +1170,6 @@ Kirk now specializes in Java™, where he works in all aspects of performance an
           // キャンセルさせるためのデータを設定
           self.parentNode.dataset.accordionCanceled = true;
         }, 750);
-        return false; 
       });
       
       
