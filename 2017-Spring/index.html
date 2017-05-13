@@ -40,14 +40,20 @@
         transition: opacity 0.3s;
     }
     
-    /* お気に入り登録済みセッション */
+    /* お気に入り登録済みセッション（本文非表示時） */
     div.session.favorite > h3.ui-accordion-header:not(.ui-accordion-header-active) {
         background-color: #ffff99;
     }
     div.session.favorite > h3.ui-accordion-header:after {
         content: " ☆";
     }
+    /* お気に入り登録済みセッション（本文表示時） */
+    div.session.favorite > h3.ui-accordion-header.ui-accordion-header-active {
+        background-color: #00afff;
+        border-color: #006eff;
+    }
     
+    /* お気に入りボタン（未登録時） */
     div.session > div > div.favorite-button:after {
         position: relative;
         float: right;
@@ -61,6 +67,7 @@
         font-size: large;
         color: #cccccc;
     }
+    /* お気に入りボタン（登録時） */
     div.session.favorite > div.ui-accordion-content > div.favorite-button:after {
         -webkit-text-stroke: 1px #cca;
         text-shadow: 0 0 3px #cca;
@@ -1150,11 +1157,11 @@ Kirk now specializes in Java™, where he works in all aspects of performance an
     $(document).ready(function () {
       // 見出し長押しによるお気に入り登録・解除
       var pressTimer = null;
-      $("div.session > h3").mouseup(function(e){
+      $("div.session > h3").on("mouseup touchend", function(e){
         clearTimeout(pressTimer);
         pressTimer = null;
         return false;
-      }).mousedown(function(e){
+      }).on("mousedown touchstart", function(e){
         let self = this;
         pressTimer = window.setTimeout(function() { 
           onFavorite(self.parentNode);
