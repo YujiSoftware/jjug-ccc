@@ -40,17 +40,31 @@
         transition: opacity 0.3s;
     }
     
-    /* お気に入り登録済みセッション（本文非表示時） */
+    /* お気に入り登録済みセッション */
     div.session.favorite > h3.ui-accordion-header:not(.ui-accordion-header-active) {
         background-color: #ffff99;
     }
-    div.session.favorite > h3.ui-accordion-header:not(.ui-accordion-header-active):after {
+    div.session.favorite > h3.ui-accordion-header:after {
         content: " ☆";
     }
-    /* お気に入り登録済みセッション（本文表示時） */
-    div.session.favorite > h3.ui-accordion-header.ui-accordion-header-active:after {
-        content: " ★";
-        color: yellow;
+    
+    div.session > div > div.favorite-button:after {
+        position: relative;
+        float: right;
+        margin: 10px 0px 0px 0px;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        line-height: 1.8;
+        cursor: pointer;
+        content: "★";
+        font-size: large;
+        color: #cccccc;
+    }
+    div.session.favorite > div.ui-accordion-content > div.favorite-button:after {
+        -webkit-text-stroke: 1px #cca;
+        text-shadow: 0 0 3px #cca;
+        color: #ffff99;
     }
   </style>
 </head>
@@ -676,7 +690,7 @@
 </div>
 
   </div>
-  <p>セッション名の長押しで、お気に入りに設定できます。</p>
+  <p>「<span style="color:grey">★</span>のクリック」または「セッション名の長押し」で、お気に入りに設定できます。</p>
   <p>
   <span style="font-style:bold;">このページは、非公式です。</span><br>
   お気づきの点は <a href="https://twitter.com/YujiSoftware">@YujiSoftware</a> までご連絡いただくか、または <a href="https://github.com/YujiSoftware/jjug-ccc/tree/master/2017-Spring">この GitHub に Pull Request</a> をお願いいたします。
@@ -1151,6 +1165,16 @@ Kirk now specializes in Java™, where he works in all aspects of performance an
           self.parentNode.dataset.accordionCanceled = true;
         }, 750);
         return false; 
+      });
+      
+      
+      $("div.session > div").each(function(){
+        $(this).prepend(
+          $("<div>")
+            .addClass("favorite-button")
+            .click(function(){
+              onFavorite(this.parentNode.parentNode);
+            }));
       });
       
       // お気に入りの復元
