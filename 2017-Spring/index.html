@@ -39,6 +39,19 @@
         opacity: 1;
         transition: opacity 0.3s;
     }
+    
+    /* お気に入り登録済みセッション（本文非表示時） */
+    div.session > h3.ui-accordion-header.favorite:not(.ui-accordion-header-active) {
+        background-color: #ffff99;
+    }
+    div.session > h3.ui-accordion-header.favorite:not(.ui-accordion-header-active):after {
+        content: " ☆";
+    }
+    /* お気に入り登録済みセッション（本文表示時） */
+    div.session > h3.ui-accordion-header.favorite.ui-accordion-header-active:after {
+        content: " ★";
+        color: yellow;
+    }
   </style>
 </head>
 <body>
@@ -663,6 +676,7 @@
 </div>
 
   </div>
+  <p>セッション名の長押しで、お気に入りに設定できます。</p>
   <p>
   <span style="font-style:bold;">このページは、非公式です。</span><br>
   お気づきの点は <a href="https://twitter.com/YujiSoftware">@YujiSoftware</a> までご連絡いただくか、または <a href="https://github.com/YujiSoftware/jjug-ccc/tree/master/2017-Spring">この GitHub に Pull Request</a> をお願いいたします。
@@ -1042,9 +1056,17 @@ Kirk now specializes in Java™, where he works in all aspects of performance an
     $(".accordion").accordion({
         heightStyle: "content",
         collapsible: true,
-        active: false
+        active: false,
+        beforeActivate(e, ui){
+          // お気に入り処理が行われた直後なら、アコーディオンを操作しない
+          if(this.dataset.accordionCanceled){
+            e.preventDefault();
+            delete this.dataset.accordionCanceled;
+          }
+        }
     });
     
+    // -------- スピーカー詳細情報ダイアログ --------
     $(".dialog").hide();
     $(".speaker").click(function(){
       var hash = this.hash;
@@ -1086,12 +1108,59 @@ Kirk now specializes in Java™, where he works in all aspects of performance an
       })
       return false;
     });
+    
     $(window).on('popstate', function(e){
       if(history.state == null){
         $(".dialog.ui-dialog-content.ui-widget-content").dialog("close");
       }else{
         $("a[href='" + history.state +"']").trigger("click");
       }
+    });
+    
+    // -------- お気に入り --------
+    const LOCAL_STORAGE_KEY = "jjug-ccc.2017-spring.favorite";
+    function onFavorite(node){
+      var favorite = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY)) || {};
+      var key = node.dataset.session;
+      if(favorite.hasOwnProperty(key)){
+        node.classList.remove("favorite");
+        delete favorite[key];
+      }else{
+        node.classList.add("favorite");
+        favorite[key] = true;
+      }
+      
+      localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(favorite));
+    }
+    
+    $(document).ready(function () {
+      // 見出し長押しによるお気に入り登録・解除
+      var pressTimer = null;
+      $("div.session > h3").mouseup(function(e){
+        clearTimeout(pressTimer);
+        pressTimer = null;
+        return false;
+      }).mousedown(function(e){
+        let self = this;
+        pressTimer = window.setTimeout(function() { 
+          onFavorite(self);
+          
+          // そのままだとクリックイベントによりアコーディオンが開閉して
+          // しまうので、アコーディオンの beforeActivate イベントで開閉を
+          // キャンセルさせるためのデータを設定
+          self.parentNode.dataset.accordionCanceled = true;
+        }, 750);
+        return false; 
+      });
+      
+      // お気に入りの復元
+      var favorite = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY)) || {};
+      $("div.session > h3").each(function(){
+        let key = this.dataset.session;
+        if(favorite.hasOwnProperty(key)){
+          this.classList.add("favorite");
+        }
+      });
     });
   </script>
   <script>
