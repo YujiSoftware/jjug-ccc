@@ -125,28 +125,6 @@
   <p><a href="https://twitter.com/hashtag/ccc_e1" target="_blank">#ccc_e1</a></p>
     </div>
   </div>
-  <div class="accordion session" data-session="#ccc_c4">
-    <h3><span class="room">[Room C+D, 14:30-15:15]</span><br/>Unified JVM Logging: Java 9 から変わる JVM ログ</h3>
-    <div>
-  <p><a href="#pm_cd_time2" class="speaker">KUBOTA Yuji </a></p>
-  Java 9 から JEP 271: Unified GC Logging により、従来の GC ログが廃止され、新たな JVM logging framework (JEP 158: Unified JVM Logging) と統合して生まれ変わります。<br>
-
-  本セッションではこれまでのロギングと比べて、どのようにフォーマットやオプション指定方法などが異なるのか、そしてどう対処していくべきかについて可能な限り紹介していきます。<br>
-
-  本セッションでは java.utl.logging については扱いません。JVM そのもののロギングについて扱います。<br>
-  <p><a href="https://twitter.com/hashtag/ccc_c4" target="_blank">#ccc_c4</a></p>
-    </div>
-  </div>
-  <div class="accordion session" data-session="#ccc_m3">
-    <h3><span class="room">[Room M, 14:55-15:15]</span><br/>Selenideを使ってみた 〜 ブラウザテスト自動化 〜</h3>
-    <div>
-  <p><a href="#pm_m_time3" class="speaker">snowhiro</a></p>
-  JJUG CCC 2016 Fallの「Selenideを試行錯誤しながら実践するブラウザ自動テスト」を聴き感銘を受けて実際にselenideを利用してみました。<br>
-
-  selenideを導入した際の良かった点・反省点を中心に ページオブジェクトの作成方法、アサーションについて具体的にお話できればと考えています。<br>
-  <p><a href="https://twitter.com/hashtag/ccc_m3" target="_blank">#ccc_m3</a></p>
-    </div>
-  </div>
   <div class="accordion session" data-session="#ccc_g5">
     <h3><span class="room">[Room G+H, 15:45-16:30]</span><br/>Introduction of Project Jigsaw</h3>
     <div>
@@ -169,6 +147,20 @@
   <p><a href="https://twitter.com/hashtag/ccc_i3" target="_blank">#ccc_i3</a></p>
     </div>
   </div>
+  <div class="accordion session" data-session="#ccc_m6">
+    <h3><span class="room">[Room M, 16:45-17:05]</span><br/>JavaFXでデスクトップガジェット風プログラムを作る</h3>
+    <div>
+  <p><a href="#pm_m_time6" class="speaker">高橋 徹</a></p>
+  デスクトップの脇で動くちょっとしたプログラム、例えば時計、カレンダーなどいわゆるデスクトップガジェットのようなプログラムをJavaFXで作成します。<br>
+
+  ガジェット風なプログラムでは、表示領域を極力少なくするためウィンドウ枠がなく背景を透明にした表示とすることが一般的です。その場合、OS（ウィンドウシステム）の機能でのウィンドウの位置・大きさの変更、終了といった操作ができないため、ドラッグ＆ドロップ操作などで位置や大きさの変更、終了を行う必要が生じます。その操作は2in1 PCなどのタッチパネルに対応しているとなおいいです。<br>
+  設定ファイルやコマンドラインオプションでの制御の他、次回起動時には最後の位置や大きさを継続できるよう、前回の状態を覚えておくことも必要です。<br>
+  JavaはデフォルトではCPUとメモリを大食いする傾向がありますので、ガジェット風なプログラムを複数動かしてもCPUやメモリを喰わないように省リソース設定をしておくこともお作法として必要です。そのためにはデプロイ方法を含めて対応することが必要となります。<br>
+
+  これらを踏まえて、JavaFXでガジェット風のプログラムを作る方法を紹介します。<br>
+  <p><a href="https://twitter.com/hashtag/ccc_m6" target="_blank">#ccc_m6</a></p>
+    </div>
+  </div>
   <div class="accordion session" data-session="#ccc_l7">
     <h3><span class="room">[Room L, 17:10-17:30]</span><br/>Javaチョットデキルへの道～JavaコアSDKに見る真似したいコード10選～</h3>
     <div>
@@ -187,6 +179,17 @@
   <p><a href="#pm_l_time2" class="speaker">Abe Asami (きの子) </a></p>
   Scalaはオブジェクト指向と関数型言語の特徴を併せ持つJVM言語です。TwitterやFoursquareがScalaを採用したことをきっかけに国内でも注目を集め始め、ここ数年で国内事例も増えてきました。「Scalaって名前は聞いたことあるけど、どういうものかあまり知らない」という方向けに、Javaと異なる点に焦点を当ててScalaの基礎を解説します。
   <p><a href="https://twitter.com/hashtag/ccc_l2" target="_blank">#ccc_l2</a></p>
+    </div>
+  </div>
+  <div class="accordion session" data-session="#ccc_c5">
+    <h3><span class="room">[Room C+D, 15:45-16:30]</span><br/>Javaエンジニアから見たKotlinの魅力</h3>
+    <div>
+  <p><a href="#pm_cd_time3" class="speaker">空中 清高</a></p>
+  Kotlinは静的型付けのオブジェクト指向プログラミング言語です。<br>
+  Javaのボイラープレートの省略やNull安全などを言語レベルから取り入れて簡潔・安全になるように設計されています。<br>
+  特にAndroid開発者の間で話題になっているKotlinですが、Javaと共存可能で、Spring Frameworkでも公式サポートされています。<br>
+  本セッションではKotlinの紹介と、Javaとの比較を通じてJavaエンジニアから見たKotlinの魅力を解説します。
+  <p><a href="https://twitter.com/hashtag/ccc_c5" target="_blank">#ccc_c5</a></p>
     </div>
   </div>
   <div class="accordion session" data-session="#ccc_i4">
@@ -219,20 +222,34 @@
 
 <h3>JVM</h3>
 <div>
+  <div class="accordion session" data-session="#ccc_c4">
+    <h3><span class="room">[Room C+D, 14:30-15:15]</span><br/>Unified JVM Logging: Java 9 から変わる JVM ログ</h3>
+    <div>
+  <p><a href="#pm_cd_time2" class="speaker">KUBOTA Yuji </a></p>
+  Java 9 から JEP 271: Unified GC Logging により、従来の GC ログが廃止され、新たな JVM logging framework (JEP 158: Unified JVM Logging) と統合して生まれ変わります。<br>
+
+  本セッションではこれまでのロギングと比べて、どのようにフォーマットやオプション指定方法などが異なるのか、そしてどう対処していくべきかについて可能な限り紹介していきます。<br>
+
+  本セッションでは java.utl.logging については扱いません。JVM そのもののロギングについて扱います。<br>
+  <p><a href="https://twitter.com/hashtag/ccc_c4" target="_blank">#ccc_c4</a></p>
+    </div>
+  </div>
+  <div class="accordion session" data-session="#ccc_e4">
+    <h3><span class="room">[Room E, 14:30-15:15]</span><br/>What you need to know about HotSpot and Your Code</h3>
+    <div>
+  <p><a href="#pm_e_time2" class="speaker">Kirk Pepperdine</a></p>
+  We all know fast code is code that’s hard to read. Or is it? Should it be? Is there even a relationship between performance and readability? What impact does code quality have on the JIT’s ability optimize it? <br>
+  In this talk we’ll look “good” and “bad” code to get an understanding of the relationship between code quality and performance. We’ll look at different implementations of the same algorithms to understand how different coding styles might affect the runtime’s ability to optimize it.<br>
+  （本セッションは英語で行われます）
+  <p><a href="https://twitter.com/hashtag/ccc_e4" target="_blank">#ccc_e4</a></p>
+    </div>
+  </div>
   <div class="accordion session" data-session="#ccc_i2">
     <h3><span class="room">[Room I, 14:30-15:15]</span><br/>Polyglot on the JVM with Graal</h3>
     <div>
   <p><a href="#pm_i_time2" class="speaker">西川 彰広 </a></p>
   Oracle Labsで開発しているGraalは、ピークパフォーマンスに対応することを目指して開発されているJITコンパイラであると共に、Javaだけでなく、JavaScript、R、Rubyを実行できるPolyglotランタイムでもあります。 このセッションでは、Graalの基本的なところから、その特徴や優れている点をデモを交えてわかりやすくお伝えします。
   <p><a href="https://twitter.com/hashtag/ccc_i2" target="_blank">#ccc_i2</a></p>
-    </div>
-  </div>
-  <div class="accordion session" data-session="#ccc_m5">
-    <h3><span class="room">[Room M, 16:10-16:30]</span><br/>グラフデータベース入門</h3>
-    <div>
-  <p><a href="#pm_m_time5" class="speaker">嶽　雅也 </a></p>
-  パナマ文書で注目されたグラフデータベースのNeo4j。 グラフデータベースはこんな用途で使えるのかという情報はあっても、Neo4jなどは日本語での書籍が出ていますが、まだまだ情報が少ないです。 初心者としては情報を少なくチャレンジしにくいものだと思いますが、今回門戸を広げるということで紹介していきたいと思います。 資料内での紹介用の言語としては、Java or Scalaを考えております。
-  <p><a href="https://twitter.com/hashtag/ccc_m5" target="_blank">#ccc_m5</a></p>
     </div>
   </div>
   <div class="accordion session" data-session="#ccc_a7">
@@ -260,6 +277,14 @@
 
 <h3>Server Side Java</h3>
 <div>
+  <div class="accordion session" data-session="#ccc_a2">
+    <h3><span class="room">[Room A+B+C+D, 11:00-11:45]</span><br/>Java EE 8 and its latest topics</h3>
+    <div>
+  <p><a href="#am_abcd_time2" class="speaker">David Delabassee</a></p>
+  This technical keynote will discuss the new capabilities that Java EE 8, the latest version of the platform, is bringing to the enterprise developers. （本セッションは逐次通訳で行われます）
+  <p><a href="https://twitter.com/hashtag/ccc_a2" target="_blank">#ccc_a2</a></p>
+    </div>
+  </div>
   <div class="accordion session" data-session="#ccc_f1">
     <h3><span class="room">[Room F, 10:00-10:45]</span><br/>JHipsterで学ぶ！Springによるサーバサイド開発手法</h3>
     <div>
@@ -277,20 +302,6 @@
   <p><a href="https://twitter.com/hashtag/ccc_g1" target="_blank">#ccc_g1</a></p>
     </div>
   </div>
-  <div class="accordion session" data-session="#ccc_f2">
-    <h3><span class="room">[Room F, 11:00-11:45]</span><br/>エンプラ開発におけるレガシーアプリケーションの巻き取りとモジュール分割の戦い</h3>
-    <div>
-  <p><a href="#am_f_time2" class="speaker">和田 一洋</a></p>
-
-
-  各開発案件の中で並行開発の効率化やテスト自動化を段階的に進めながら、アプリ全体の開発を巻き取り、現在は段階的な再構築を進めています。<br>
-
-  典型的な稟議決裁⇒ウォーターフォール型の開発の中でも、開発改善のスイッチを探して押し続けようと試行錯誤してきました。<br>
-
-  振り返りと改善を地道に繰り返しながらアーキテクチャを模索してきた２年間の取り組み、次のステップとして考えていることを紹介します。
-  <p><a href="https://twitter.com/hashtag/ccc_f2" target="_blank">#ccc_f2</a></p>
-    </div>
-  </div>
   <div class="accordion session" data-session="#ccc_g2">
     <h3><span class="room">[Room G+H, 11:00-11:45]</span><br/>Vue.js + Spring Bootで楽しくフルスタック開発やってみた</h3>
     <div>
@@ -301,6 +312,19 @@
                                                           フロントエンドを避けていたJavaプログラマも楽しみながら歩み寄れる時代が来た気がするので、フロントエンドに手を出したい方に役立つ何かをお伝えできたら良いなと思います。<br>
                                                       
   <p><a href="https://twitter.com/hashtag/ccc_g2" target="_blank">#ccc_g2</a></p>
+    </div>
+  </div>
+  <div class="accordion session" data-session="#ccc_c3">
+    <h3><span class="room">[Room C+D, 13:30-14:15]</span><br/>新しいTERASOLUNA Batch Frameworkとは</h3>
+    <div>
+  <p><a href="#pm_cd_time1" class="speaker">伊東 裕二</a> / <a href="#pm_cd_time1_1" class="speaker">山田真也</a></p>
+  株式会社NTTデータは、従来の独自のフレームワークから脱却しました。<br>
+  そして、サーバーサイドJavaアプリ開発のノウハウの詰まった「TERASOLUNA Server Framework for Java 5(以下、TERA Server5)」を2016年2月24日から展開しています。<br>
+  そのTERA Server5では、OSSを極力そのまま活用するための開発ガイドラインとサポートの提供に注力しています。
+  そんなTERASOLUNAに、バッチサイドJavaアプリ開発のノウハウの詰まった「TERASOLUNA Batch Framework for Java 5(以下、TERA Batch5)」が新たに仲間入りしました！<br>
+  TERA Batch5はSpring Batchを利用したJavaフレームワークです。<br>
+  本セッションでは、そんなTERA Batch5のエッセンスをご紹介します。TERASOLUNAに興味を持っていただくきっかけになればと思います。
+  <p><a href="https://twitter.com/hashtag/ccc_c3" target="_blank">#ccc_c3</a></p>
     </div>
   </div>
   <div class="accordion session" data-session="#ccc_i1">
@@ -333,6 +357,20 @@
   <p><a href="https://twitter.com/hashtag/ccc_a4" target="_blank">#ccc_a4</a></p>
     </div>
   </div>
+  <div class="accordion session" data-session="#ccc_f5">
+    <h3><span class="room">[Room F, 15:45-16:30]</span><br/>Seasar2からSpringへ移行した俺たちのアプリケーションがマイクロサービスアーキテクチャへ歩み始めた</h3>
+    <div>
+  <p><a href="#pm_f_time3" class="speaker">阪田 浩一</a></p>
+  2011年にリリースした弊社フリューのアプリケーションは、利用者が年々増加し、1000万人を超えました。それに伴い、機能を追加、改修しているため肥大化したモノリシックアプリケーションとなりました。また開発チームも複数あり、それぞれが機能を開発し、毎日のようにデプロイ、リリースしています。<br>
+
+  こうした現状から、ドメインごとにアプリケーションを分割したいという欲求が生まれ、マイクロサービスアーキテクチャに変えていくことにしました。もちろん今もサービスを運用、新機能開発していく中でゆるやかに実施していくため、完成したわけではありません。このセッションでは、現実に運用しているアプリケーションに対して、マイクロサービス構築に何を使い、どのように一歩踏み出し、その結果チームは何を実現し何を得られたか、ということを話します。<br>
+
+  JJUG CCCでは弊社フリューのアーキテクチャの変遷について、2016 Spring、2016 Fallとセッションをしてきました。Springでは"Seasar2で作った俺たちのサービスの今"、Fallでは"10年運用している画像サービスでのJavaの活用と今後の展望"と、Seasar2からSpring Framework/MVCに移行した話をしました。今回は、このアプリケーションから特定の機能を取り出してマイクロサービスとしてSpring Boot、Spring Cloud Netflix(ribbon/Eureka/Hystrix)で構築し、既存の手動テストをパスさせるためSpring Cloud Contract Stub Runnerを活用した点を中心に話します。また、私以外Spring自体をほぼ知らないチームで、どのように習得を進めたかという点にも触れます。<br>
+
+  すでにこれらの技術をご存知の方にはこのセッションは適切でない可能性があります。また、ベストプラクティスでも、Spring Cloudのすべてのプロダクトを使っているわけでもありません。それでも、1つの現場の事例としてみなさんのご参考になれば幸いです。
+  <p><a href="https://twitter.com/hashtag/ccc_f5" target="_blank">#ccc_f5</a></p>
+    </div>
+  </div>
   <div class="accordion session" data-session="#ccc_l4">
     <h3><span class="room">[Room L, 15:45-16:05]</span><br/>SIプロジェクトでよくあるフレームワークのカスタム開発ってまだ必要なの？</h3>
     <div>
@@ -345,19 +383,29 @@
   </div>
 </div>
 
-<h3>その他</h3>
+<h3>データベース</h3>
 <div>
-  <div class="accordion session" data-session="#ccc_e2">
-    <h3><span class="room">[Room E, 11:00-11:45]</span><br/>Java Clientで入門するApache Kafka</h3>
+  <div class="accordion session" data-session="#ccc_m5">
+    <h3><span class="room">[Room M, 16:10-16:30]</span><br/>グラフデータベース入門</h3>
     <div>
-  <p><a href="#am_e_time2" class="speaker">森谷 大輔</a></p>
-  Kafka Java Clientでの実演を交えながらKafkaの基本についてお話しします。<br>
-                                                          ・シンプルなユースケースでの使い方<br>
-                                                          ・新しいKafka Java Client (0.10.2.0)で使える機能<br>
-                                                          ・ユニットテストの方法<br>
-                                                          ・一般的なアプリケーションで必要となりそうな要件<br>
-                                                          ・マルチスレッドで実装する場合の注意点
-  <p><a href="https://twitter.com/hashtag/ccc_e2" target="_blank">#ccc_e2</a></p>
+  <p><a href="#pm_m_time5" class="speaker">嶽　雅也 </a></p>
+  パナマ文書で注目されたグラフデータベースのNeo4j。 グラフデータベースはこんな用途で使えるのかという情報はあっても、Neo4jなどは日本語での書籍が出ていますが、まだまだ情報が少ないです。 初心者としては情報を少なくチャレンジしにくいものだと思いますが、今回門戸を広げるということで紹介していきたいと思います。 資料内での紹介用の言語としては、Java or Scalaを考えております。
+  <p><a href="https://twitter.com/hashtag/ccc_m5" target="_blank">#ccc_m5</a></p>
+    </div>
+  </div>
+  <div class="accordion session" data-session="#ccc_g3">
+    <h3><span class="room">[Room G+H, 13:30-14:15]</span><br/>データ履歴管理のためのテンポラルデータモデルとReladomoの紹介</h3>
+    <div>
+  <p><a href="#pm_gh_time1" class="speaker">調整中</a></p>
+  リレーショナルデータベースを用いてデータの履歴管理をするのは一般的に大変だと認識されています。これはテーブル構造を用いて過去のある時点の状態を一意に表現するのが難いからで、なかでもとりわけ難しいのが履歴の検索です。バージョン管理された履歴データや、さらにそのデータへJavaから正しくアクセスするロジックを自前で実装しようとすると、工数は膨大なものになり、技術的負債の温床にもなってしまいます。
+  本セッションではこれらの履歴問題を解決するテンポラルデータモデルと呼ばれる設計手法を紹介し、その扱いを抽象化してくれるJavaのOSS ORMフレームワークであるReladomoを紹介します。<br>
+
+  ・テンポラルデータモデルとは<br>
+  ・有効時間<br>
+  ・トランザクション時間<br>
+  ・有効時間とトランザクション時間を同時に表現するバイテンポラルデータモデル<br>
+  ・Javaからバイテンポラルデータモデルを容易に扱うReladomoの紹介
+  <p><a href="https://twitter.com/hashtag/ccc_g3" target="_blank">#ccc_g3</a></p>
     </div>
   </div>
   <div class="accordion session" data-session="#ccc_m1">
@@ -385,25 +433,35 @@
   <p><a href="https://twitter.com/hashtag/ccc_g4" target="_blank">#ccc_g4</a></p>
     </div>
   </div>
-  <div class="accordion session" data-session="#ccc_l3">
-    <h3><span class="room">[Room L, 14:55-15:15]</span><br/>新卒2年目が鍛えられたコードレビュー道場の軌跡</h3>
+  <div class="accordion session" data-session="#ccc_c6">
+    <h3><span class="room">[Room C+D, 16:45-17:30]</span><br/>劇的！データベース・ビフォーアフター 時代はディスクからインメモリーへ――</h3>
     <div>
-  <p><a href="#pm_l_time3" class="speaker">chiiia12</a></p>
-  新卒2年目がよりスキルをあげるために、先輩と半年コードレビュー道場というものを行いました。その中で教わってきた内容や感じたことをご紹介します。 なんとなくJavaは理解して書けてきたけど、よりよい実装方法の話・設計の考え方など初心者からもう一段スキルアップするための観点で参考になればと思います。<br>
-
-  ・デザインパターンに毒されてみる<br>
-  ・CommonUtilという設計放棄<br>
-  ・ライブラリを積極的に使う<br>
-  ・テストをもっと効率よく書く など
-  <p><a href="https://twitter.com/hashtag/ccc_l3" target="_blank">#ccc_l3</a></p>
+  <p><a href="#pm_cd_time4" class="speaker">漆原 茂</a> / <a href="#pm_cd_time4_1" class="speaker">山河 征紀</a></p>
+  スケーラブルで高速アクセスが可能なデータ基盤が存在したら、皆さんのアプリケーションは劇的に変わると思いませんか？ そんな希望を叶えるのがインメモリーデータグリッドです。金融機関の業務システムからWebサービスまで実用性は証明済み。有力製品のオープンソース化により、今や私たちのすぐ手の届くものになっています。これを利用しない手はありません。皆さんのアプリケーションをRDBMSの制約から解放し、次のステージへと進化させる方法をご紹介します。
+  <p><a href="https://twitter.com/hashtag/ccc_c6" target="_blank">#ccc_c6</a></p>
     </div>
   </div>
-  <div class="accordion session" data-session="#ccc_m2">
-    <h3><span class="room">[Room M, 14:30-14:50]</span><br/>文型さえおさえれば英語を読む力は上がる！</h3>
+</div>
+
+<h3>機械学習</h3>
+<div>
+  <div class="accordion session" data-session="#ccc_a3">
+    <h3><span class="room">[Room A+B, 13:30-14:15]</span><br/>Scala製機械学習基盤PredictionIOとSparkによるレコメンドシステム</h3>
     <div>
-  <p><a href="#pm_m_time2" class="speaker">よこな </a></p>
-  文型さえおさえれば英語を読む力は上がる！ SV, SVC, SVOO...文型って覚えてますか？分かりますか？英語を読んでもよく分からない方、単語の意味を並べて独自ストーリーを作ってしまう方、少しだけステップアップしませんか？ 英文法好きのよこなが技術的な英語(OSSのドキュメントとかPRとか)を漁ってサンプルになりそうな英文を解説してみます。一緒に考えながら、パズルのように紐解いてみましょう！英文は、丁寧に構造を捉えれば、ロジカルに考えることが出来て面白いので、その雰囲気が伝わると嬉しいです。文型以外の話もしちゃうかもしれません。
-  <p><a href="https://twitter.com/hashtag/ccc_m2" target="_blank">#ccc_m2</a></p>
+  <p><a href="#pm_ab_time1" class="speaker">萩野 貴拓</a></p>
+  SparkやMLlib、HDFS、Elasticsearchなど、注目を集めるオープンソースをベースとした機械学習サーバApache PredictionIOの概論と、同システムを使ったレコメンドシステム開発で得られた知見を共有するセッションです。Apache PredictionIOは様々な機械学習の手法をテンプレートに記述するだけで、Sparkをベースに学習タスクの分散処理が可能になります。それだけでなく、学習モデルから予測値を返したり、新たなイベントデータをリアルタイムに受けつけるAPIサーバまでを統合的に提供するプラットフォーム技術です。<br>
+  本セッションでは、機械学習のインフラデザインとしても参考になるPredictionIOのアーキテクチャや、日本最大級の求人検索エンジンのログデータから、ユーザに最適な求人を推薦するレコメンドシステムの開発を通じて、学習ロジックのつくり方、学習モデルの評価と改善、Spark MLlibのチューニングやハマりどころなど実践導入のなかでのノウハウや苦労をお話します。Webシステムに機械学習を導入する際にPredictionIOを使うメリットをお伝えできればと思いますので、ぜひご参加ください。
+  <p><a href="https://twitter.com/hashtag/ccc_a3" target="_blank">#ccc_a3</a></p>
+    </div>
+  </div>
+  <div class="accordion session" data-session="#ccc_f4">
+    <h3><span class="room">[Room F, 14:30-15:15]</span><br/>ナビタイムも導入！！ボットで始発・終電案内から観光ガイドまで 〜  Java でも日本語自然言語処理をカンタンに利用可能 Microsoft LUIS!!</h3>
+    <div>
+  <p><a href="#pm_f_time2" class="speaker">寺田佳央</a> / <a href="#pm_f_time2_1" class="speaker">小田中 育生</a></p>
+  Java はもちろんプログラミング言語問わず、画像解析や、音声認識、テキスト解析、翻訳など、今やかんたんに AIのテクノロジーを活用できる時代がやってまいりました。マイクロソフトは日本語対応した自然言語処理解析を実施するために LUIS (Language Understanding Intelligent Service) を提供しています。LUIS は専用の GUI で日本語文章を学習させることで、かんたんに文章の中から語句を抽出することができます。さらに LUIS と Bot Framework を連携する事で、Web アプリケーション内、もしくは Skype や FaceBook メッセンジャー、Slack などとの連携も容易で、ユーザから入力された内容に適した応答を、柔軟にすばやく返すことができるようになります。<br>
+  また、株式会社ナビタイムジャパンでは LINE 公式アカウントで、LUIS を活用したサービスを提供しています。例えば、昨年「乗換検索」サービス内で、始発・終電を教えてくれる機能を追加したり、今年に入って新しく英語対応の観光情報ガイドアプリ「鎌倉 NAVITIME Travel」も提供しはじめました。<br>
+  本セッションでは、LUIS と連携する Java アプリケーションの開発方法をソースコードを交えながら具体的にご紹介します。また、なぜナビタイムが LUIS を採用してサービスを提供しているのかを、実際のアプリケーションのデモを交えながらわかりやすくご紹介し、これからの AI やボット活用の可能性についてご紹介します。
+  <p><a href="https://twitter.com/hashtag/ccc_f4" target="_blank">#ccc_f4</a></p>
     </div>
   </div>
   <div class="accordion session" data-session="#ccc_m4">
@@ -420,6 +478,154 @@
   <p><a href="#pm_ab_time4" class="speaker">きしだ なおき </a></p>
   最近は機械学習が流行しています。 しかし、Javaのメモリ使用状況のような波形データの分析は、そのままの形では単純な機械学習器に不向きです。 このセッションでは、このような波形データに対して、ウェーブレット変換で周波数解析してから機械学習を行う方法について紹介します。
   <p><a href="https://twitter.com/hashtag/ccc_a6" target="_blank">#ccc_a6</a></p>
+    </div>
+  </div>
+  <div class="accordion session" data-session="#ccc_e6">
+    <h3><span class="room">[Room E, 16:45-17:30]</span><br/>Spark + DeepLearning4J の特長と最新動向（仮）</h3>
+    <div>
+  <p><a href="#pm_e_time4" class="speaker">田中裕一</a></p>
+  昨今BigData処理基盤として人気のSparkとDeepLearningを組み合わせて動かすことで基盤としてどう行ったメリットがあるのか？また、どのようなフレームワークが登場してきているのか？その中でもDeepLearning4J on Sparkについての説明を行います。
+  <p><a href="https://twitter.com/hashtag/ccc_e6" target="_blank">#ccc_e6</a></p>
+    </div>
+  </div>
+</div>
+
+<h3>改善事例</h3>
+<div>
+  <div class="accordion session" data-session="#ccc_f2">
+    <h3><span class="room">[Room F, 11:00-11:45]</span><br/>エンプラ開発におけるレガシーアプリケーションの巻き取りとモジュール分割の戦い</h3>
+    <div>
+  <p><a href="#am_f_time2" class="speaker">和田 一洋</a></p>
+
+
+  各開発案件の中で並行開発の効率化やテスト自動化を段階的に進めながら、アプリ全体の開発を巻き取り、現在は段階的な再構築を進めています。<br>
+
+  典型的な稟議決裁⇒ウォーターフォール型の開発の中でも、開発改善のスイッチを探して押し続けようと試行錯誤してきました。<br>
+
+  振り返りと改善を地道に繰り返しながらアーキテクチャを模索してきた２年間の取り組み、次のステップとして考えていることを紹介します。
+  <p><a href="https://twitter.com/hashtag/ccc_f2" target="_blank">#ccc_f2</a></p>
+    </div>
+  </div>
+  <div class="accordion session" data-session="#ccc_f3">
+    <h3><span class="room">[Room F, 13:30-14:15]</span><br/>SpotBugs(FindBugs)による大規模ERPのコード品質改善</h3>
+    <div>
+  <p><a href="#pm_f_time1" class="speaker">Kengo TODA</a></p>
+  Java開発を助けてくれるSpotBugs(FindBugs)について、大規模ERP開発でどのように使い生産性を高めているか話します。<br>
+
+  静的解析ツールはコード品質の底上げに役立ちますが、実行が遅かったり用途が直感的でなかったりと開発プロセスに組み込むうえでの難しさがあります。その難しさといかに向き合ってきたか、実例を交えて紹介します。<br>
+  また社内フレームワーク・社内ライブラリの正しい使い方を広めるためのプラグインの実装方法についても紹介します。
+  <p><a href="https://twitter.com/hashtag/ccc_f3" target="_blank">#ccc_f3</a></p>
+    </div>
+  </div>
+  <div class="accordion session" data-session="#ccc_l3">
+    <h3><span class="room">[Room L, 14:55-15:15]</span><br/>新卒2年目が鍛えられたコードレビュー道場の軌跡</h3>
+    <div>
+  <p><a href="#pm_l_time3" class="speaker">chiiia12</a></p>
+  新卒2年目がよりスキルをあげるために、先輩と半年コードレビュー道場というものを行いました。その中で教わってきた内容や感じたことをご紹介します。 なんとなくJavaは理解して書けてきたけど、よりよい実装方法の話・設計の考え方など初心者からもう一段スキルアップするための観点で参考になればと思います。<br>
+
+  ・デザインパターンに毒されてみる<br>
+  ・CommonUtilという設計放棄<br>
+  ・ライブラリを積極的に使う<br>
+  ・テストをもっと効率よく書く など
+  <p><a href="https://twitter.com/hashtag/ccc_l3" target="_blank">#ccc_l3</a></p>
+    </div>
+  </div>
+  <div class="accordion session" data-session="#ccc_a5">
+    <h3><span class="room">[Room A+B, 15:45-16:30]</span><br/>Scalaによるサービス開発現場での継続的リファクタリングの実践</h3>
+    <div>
+  <p><a href="#pm_ab_time3" class="speaker">岩松 竜也</a></p>
+  昨年から新規サービスとして開発に着手したプロジェクトですが、短いサイクルの連続で改善を繰り返してきたため開発開始から1年以上が経過した現在、技術的負債が開発効率に及ぼす影響も無視できないものになってきました。チーム内でリファクタリングの必要性は認識されていたものの、機能開発を止めるわけにはいかない状況の中、私たちは開発と並行して継続的にリファクタリングを行う道を選択しました。<br>
+  このセッションでは実際にサービス開発の現場でどのようにリファクタリングを推進したのか、またプロダクト・コード上の問題点や解決方法の整理、チーム内での合意形成、リファクタリングのスコープ設定や進行方法など具体的なノウハウについてお話しさせていただきます。
+  <p><a href="https://twitter.com/hashtag/ccc_a5" target="_blank">#ccc_a5</a></p>
+    </div>
+  </div>
+  <div class="accordion session" data-session="#ccc_l5">
+    <h3><span class="room">[Room L, 16:10-16:30]</span><br/>Java8移行は怖くない～エンタープライズ案件でのJava8移行事例について～</h3>
+    <div>
+  <p><a href="#pm_l_time5" class="speaker"></a></p>
+  JDK9のリリースも間近ですが、Webアプリケーションを中心としたJava言語を用いたシステム開発では、使用するJavaランタイムのバージョンはサービスイン時のバージョンで「塩漬け」になるというのが実態ではないでしょうか。本セッションでは、発表者の関わったエンタープライズ向けWebサービスでのJava8移行の事例を通じて、サービスイン後のJavaランタイムのバージョンアップを行う際のポイントについて紹介します。
+  <p><a href="https://twitter.com/hashtag/ccc_l5" target="_blank">#ccc_l5</a></p>
+    </div>
+  </div>
+</div>
+
+<h3>その他</h3>
+<div>
+  <div class="accordion session" data-session="#ccc_a1">
+    <h3><span class="room">[Room A+B+C+D, 10:00-10:45]</span><br/>JJUG CCC 20th fireside chat</h3>
+    <div>
+  <p><a href="#am_abcd_time1" class="speaker">20回生き残っている幹事たち</a></p>
+  気がつけば、JJUG CCCもおかげさまで20回を迎えることができました。このセッションでは熱狂のJavaとJJUGの過去から未来までを語り尽くします！
+  <p><a href="https://twitter.com/hashtag/ccc_a1" target="_blank">#ccc_a1</a></p>
+    </div>
+  </div>
+  <div class="accordion session" data-session="#ccc_e2">
+    <h3><span class="room">[Room E, 11:00-11:45]</span><br/>Java Clientで入門するApache Kafka</h3>
+    <div>
+  <p><a href="#am_e_time2" class="speaker">森谷 大輔</a></p>
+  Kafka Java Clientでの実演を交えながらKafkaの基本についてお話しします。<br>
+                                                          ・シンプルなユースケースでの使い方<br>
+                                                          ・新しいKafka Java Client (0.10.2.0)で使える機能<br>
+                                                          ・ユニットテストの方法<br>
+                                                          ・一般的なアプリケーションで必要となりそうな要件<br>
+                                                          ・マルチスレッドで実装する場合の注意点
+  <p><a href="https://twitter.com/hashtag/ccc_e2" target="_blank">#ccc_e2</a></p>
+    </div>
+  </div>
+  <div class="accordion session" data-session="#ccc_e3">
+    <h3><span class="room">[Room E, 13:30-14:15]</span><br/>Java libraries you can't afford to miss</h3>
+    <div>
+  <p><a href="#pm_e_time1" class="speaker">Andres Almiray</a></p>
+  The Java language has crossed it's 20th anniversary and with it comes an incredible range of tools libraries to choose from; sometimes there are too many choices for the same task. In this talk we'll cover those libraries that have risen to the top by proving themselves to be worthy of a place in every developer's toolbox, both for production and testing code. We'll also cover some fairly new libraries that are bound to make a big impact in the ecosystem. <br>
+                                                      （本セッションは英語で行われます）
+  <p><a href="https://twitter.com/hashtag/ccc_e3" target="_blank">#ccc_e3</a></p>
+    </div>
+  </div>
+  <div class="accordion session" data-session="#ccc_m2">
+    <h3><span class="room">[Room M, 14:30-14:50]</span><br/>文型さえおさえれば英語を読む力は上がる！</h3>
+    <div>
+  <p><a href="#pm_m_time2" class="speaker">よこな </a></p>
+  文型さえおさえれば英語を読む力は上がる！ SV, SVC, SVOO...文型って覚えてますか？分かりますか？英語を読んでもよく分からない方、単語の意味を並べて独自ストーリーを作ってしまう方、少しだけステップアップしませんか？ 英文法好きのよこなが技術的な英語(OSSのドキュメントとかPRとか)を漁ってサンプルになりそうな英文を解説してみます。一緒に考えながら、パズルのように紐解いてみましょう！英文は、丁寧に構造を捉えれば、ロジカルに考えることが出来て面白いので、その雰囲気が伝わると嬉しいです。文型以外の話もしちゃうかもしれません。
+  <p><a href="https://twitter.com/hashtag/ccc_m2" target="_blank">#ccc_m2</a></p>
+    </div>
+  </div>
+  <div class="accordion session" data-session="#ccc_m3">
+    <h3><span class="room">[Room M, 14:55-15:15]</span><br/>Selenideを使ってみた 〜 ブラウザテスト自動化 〜</h3>
+    <div>
+  <p><a href="#pm_m_time3" class="speaker">snowhiro</a></p>
+  JJUG CCC 2016 Fallの「Selenideを試行錯誤しながら実践するブラウザ自動テスト」を聴き感銘を受けて実際にselenideを利用してみました。<br>
+
+  selenideを導入した際の良かった点・反省点を中心に ページオブジェクトの作成方法、アサーションについて具体的にお話できればと考えています。<br>
+  <p><a href="https://twitter.com/hashtag/ccc_m3" target="_blank">#ccc_m3</a></p>
+    </div>
+  </div>
+  <div class="accordion session" data-session="#ccc_e5">
+    <h3><span class="room">[Room E, 15:45-16:30]</span><br/>Javaで実装して学ぶOAuth 2.0！</h3>
+    <div>
+  <p><a href="#pm_e_time3" class="speaker">多田真敏</a></p>
+  RESTful Webサービスやマイクロサービスにおけるセキュリティ技術として、OAuth 2.0が利用されることが多いでしょう。<br>
+  このセッションでは、OAuth 2.0を基礎から丁寧に解説します。併せて、Javaにおける、OAuth 2.0の実装方法についても解説します。
+  <p><a href="https://twitter.com/hashtag/ccc_e5" target="_blank">#ccc_e5</a></p>
+    </div>
+  </div>
+  <div class="accordion session" data-session="#ccc_f6">
+    <h3><span class="room">[Room F, 16:45-17:30]</span><br/>U-NEXT学生インターン、過激なJavaの学び方と過激な要求</h3>
+    <div>
+  <p><a href="#pm_f_time4" class="speaker">舟木 初</a></p>
+  株式会社U-NEXTの学生インターンとして、1年間かけてJava8とDBFluteとLastaFluteで社内用Webアプリを作りました。<br>
+  しかしプログラミング経験がなかったので、Java8を学ぶ際に大変苦労しました。<br>
+  その時に得た独特な発想や教育論も含めて、1年間の経験や学びをお話し致します
+  <p><a href="https://twitter.com/hashtag/ccc_f6" target="_blank">#ccc_f6</a></p>
+    </div>
+  </div>
+  <div class="accordion session" data-session="#ccc_g6">
+    <h3><span class="room">[Room G+H, 16:45-17:30]</span><br/>Engineers can change the world ～ "世界" で活躍するエンジニアになるために</h3>
+    <div>
+  <p><a href="#pm_gh_time4" class="speaker">Drew Robbins</a> / <a href="#pm_f_time2" class="speaker">寺田 佳央</a></p>
+  Cross the border ～ エンジニアとして国境を超えること。それは、世界を変える第一歩かもしれません。そんな第一歩を踏み出すために日本人エンジニアとして知っておきたい米国エンジニアの働き方や考え方、そして実際の開発プロセスの違いや特徴などを通して、言語だけでなく文化や生活習慣の違いを超えて他国のエンジニアとコミュニケーションを図る際のポイントや、グローバルで働くために目指すべきエンジニア像を、日英混在でご紹介します。<br>
+
+  Cross the border - to cross the border as an engineer, it would be the first step for you to change the world.In this bilingual session, you can know that there are lots of differences of working style, thinking, development process, etc... between the US and Japan, and can learn what's the best way to communicate/collaborate with other engineers in the US. Then, you may be a super engineer to change the world!
+  <p><a href="https://twitter.com/hashtag/ccc_g6" target="_blank">#ccc_g6</a></p>
     </div>
   </div>
   <div class="accordion session" data-session="#ccc_l6">
@@ -475,204 +681,6 @@
   <p><a href="https://twitter.com/hashtag/ccc_i5" target="_blank">#ccc_i5</a></p>
     </div>
   </div>
-</div>
-<!--
-<h3>作業中</h3>
-<div>
-  <div class="accordion session" data-session="#ccc_a1">
-    <h3><span class="room">[Room A+B+C+D, 10:00-10:45]</span><br/>JJUG CCC 20th fireside chat</h3>
-    <div>
-  <p><a href="#am_abcd_time1" class="speaker">20回生き残っている幹事たち</a></p>
-  気がつけば、JJUG CCCもおかげさまで20回を迎えることができました。このセッションでは熱狂のJavaとJJUGの過去から未来までを語り尽くします！
-  <p><a href="https://twitter.com/hashtag/ccc_a1" target="_blank">#ccc_a1</a></p>
-    </div>
-  </div>
-  <div class="accordion session" data-session="#ccc_a2">
-    <h3><span class="room">[Room A+B+C+D, 11:00-11:45]</span><br/>Java EE 8 and its latest topics</h3>
-    <div>
-  <p><a href="#am_abcd_time2" class="speaker">David Delabassee</a></p>
-  This technical keynote will discuss the new capabilities that Java EE 8, the latest version of the platform, is bringing to the enterprise developers. （本セッションは逐次通訳で行われます）
-  <p><a href="https://twitter.com/hashtag/ccc_a2" target="_blank">#ccc_a2</a></p>
-    </div>
-  </div>
-  <div class="accordion session" data-session="#ccc_a3">
-    <h3><span class="room">[Room A+B, 13:30-14:15]</span><br/>Scala製機械学習基盤PredictionIOとSparkによるレコメンドシステム</h3>
-    <div>
-  <p><a href="#pm_ab_time1" class="speaker">萩野 貴拓</a></p>
-  SparkやMLlib、HDFS、Elasticsearchなど、注目を集めるオープンソースをベースとした機械学習サーバApache PredictionIOの概論と、同システムを使ったレコメンドシステム開発で得られた知見を共有するセッションです。Apache PredictionIOは様々な機械学習の手法をテンプレートに記述するだけで、Sparkをベースに学習タスクの分散処理が可能になります。それだけでなく、学習モデルから予測値を返したり、新たなイベントデータをリアルタイムに受けつけるAPIサーバまでを統合的に提供するプラットフォーム技術です。<br>
-  本セッションでは、機械学習のインフラデザインとしても参考になるPredictionIOのアーキテクチャや、日本最大級の求人検索エンジンのログデータから、ユーザに最適な求人を推薦するレコメンドシステムの開発を通じて、学習ロジックのつくり方、学習モデルの評価と改善、Spark MLlibのチューニングやハマりどころなど実践導入のなかでのノウハウや苦労をお話します。Webシステムに機械学習を導入する際にPredictionIOを使うメリットをお伝えできればと思いますので、ぜひご参加ください。
-  <p><a href="https://twitter.com/hashtag/ccc_a3" target="_blank">#ccc_a3</a></p>
-    </div>
-  </div>
-  <div class="accordion session" data-session="#ccc_c3">
-    <h3><span class="room">[Room C+D, 13:30-14:15]</span><br/>新しいTERASOLUNA Batch Frameworkとは</h3>
-    <div>
-  <p><a href="#pm_cd_time1" class="speaker">伊東 裕二</a> / <a href="#pm_cd_time1_1" class="speaker">山田真也</a></p>
-  株式会社NTTデータは、従来の独自のフレームワークから脱却しました。<br>
-  そして、サーバーサイドJavaアプリ開発のノウハウの詰まった「TERASOLUNA Server Framework for Java 5(以下、TERA Server5)」を2016年2月24日から展開しています。<br>
-  そのTERA Server5では、OSSを極力そのまま活用するための開発ガイドラインとサポートの提供に注力しています。
-  そんなTERASOLUNAに、バッチサイドJavaアプリ開発のノウハウの詰まった「TERASOLUNA Batch Framework for Java 5(以下、TERA Batch5)」が新たに仲間入りしました！<br>
-  TERA Batch5はSpring Batchを利用したJavaフレームワークです。<br>
-  本セッションでは、そんなTERA Batch5のエッセンスをご紹介します。TERASOLUNAに興味を持っていただくきっかけになればと思います。
-  <p><a href="https://twitter.com/hashtag/ccc_c3" target="_blank">#ccc_c3</a></p>
-    </div>
-  </div>
-  <div class="accordion session" data-session="#ccc_e3">
-    <h3><span class="room">[Room E, 13:30-14:15]</span><br/>Java libraries you can't afford to miss</h3>
-    <div>
-  <p><a href="#pm_e_time1" class="speaker">Andres Almiray</a></p>
-  The Java language has crossed it's 20th anniversary and with it comes an incredible range of tools libraries to choose from; sometimes there are too many choices for the same task. In this talk we'll cover those libraries that have risen to the top by proving themselves to be worthy of a place in every developer's toolbox, both for production and testing code. We'll also cover some fairly new libraries that are bound to make a big impact in the ecosystem. <br>
-                                                      （本セッションは英語で行われます）
-  <p><a href="https://twitter.com/hashtag/ccc_e3" target="_blank">#ccc_e3</a></p>
-    </div>
-  </div>
-  <div class="accordion session" data-session="#ccc_f3">
-    <h3><span class="room">[Room F, 13:30-14:15]</span><br/>SpotBugs(FindBugs)による大規模ERPのコード品質改善</h3>
-    <div>
-  <p><a href="#pm_f_time1" class="speaker">Kengo TODA</a></p>
-  Java開発を助けてくれるSpotBugs(FindBugs)について、大規模ERP開発でどのように使い生産性を高めているか話します。<br>
-
-  静的解析ツールはコード品質の底上げに役立ちますが、実行が遅かったり用途が直感的でなかったりと開発プロセスに組み込むうえでの難しさがあります。その難しさといかに向き合ってきたか、実例を交えて紹介します。<br>
-  また社内フレームワーク・社内ライブラリの正しい使い方を広めるためのプラグインの実装方法についても紹介します。
-  <p><a href="https://twitter.com/hashtag/ccc_f3" target="_blank">#ccc_f3</a></p>
-    </div>
-  </div>
-  <div class="accordion session" data-session="#ccc_g3">
-    <h3><span class="room">[Room G+H, 13:30-14:15]</span><br/>データ履歴管理のためのテンポラルデータモデルとReladomoの紹介</h3>
-    <div>
-  <p><a href="#pm_gh_time1" class="speaker">調整中</a></p>
-  リレーショナルデータベースを用いてデータの履歴管理をするのは一般的に大変だと認識されています。これはテーブル構造を用いて過去のある時点の状態を一意に表現するのが難いからで、なかでもとりわけ難しいのが履歴の検索です。バージョン管理された履歴データや、さらにそのデータへJavaから正しくアクセスするロジックを自前で実装しようとすると、工数は膨大なものになり、技術的負債の温床にもなってしまいます。
-  本セッションではこれらの履歴問題を解決するテンポラルデータモデルと呼ばれる設計手法を紹介し、その扱いを抽象化してくれるJavaのOSS ORMフレームワークであるReladomoを紹介します。<br>
-
-  ・テンポラルデータモデルとは<br>
-  ・有効時間<br>
-  ・トランザクション時間<br>
-  ・有効時間とトランザクション時間を同時に表現するバイテンポラルデータモデル<br>
-  ・Javaからバイテンポラルデータモデルを容易に扱うReladomoの紹介
-  <p><a href="https://twitter.com/hashtag/ccc_g3" target="_blank">#ccc_g3</a></p>
-    </div>
-  </div>
-  <div class="accordion session" data-session="#ccc_e4">
-    <h3><span class="room">[Room E, 14:30-15:15]</span><br/>What you need to know about HotSpot and Your Code</h3>
-    <div>
-  <p><a href="#pm_e_time2" class="speaker">Kirk Pepperdine</a></p>
-  We all know fast code is code that’s hard to read. Or is it? Should it be? Is there even a relationship between performance and readability? What impact does code quality have on the JIT’s ability optimize it? <br>
-  In this talk we’ll look “good” and “bad” code to get an understanding of the relationship between code quality and performance. We’ll look at different implementations of the same algorithms to understand how different coding styles might affect the runtime’s ability to optimize it.<br>
-  （本セッションは英語で行われます）
-  <p><a href="https://twitter.com/hashtag/ccc_e4" target="_blank">#ccc_e4</a></p>
-    </div>
-  </div>
-  <div class="accordion session" data-session="#ccc_f4">
-    <h3><span class="room">[Room F, 14:30-15:15]</span><br/>ナビタイムも導入！！ボットで始発・終電案内から観光ガイドまで 〜  Java でも日本語自然言語処理をカンタンに利用可能 Microsoft LUIS!!</h3>
-    <div>
-  <p><a href="#pm_f_time2" class="speaker">寺田佳央</a> / <a href="#pm_f_time2_1" class="speaker">小田中 育生</a></p>
-  Java はもちろんプログラミング言語問わず、画像解析や、音声認識、テキスト解析、翻訳など、今やかんたんに AIのテクノロジーを活用できる時代がやってまいりました。マイクロソフトは日本語対応した自然言語処理解析を実施するために LUIS (Language Understanding Intelligent Service) を提供しています。LUIS は専用の GUI で日本語文章を学習させることで、かんたんに文章の中から語句を抽出することができます。さらに LUIS と Bot Framework を連携する事で、Web アプリケーション内、もしくは Skype や FaceBook メッセンジャー、Slack などとの連携も容易で、ユーザから入力された内容に適した応答を、柔軟にすばやく返すことができるようになります。<br>
-  また、株式会社ナビタイムジャパンでは LINE 公式アカウントで、LUIS を活用したサービスを提供しています。例えば、昨年「乗換検索」サービス内で、始発・終電を教えてくれる機能を追加したり、今年に入って新しく英語対応の観光情報ガイドアプリ「鎌倉 NAVITIME Travel」も提供しはじめました。<br>
-  本セッションでは、LUIS と連携する Java アプリケーションの開発方法をソースコードを交えながら具体的にご紹介します。また、なぜナビタイムが LUIS を採用してサービスを提供しているのかを、実際のアプリケーションのデモを交えながらわかりやすくご紹介し、これからの AI やボット活用の可能性についてご紹介します。
-  <p><a href="https://twitter.com/hashtag/ccc_f4" target="_blank">#ccc_f4</a></p>
-    </div>
-  </div>
-  <div class="accordion session" data-session="#ccc_a5">
-    <h3><span class="room">[Room A+B, 15:45-16:30]</span><br/>Scalaによるサービス開発現場での継続的リファクタリングの実践</h3>
-    <div>
-  <p><a href="#pm_ab_time3" class="speaker">岩松 竜也</a></p>
-  昨年から新規サービスとして開発に着手したプロジェクトですが、短いサイクルの連続で改善を繰り返してきたため開発開始から1年以上が経過した現在、技術的負債が開発効率に及ぼす影響も無視できないものになってきました。チーム内でリファクタリングの必要性は認識されていたものの、機能開発を止めるわけにはいかない状況の中、私たちは開発と並行して継続的にリファクタリングを行う道を選択しました。<br>
-  このセッションでは実際にサービス開発の現場でどのようにリファクタリングを推進したのか、またプロダクト・コード上の問題点や解決方法の整理、チーム内での合意形成、リファクタリングのスコープ設定や進行方法など具体的なノウハウについてお話しさせていただきます。
-  <p><a href="https://twitter.com/hashtag/ccc_a5" target="_blank">#ccc_a5</a></p>
-    </div>
-  </div>
-  <div class="accordion session" data-session="#ccc_c5">
-    <h3><span class="room">[Room C+D, 15:45-16:30]</span><br/>Javaエンジニアから見たKotlinの魅力</h3>
-    <div>
-  <p><a href="#pm_cd_time3" class="speaker">空中 清高</a></p>
-  Kotlinは静的型付けのオブジェクト指向プログラミング言語です。<br>
-  Javaのボイラープレートの省略やNull安全などを言語レベルから取り入れて簡潔・安全になるように設計されています。<br>
-  特にAndroid開発者の間で話題になっているKotlinですが、Javaと共存可能で、Spring Frameworkでも公式サポートされています。<br>
-  本セッションではKotlinの紹介と、Javaとの比較を通じてJavaエンジニアから見たKotlinの魅力を解説します。
-  <p><a href="https://twitter.com/hashtag/ccc_c5" target="_blank">#ccc_c5</a></p>
-    </div>
-  </div>
-  <div class="accordion session" data-session="#ccc_e5">
-    <h3><span class="room">[Room E, 15:45-16:30]</span><br/>Javaで実装して学ぶOAuth 2.0！</h3>
-    <div>
-  <p><a href="#pm_e_time3" class="speaker">多田真敏</a></p>
-  RESTful Webサービスやマイクロサービスにおけるセキュリティ技術として、OAuth 2.0が利用されることが多いでしょう。<br>
-  このセッションでは、OAuth 2.0を基礎から丁寧に解説します。併せて、Javaにおける、OAuth 2.0の実装方法についても解説します。
-  <p><a href="https://twitter.com/hashtag/ccc_e5" target="_blank">#ccc_e5</a></p>
-    </div>
-  </div>
-  <div class="accordion session" data-session="#ccc_f5">
-    <h3><span class="room">[Room F, 15:45-16:30]</span><br/>Seasar2からSpringへ移行した俺たちのアプリケーションがマイクロサービスアーキテクチャへ歩み始めた</h3>
-    <div>
-  <p><a href="#pm_f_time3" class="speaker">阪田 浩一</a></p>
-  2011年にリリースした弊社フリューのアプリケーションは、利用者が年々増加し、1000万人を超えました。それに伴い、機能を追加、改修しているため肥大化したモノリシックアプリケーションとなりました。また開発チームも複数あり、それぞれが機能を開発し、毎日のようにデプロイ、リリースしています。<br>
-
-  こうした現状から、ドメインごとにアプリケーションを分割したいという欲求が生まれ、マイクロサービスアーキテクチャに変えていくことにしました。もちろん今もサービスを運用、新機能開発していく中でゆるやかに実施していくため、完成したわけではありません。このセッションでは、現実に運用しているアプリケーションに対して、マイクロサービス構築に何を使い、どのように一歩踏み出し、その結果チームは何を実現し何を得られたか、ということを話します。<br>
-
-  JJUG CCCでは弊社フリューのアーキテクチャの変遷について、2016 Spring、2016 Fallとセッションをしてきました。Springでは"Seasar2で作った俺たちのサービスの今"、Fallでは"10年運用している画像サービスでのJavaの活用と今後の展望"と、Seasar2からSpring Framework/MVCに移行した話をしました。今回は、このアプリケーションから特定の機能を取り出してマイクロサービスとしてSpring Boot、Spring Cloud Netflix(ribbon/Eureka/Hystrix)で構築し、既存の手動テストをパスさせるためSpring Cloud Contract Stub Runnerを活用した点を中心に話します。また、私以外Spring自体をほぼ知らないチームで、どのように習得を進めたかという点にも触れます。<br>
-
-  すでにこれらの技術をご存知の方にはこのセッションは適切でない可能性があります。また、ベストプラクティスでも、Spring Cloudのすべてのプロダクトを使っているわけでもありません。それでも、1つの現場の事例としてみなさんのご参考になれば幸いです。
-  <p><a href="https://twitter.com/hashtag/ccc_f5" target="_blank">#ccc_f5</a></p>
-    </div>
-  </div>
-  <div class="accordion session" data-session="#ccc_l5">
-    <h3><span class="room">[Room L, 16:10-16:30]</span><br/>Java8移行は怖くない～エンタープライズ案件でのJava8移行事例について～</h3>
-    <div>
-  <p><a href="#pm_l_time5" class="speaker"></a></p>
-  JDK9のリリースも間近ですが、Webアプリケーションを中心としたJava言語を用いたシステム開発では、使用するJavaランタイムのバージョンはサービスイン時のバージョンで「塩漬け」になるというのが実態ではないでしょうか。本セッションでは、発表者の関わったエンタープライズ向けWebサービスでのJava8移行の事例を通じて、サービスイン後のJavaランタイムのバージョンアップを行う際のポイントについて紹介します。
-  <p><a href="https://twitter.com/hashtag/ccc_l5" target="_blank">#ccc_l5</a></p>
-    </div>
-  </div>
-  <div class="accordion session" data-session="#ccc_c6">
-    <h3><span class="room">[Room C+D, 16:45-17:30]</span><br/>劇的！データベース・ビフォーアフター 時代はディスクからインメモリーへ――</h3>
-    <div>
-  <p><a href="#pm_cd_time4" class="speaker">漆原 茂</a> / <a href="#pm_cd_time4_1" class="speaker">山河 征紀</a></p>
-  スケーラブルで高速アクセスが可能なデータ基盤が存在したら、皆さんのアプリケーションは劇的に変わると思いませんか？ そんな希望を叶えるのがインメモリーデータグリッドです。金融機関の業務システムからWebサービスまで実用性は証明済み。有力製品のオープンソース化により、今や私たちのすぐ手の届くものになっています。これを利用しない手はありません。皆さんのアプリケーションをRDBMSの制約から解放し、次のステージへと進化させる方法をご紹介します。
-  <p><a href="https://twitter.com/hashtag/ccc_c6" target="_blank">#ccc_c6</a></p>
-    </div>
-  </div>
-  <div class="accordion session" data-session="#ccc_e6">
-    <h3><span class="room">[Room E, 16:45-17:30]</span><br/>Spark + DeepLearning4J の特長と最新動向（仮）</h3>
-    <div>
-  <p><a href="#pm_e_time4" class="speaker">田中裕一</a></p>
-  昨今BigData処理基盤として人気のSparkとDeepLearningを組み合わせて動かすことで基盤としてどう行ったメリットがあるのか？また、どのようなフレームワークが登場してきているのか？その中でもDeepLearning4J on Sparkについての説明を行います。
-  <p><a href="https://twitter.com/hashtag/ccc_e6" target="_blank">#ccc_e6</a></p>
-    </div>
-  </div>
-  <div class="accordion session" data-session="#ccc_f6">
-    <h3><span class="room">[Room F, 16:45-17:30]</span><br/>U-NEXT学生インターン、過激なJavaの学び方と過激な要求</h3>
-    <div>
-  <p><a href="#pm_f_time4" class="speaker">舟木 初</a></p>
-  株式会社U-NEXTの学生インターンとして、1年間かけてJava8とDBFluteとLastaFluteで社内用Webアプリを作りました。<br>
-  しかしプログラミング経験がなかったので、Java8を学ぶ際に大変苦労しました。<br>
-  その時に得た独特な発想や教育論も含めて、1年間の経験や学びをお話し致します
-  <p><a href="https://twitter.com/hashtag/ccc_f6" target="_blank">#ccc_f6</a></p>
-    </div>
-  </div>
-  <div class="accordion session" data-session="#ccc_g6">
-    <h3><span class="room">[Room G+H, 16:45-17:30]</span><br/>Engineers can change the world ～ "世界" で活躍するエンジニアになるために</h3>
-    <div>
-  <p><a href="#pm_gh_time4" class="speaker">Drew Robbins</a> / <a href="#pm_f_time2" class="speaker">寺田 佳央</a></p>
-  Cross the border ～ エンジニアとして国境を超えること。それは、世界を変える第一歩かもしれません。そんな第一歩を踏み出すために日本人エンジニアとして知っておきたい米国エンジニアの働き方や考え方、そして実際の開発プロセスの違いや特徴などを通して、言語だけでなく文化や生活習慣の違いを超えて他国のエンジニアとコミュニケーションを図る際のポイントや、グローバルで働くために目指すべきエンジニア像を、日英混在でご紹介します。<br>
-
-  Cross the border - to cross the border as an engineer, it would be the first step for you to change the world.In this bilingual session, you can know that there are lots of differences of working style, thinking, development process, etc... between the US and Japan, and can learn what's the best way to communicate/collaborate with other engineers in the US. Then, you may be a super engineer to change the world!
-  <p><a href="https://twitter.com/hashtag/ccc_g6" target="_blank">#ccc_g6</a></p>
-    </div>
-  </div>
-  <div class="accordion session" data-session="#ccc_m6">
-    <h3><span class="room">[Room M, 16:45-17:05]</span><br/>JavaFXでデスクトップガジェット風プログラムを作る</h3>
-    <div>
-  <p><a href="#pm_m_time6" class="speaker">高橋 徹</a></p>
-  デスクトップの脇で動くちょっとしたプログラム、例えば時計、カレンダーなどいわゆるデスクトップガジェットのようなプログラムをJavaFXで作成します。<br>
-
-  ガジェット風なプログラムでは、表示領域を極力少なくするためウィンドウ枠がなく背景を透明にした表示とすることが一般的です。その場合、OS（ウィンドウシステム）の機能でのウィンドウの位置・大きさの変更、終了といった操作ができないため、ドラッグ＆ドロップ操作などで位置や大きさの変更、終了を行う必要が生じます。その操作は2in1 PCなどのタッチパネルに対応しているとなおいいです。<br>
-  設定ファイルやコマンドラインオプションでの制御の他、次回起動時には最後の位置や大きさを継続できるよう、前回の状態を覚えておくことも必要です。<br>
-  JavaはデフォルトではCPUとメモリを大食いする傾向がありますので、ガジェット風なプログラムを複数動かしてもCPUやメモリを喰わないように省リソース設定をしておくこともお作法として必要です。そのためにはデプロイ方法を含めて対応することが必要となります。<br>
-
-  これらを踏まえて、JavaFXでガジェット風のプログラムを作る方法を紹介します。<br>
-  <p><a href="https://twitter.com/hashtag/ccc_m6" target="_blank">#ccc_m6</a></p>
-    </div>
-  </div>
   <div class="accordion session" data-session="#ccc_g7">
     <h3><span class="room">[Room G+H, 17:45-18:30]</span><br/>ハックで生きる：オープンソースで会社を興すには</h3>
     <div>
@@ -683,10 +691,10 @@
   <p><a href="https://twitter.com/hashtag/ccc_g7" target="_blank">#ccc_g7</a></p>
     </div>
   </div>
-  -->
 </div>
 
-  </div>
+</div>
+
   <p>「<span style="color:grey">★</span>のクリック」または「セッション名の長押し」で、お気に入りに設定できます。</p>
   <p>
   <span style="font-style:bold;">このページは、非公式です。</span><br>
