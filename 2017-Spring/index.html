@@ -1186,7 +1186,7 @@ Kirk now specializes in Java™, where he works in all aspects of performance an
     $(document).ready(function () {
       // 見出し長押しによるお気に入り登録・解除
       var pressTimer = null;
-      $("div.session > h3").on("mouseup touchend", function(e){
+      $("div.session > h3").on("mouseup touchmove touchend", function(e){
         clearTimeout(pressTimer);
         pressTimer = null;
       }).on("mousedown touchstart", function(e){
