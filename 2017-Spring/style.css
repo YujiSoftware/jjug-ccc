@@ -102,3 +102,14 @@ div.session.favorite > div.ui-accordion-content > div.favorite-button:after {
     text-shadow: 0 0 3px #cca;
     color: #ffff33;
 }
+
+div.session > div > p.questionnaire {
+    position: relative;
+    float: right;
+    margin-right: 0.5em;
+    text-decoration: none;
+}
+
+div.session > div > p.questionnaire a {
+    text-decoration: none;
+}
