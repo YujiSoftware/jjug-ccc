@@ -1,6 +1,8 @@
 var items = [];
 var speakers = $(".speaker");
 for(var i = 0; i < speakers.length; i++){
+  var speakerSocials = speakers[i].getElementsByClassName("speaker-socials");
+  
   var item = {
     key: speakers[i].id,
     name: speakers[i].getElementsByClassName("name")[0].textContent,
@@ -8,7 +10,7 @@ for(var i = 0; i < speakers.length; i++){
     alt: speakers[i].getElementsByClassName("text-alt")[0].textContent,
     about: speakers[i].getElementsByClassName("about")[0].innerHTML,
     socials:
-      Array.from(speakers[i].getElementsByClassName("speaker-socials")[0].getElementsByTagName("a")).map(a => a.href)
+      Array.from(speakerSocials.length > 0 ? speakerSocials[0].getElementsByTagName("a") : []).map(a => a.href)
   };
 
   items.push(item);
