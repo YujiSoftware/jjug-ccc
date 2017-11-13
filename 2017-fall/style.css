@@ -30,6 +30,11 @@ ul.mode li.active a{
   color: steelblue;
 }
 
+div.level-commentary{
+  font-size: small;
+  color: slategray;
+  text-align: center;
+}
 div.timetable > div.ui-accordion-content{
   margin: 0px;
   padding: 0.5em !important;
@@ -40,6 +45,10 @@ div.session > div.ui-accordion-content{
 }
 span.room{
   font-size: small;
+}
+span.level{
+  font-size: small;
+  opacity: 0.75;
 }
 span.hashtag{
   font-size: small;
