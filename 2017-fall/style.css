@@ -6,9 +6,11 @@ ul.mode{
   display: table;
   table-layout: fixed;
   padding: 0px;
-  width: 75%;
+  width: 90%;
   height: 30px;
   margin: 1em auto 1em auto;
+  border-collapse: separate;
+  border-spacing: 3px 0;
 }
 ul.mode li {
     display: table-cell;
