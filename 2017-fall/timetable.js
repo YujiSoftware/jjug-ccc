@@ -170,4 +170,8 @@ $(document).ready(function () {
       this.classList.add("favorite");
     }
   });
+
+  if(location.pathname.indexOf("favorite.html") !== -1){
+      $("div.session:not(.favorite)").css("display", "none");
+  }
 });
