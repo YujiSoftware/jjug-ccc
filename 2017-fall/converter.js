@@ -10,7 +10,7 @@ for(var i = 0; i < scheduleItems.length; i++){
   if(article != null){
     var hashtag = $("a[target=blank]", article);
     var speaker = article.getElementsByClassName("speaker-name")[0];
-    var description = article.getElementsByClassName("description")[0].innerHTML;
+    var description = Array.from(article.getElementsByClassName("description")).map(e => e.innerHTML).join("<br/>\r\n");
   }else{
     var hashtag = [];
     var speaker = null;
