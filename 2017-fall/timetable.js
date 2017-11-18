@@ -72,60 +72,51 @@ function onFavorite(node){
 }
 
 $(document).ready(function () {
-  if(false){
     var questionnaires = {
-    "#ccc_a1": "https://questionnaires.cfapps.pez.pivotal.io/sessions/85fda9de-fd76-47b9-8f15-9f9c0c9152cd",     //  01. JJUG CCC 20th fireside chat [20回生き残っている幹事たち]
-    "#ccc_e1": "https://questionnaires.cfapps.pez.pivotal.io/sessions/a86a3685-ece0-436f-82d9-61b9e41e2548",     //  02. ふつうのJavaコーディング [irof]
-    "#ccc_f1": "https://questionnaires.cfapps.pez.pivotal.io/sessions/1a1ea205-a098-4d45-ac04-054f17ea25c4",     //  03. JHipsterで学ぶ！Springによるサーバサイド開発手法 [Shinichi Kozake]
-    "#ccc_g1": "https://questionnaires.cfapps.pez.pivotal.io/sessions/4a1fa48c-4b30-485a-aba2-aecc4c4fbdba",     //  04. 非機能要件とSpring Boot [梅澤 雄一郎]
-    "#ccc_a2": "https://questionnaires.cfapps.pez.pivotal.io/sessions/2b82377a-2f59-421c-b261-157fdc2b9a01",     //  05. Java EE 8 and its latest topics [David Delabassee]
-    "#ccc_e2": "https://questionnaires.cfapps.pez.pivotal.io/sessions/ceea6f94-a1a6-4966-804b-cd9ef8ba157b",     //  06. Java Clientで入門するApache Kafka [森谷 大輔]
-    "#ccc_f2": "https://questionnaires.cfapps.pez.pivotal.io/sessions/2da17ca6-09bb-4c17-8119-3c5e15bba458",     //  07. エンプラ開発におけるレガシーアプリケーションの巻き取りとモジュール分割の戦い [和田 一洋]
-    "#ccc_g2": "https://questionnaires.cfapps.pez.pivotal.io/sessions/3e402299-5120-474e-b7a2-8e599699fe28",     //  08. Vue.js + Spring Bootで楽しくフルスタック開発やってみた [うらがみ]
-    "#ccc_a3": "https://questionnaires.cfapps.pez.pivotal.io/sessions/a9e50db2-2382-4d3e-929a-f946cfe903b7",     //  09. Scala製機械学習基盤PredictionIOとSparkによるレコメンドシステム [萩野 貴拓]
-    "#ccc_c3": "https://questionnaires.cfapps.pez.pivotal.io/sessions/51d9de72-37ec-4ac4-9191-0ea076d78891",     //  10. 新しいTERASOLUNA Batch Frameworkとは [伊東 裕二, 山田真也]
-    "#ccc_e3": "https://questionnaires.cfapps.pez.pivotal.io/sessions/67f586a0-04c4-4dd8-9a87-9d34c0714c4f",     //  11. Java libraries you can't afford to miss [Andres Almiray]
-    "#ccc_f3": "https://questionnaires.cfapps.pez.pivotal.io/sessions/24fbebf6-ee24-44e9-9887-5e7605161496",     //  12. SpotBugs(FindBugs)による大規模ERPのコード品質改善 [Kengo TODA]
-    "#ccc_g3": "https://questionnaires.cfapps.pez.pivotal.io/sessions/72065ef7-9363-4f92-8220-8a126e148545",     //  13. データ履歴管理のためのテンポラルデータモデルとReladomoの紹介 [伊藤博志]
-    "#ccc_i1": "https://questionnaires.cfapps.pez.pivotal.io/sessions/0324b467-5a93-497f-8010-0dccc1a22416",     //  14. 全部 Java で作っちゃえ!! Vaadin 8 による "オール Java" Web アプリ開発のしくみと実践 [加藤 裕]
-    "#ccc_l1": "https://questionnaires.cfapps.pez.pivotal.io/sessions/a877d8ca-2335-48e0-ad9e-a90bd50d6db4",     //  15. How to use MicroProfile and a way to rebirth Japanese enterprise computing [HASUNUMA Kenji]
-    "#ccc_m1": "https://questionnaires.cfapps.pez.pivotal.io/sessions/905bacd3-2250-4075-8dcd-d71f9f1a3f18",     //  16. JavaエンジニアのためのPostgreSQLステップアップ [喜田 紘介]
-    "#ccc_a4": "https://questionnaires.cfapps.pez.pivotal.io/sessions/896c0cd3-5bc0-4ce3-9c8e-472e2999f00a",     //  17. ヤフーの広告レポートシステムをSpring Cloud Stream化するまで [塩野　貴義, 橋本　尚亮]
-    "#ccc_c4": "https://questionnaires.cfapps.pez.pivotal.io/sessions/0da07375-d2d1-440c-a1a1-df21ee113255",     //  18. Unified JVM Logging: Java 9 から変わる JVM ログ [KUBOTA Yuji]
-    "#ccc_e4": "https://questionnaires.cfapps.pez.pivotal.io/sessions/98e1c1a0-ccbe-43e1-9ae0-f9d05e0e93d5",     //  19. What you need to know about HotSpot and Your Code [Kirk Pepperdine]
-    "#ccc_f4": "https://questionnaires.cfapps.pez.pivotal.io/sessions/98494796-4a90-445e-a562-2d4356507d35",     //  20. ナビタイムも導入！！ボットで始発・終電案内から観光ガイドまで 〜 Java でも日本語自然言語処理をカンタンに利用可能 Microsoft LUIS!! [寺田佳央, 小田中 育生]
-    "#ccc_g4": "https://questionnaires.cfapps.pez.pivotal.io/sessions/824a12e7-b142-404a-bfee-af647432c958",     //  21. Javaエンジニアに知って欲しいRDBアンチパターン [soudai sone]
-    "#ccc_i2": "https://questionnaires.cfapps.pez.pivotal.io/sessions/5b843b7b-ce47-4b6b-a3dd-d5f3f687cc9a",     //  22. Polyglot on the JVM with Graal [西川 彰広]
-    "#ccc_l2": "https://questionnaires.cfapps.pez.pivotal.io/sessions/ad0ac2c2-d917-48f1-9462-00d89743307b",     //  23. JavaエンジニアのためのScala入門 [Abe Asami (きの子)]
-    "#ccc_l3": "https://questionnaires.cfapps.pez.pivotal.io/sessions/c9251c9a-ca7e-4c29-a55c-8b4e864dd7b1",     //  24. 新卒2年目が鍛えられたコードレビュー道場の軌跡 [chiiia12]
-    "#ccc_m2": "https://questionnaires.cfapps.pez.pivotal.io/sessions/99044d7b-e187-4650-83f8-1e4ccfc6fdd0",     //  25. 文型さえおさえれば英語を読む力は上がる！ [よこな]
-    "#ccc_m3": "https://questionnaires.cfapps.pez.pivotal.io/sessions/5ff8de77-de27-4cfd-8d6d-3c36d478bccd",     //  26. Selenideを使ってみた 〜 ブラウザテスト自動化 〜	 [snowhiro]
-    "#ccc_a5": "https://questionnaires.cfapps.pez.pivotal.io/sessions/a51a94eb-2b6a-4740-8915-f67ae35920fa",     //  27. Scalaによるサービス開発現場での継続的リファクタリングの実践 [岩松 竜也]
-    "#ccc_c5": "https://questionnaires.cfapps.pez.pivotal.io/sessions/9ce21b58-453d-4bcf-9311-69a7bc790805",     //  28. Javaエンジニアから見たKotlinの魅力 [空中 清高]
-    "#ccc_e5": "https://questionnaires.cfapps.pez.pivotal.io/sessions/72fd77aa-3763-45da-b20a-a74d7ac76ed4",     //  29. Javaで実装して学ぶOAuth 2.0！ [多田真敏]
-    "#ccc_f5": "https://questionnaires.cfapps.pez.pivotal.io/sessions/75192c09-e4ee-4be6-a5dd-da90ce5dc388",     //  30. Seasar2からSpringへ移行した俺たちのアプリケーションがマイクロサービスアーキテクチャへ歩み始めた [阪田 浩一]
-    "#ccc_g5": "https://questionnaires.cfapps.pez.pivotal.io/sessions/a6233338-7d97-4209-bc30-bc60b16a4c6a",     //  31. Introduction of Project Jigsaw [櫻庭 祐一]
-    "#ccc_i3": "https://questionnaires.cfapps.pez.pivotal.io/sessions/4333e84b-0dec-4b63-818a-a4dd338348b0",     //  32. Androidアプリ開発からみたRxJavaの使いどころ [Naoki Morioka]
-    "#ccc_l4": "https://questionnaires.cfapps.pez.pivotal.io/sessions/d06b6589-f87f-4140-bdc0-2285cef22dd7",     //  33. SIプロジェクトでよくあるフレームワークのカスタム開発ってまだ必要なの？ [Hideyuki Fujikawa]
-    "#ccc_l5": "https://questionnaires.cfapps.pez.pivotal.io/sessions/d0bc7daa-de57-448b-b203-d67f73dd17ce",     //  34. Java8移行は怖くない～エンタープライズ案件でのJava8移行事例について～ [大中 浩行]
-    "#ccc_m4": "https://questionnaires.cfapps.pez.pivotal.io/sessions/efef247a-139b-4b49-a2e4-dcd3c2859af1",     //  35. 今日からDL4J [EVGENIY(髙橋良貴)]
-    "#ccc_m5": "https://questionnaires.cfapps.pez.pivotal.io/sessions/c9ae1093-ea06-4909-b9ea-6a70a33c2155",     //  36. グラフデータベース入門 [嶽　雅也]
-    "#ccc_a6": "https://questionnaires.cfapps.pez.pivotal.io/sessions/1710e2ce-6084-4627-9261-9c01ee6eae1b",     //  37. Java8プログラミング ベストプラクティス & きしだが働いてるかどうかIDEのメモリ使用状況から機械学習で判定する [きしだ なおき]
-    "#ccc_c6": "https://questionnaires.cfapps.pez.pivotal.io/sessions/bcc06602-0e28-4961-975c-75a48b8220cb",     //  38. 劇的！データベース・ビフォーアフター 時代はディスクからインメモリーへ―― [山河 征紀, 漆原 茂]
-    "#ccc_e6": "https://questionnaires.cfapps.pez.pivotal.io/sessions/7fd2655b-1903-4abe-94f0-af88b65ab67f",     //  39. Spark + DeepLearning4J の特長と最新動向 [田中裕一]
-    "#ccc_f6": "https://questionnaires.cfapps.pez.pivotal.io/sessions/f1d08d24-30b0-4acd-b7b1-74903f551458",     //  40. U-NEXT学生インターン、過激なJavaの学び方と過激な要求 [舟木 初]
-    "#ccc_g6": "https://questionnaires.cfapps.pez.pivotal.io/sessions/d0e3a2b9-dfe5-4acb-8a75-b9979f6ba91d",     //  41. Engineers can change the world ～ "世界" で活躍するエンジニアになるために [Drew Robbins, 寺田 佳央]
-    "#ccc_i4": "https://questionnaires.cfapps.pez.pivotal.io/sessions/a2c1aef5-d8ab-4930-8b94-586fb6a38167",     //  42. Arachne Unweaved [Ikuru K]
-    "#ccc_l6": "https://questionnaires.cfapps.pez.pivotal.io/sessions/d0c9f295-0f98-409a-9d2c-09b148fa44c1",     //  43. Javaとアイドルのコラボ！？某アイドルBot開発の裏側 [菊田洋一]
-    "#ccc_l7": "https://questionnaires.cfapps.pez.pivotal.io/sessions/1cc09a1b-23e0-4ab4-8e4e-9792148384f4",     //  44. Javaチョットデキルへの道～JavaコアSDKに見る真似したいコード10選～ [福嶋航]
-    "#ccc_m6": "https://questionnaires.cfapps.pez.pivotal.io/sessions/5f382d22-79a9-4bd5-a021-b8525bdd9403",     //  45. JavaFXでデスクトップガジェット風プログラムを作る [高橋 徹]
-    "#ccc_m7": "https://questionnaires.cfapps.pez.pivotal.io/sessions/4b282456-888d-4f7d-bf1b-d73a32343919",     //  46. 新卒2年目から始めるOSSのススメ 〜明日からできるコミットデビュー〜 [梶栗 芳夫]
-    "#ccc_a7": "https://questionnaires.cfapps.pez.pivotal.io/sessions/7b038e94-2946-487a-9be3-f37e8f214f46",     //  47. VMの歩む道。Dalvik、ART、そしてJava VM [yy_yank]
-    "#ccc_c7": "https://questionnaires.cfapps.pez.pivotal.io/sessions/0f95b0ba-9b2c-45f6-a69a-5ba19e298d6b",     //  8. マチコ&河村の怒り新党 〜真の最終回〜 [よこな]
-    "#ccc_g7": "https://questionnaires.cfapps.pez.pivotal.io/sessions/27ae6b3b-46a4-47bd-88df-3b9487460d7e",     //  49. ハックで生きる：オープンソースで会社を興すには [川口耕介]
-    "#ccc_i5": "https://questionnaires.cfapps.pez.pivotal.io/sessions/58bc378a-4d0b-472a-a885-46bfa85d7654",     //  50. Java x Arduinoで始めるIoT / フィジカルコンピューティング [Yusuke Yamamoto]
-    "#ccc_l8": "https://questionnaires.cfapps.pez.pivotal.io/sessions/b7414e0f-8a13-46f4-965f-bad5cb73a3a6",     //  51. 思ったほど怖くない！Haskell on JVM 超入門 [チェシャ猫]
-    "#ccc_m8": "https://questionnaires.cfapps.pez.pivotal.io/sessions/dee93364-19b7-462b-b4ba-17c50b7a10ef",    //  52. Ordinary Object Pointer について調べてみた [Go Tanaka]
+    "#ccc_a1": "https://jjug-enquete.cfapps.io/sessions/7ef869ce-c1ea-4109-b92d-5dc2161216ec",    // a01. AsciiDocとPlantUMLでドキュメント作成 [梅澤 雄一郎] debugger eval code:1:108
+"#ccc_a2": "https://jjug-enquete.cfapps.io/sessions/7d150876-baa1-48ad-a48c-d65beb60e900",    // a02. サンプルアプリケーションで学ぶApache Cassandraを使ったJavaアプリケーションの作り方 [森下 雄貴] debugger eval code:1:108
+"#ccc_a3": "https://jjug-enquete.cfapps.io/sessions/7b30cb8a-39d6-46f5-8b42-6df776a37f2a",    // a03. サーバサイドKotlin [大谷弘喜] debugger eval code:1:108
+"#ccc_a4": "https://jjug-enquete.cfapps.io/sessions/1da6a8e6-4fff-454f-ac55-1abc17361bdb",    // a04. ヤフー発のメッセージキュー「Pulsar」のご紹介 [坂本雅宏] debugger eval code:1:108
+"#ccc_a5": "https://jjug-enquete.cfapps.io/sessions/f9dc56a1-a54a-44e4-bb98-ff109179a488",    // a05. JDKの新しいリリースモデル [伊藤敬] debugger eval code:1:108
+"#ccc_a6": "https://jjug-enquete.cfapps.io/sessions/6cad358b-2ac2-4542-aa69-ad2d9f88fdba",    // a06. ついに来たリアルタイムSpark〜ビッグデータ処理の新常識・SnappyDataの実力〜 [山河征紀] debugger eval code:1:108
+"#ccc_a7": "https://jjug-enquete.cfapps.io/sessions/228b3e2b-b2a6-4928-9475-3484a3deb63f",    // a07. Java でつくる本格形態素解析器 [高岡 一馬] debugger eval code:1:108
+"#ccc_a8": "https://jjug-enquete.cfapps.io/sessions/6607caae-ba85-4ec2-8753-4f17b6fdda72",    // a08. 【Serverspec】公共案件におけるWeblogicのテスト事例 [佐々木 優太朗] debugger eval code:1:108
+"#ccc_c1": "https://jjug-enquete.cfapps.io/sessions/b9af052e-6e98-4750-a925-996bc9ac36fb",    // c01. Selenide or Geb？ あなたはそのときどちらを使う？ [島根 義和 & 高橋 陽太郎] debugger eval code:1:108
+"#ccc_c2": "https://jjug-enquete.cfapps.io/sessions/cda2de8a-6941-4e99-843e-f39ce64f6c12",    // c02. Apache Camel + hawtio + Spring Boot によるモダンなインテグレーション・マイクロサービス [佐藤 匡剛] debugger eval code:1:108
+"#ccc_c3": "https://jjug-enquete.cfapps.io/sessions/392d66e0-7a3f-4519-b6e2-09506235c22e",    // c03. Open Liberty:オープンソースになったWebSphere Liberty [田中孝清] debugger eval code:1:108
+"#ccc_c4": "https://jjug-enquete.cfapps.io/sessions/5446b4c7-fd97-4d21-ac69-afa12930c322",    // c04. ゴールドマン・サックスにおけるCamundaを用いたビジネスプロセスの可視化とワークフローの自動化 [福井達也,石井すみれ] debugger eval code:1:108
+"#ccc_c5": "https://jjug-enquete.cfapps.io/sessions/292485bc-920a-4795-aae1-d3018ef9a90d",    // c05. オレオレJVM言語を作ってみる（四則演算するだけだけど） [阪田 浩一] debugger eval code:1:108
+"#ccc_c6": "https://jjug-enquete.cfapps.io/sessions/d9f6380b-bba5-4353-a25f-904851266d80",    // c06. Effects of SHAttered [Michael Demey] debugger eval code:1:108
+"#ccc_c7": "https://jjug-enquete.cfapps.io/sessions/b36e0a31-536e-4d72-8d31-e7cbc3a49a88",    // c07. CPUから見たG1GC [数村憲治] debugger eval code:1:108
+"#ccc_e1": "https://jjug-enquete.cfapps.io/sessions/7e7b3feb-dcf5-46b7-b9fb-03ecd0ab048f",    // e01. 年齢も経験も関係ない!ステップアップするためのJavaコミュニティ活用術 [横田紋奈] debugger eval code:1:108
+"#ccc_e2": "https://jjug-enquete.cfapps.io/sessions/a41c57a1-02c1-4a1f-9330-ae382f964d53",    // e02. OpenJDK 参加入門 [David Buck] debugger eval code:1:108
+"#ccc_e3": "https://jjug-enquete.cfapps.io/sessions/4158ba04-9fb4-4609-8148-416801d35acb",    // e03. Pivotal認定講師が徹底解説!Spring Bootの本当の理解ポイント [多田真敏] debugger eval code:1:108
+"#ccc_e4": "https://jjug-enquete.cfapps.io/sessions/965c6d40-3652-4674-9d7e-e9b1d5606717",    // e04. Java SE 9のご紹介 [宮川 拓] debugger eval code:1:108
+"#ccc_e5": "https://jjug-enquete.cfapps.io/sessions/901c71df-bd02-44da-8d53-5d18179a332a",    // e05. 入社してから運用しているサービスの運用改善奮闘記 [佐藤彗太] debugger eval code:1:108
+"#ccc_e6": "https://jjug-enquete.cfapps.io/sessions/e7973185-a307-40c7-86ca-332c3b31d5f3",    // e06. Spring BootとKafkaでCQRSなアプリを動かしてみる [椎葉 光行] debugger eval code:1:108
+"#ccc_g1": "https://jjug-enquete.cfapps.io/sessions/3465bb96-d395-442d-a3b2-dc7e5d7ca0b3",    // g01. Backlog: Java から Scala への移行の歩み [谷本陽介 & 松本裕二] debugger eval code:1:108
+"#ccc_g2": "https://jjug-enquete.cfapps.io/sessions/b8a81d70-eaf6-4d61-afb5-9e9a667baf53",    // g02. 10年前のレガシーシステムをサーバーサイドKotlinでフルリニューアルした話 [前原秀徳] debugger eval code:1:108
+"#ccc_g3": "https://jjug-enquete.cfapps.io/sessions/bdbc8970-9d7a-4353-8b31-e67874c6ee81",    // g03. Java 9を迎えた今こそ！Java本格(再)入門 [岡田 拓也] debugger eval code:1:108
+"#ccc_g4": "https://jjug-enquete.cfapps.io/sessions/9c14a835-f893-4be7-b231-6c601c56f2c2",    // g04. Spring Security にできること・できないこと [opengl-8080] debugger eval code:1:108
+"#ccc_g5": "https://jjug-enquete.cfapps.io/sessions/17bc3132-15a9-4c7a-8518-0dca7ffa891f",    // g05. Javaが「書ける」から「できる」になれる!メモリ節約ノウハウ話 [猪鼻哲也] debugger eval code:1:108
+"#ccc_g6": "https://jjug-enquete.cfapps.io/sessions/91fec581-e125-43c0-883a-2c8395a4a039",    // g06. 新しいプログラミング言語の学び方〜HTTPサーバーを作って学ぶJava, Scala, Clojure〜 [田所駿佑] debugger eval code:1:108
+"#ccc_g7": "https://jjug-enquete.cfapps.io/sessions/ce1c4174-eb73-4931-ae38-8df95def1f27",    // g07. 最近のDeep Learning事情とJava [EVGENIY(髙橋良貴)] debugger eval code:1:108
+"#ccc_i1": "https://jjug-enquete.cfapps.io/sessions/73626921-283d-4c56-ade0-71d60ccf122d",    // i01. モブプロで実施する Cognitive Service & Botハッカソン [Microsoft] debugger eval code:1:108
+"#ccc_i3": "https://jjug-enquete.cfapps.io/sessions/3fcde47e-b4db-4a03-9017-a63996dabad8",    // i03. Elastic 6.0 ハンズオン [樋口 慎] debugger eval code:1:108
+"#ccc_l1": "https://jjug-enquete.cfapps.io/sessions/f9f13754-2b6a-48df-852a-1fcbe5ce48be",    // l01. SpringBootとMyBatisでデータベースを可視化する [] debugger eval code:1:108
+"#ccc_l2": "https://jjug-enquete.cfapps.io/sessions/66947351-7388-409b-b7b6-b1f31ef1b3c8",    // l02. JVM上で動くPython処理系実装のススメ [澁谷 典明(Yoshiaki Shibutani)] debugger eval code:1:108
+"#ccc_m1": "https://jjug-enquete.cfapps.io/sessions/55089770-2234-41b9-86aa-9a349598f9b3",    // m01. サーバーサイドでの非同期処理で色々試したよ。 [Koji Lin] debugger eval code:1:108
+"#ccc_m2": "https://jjug-enquete.cfapps.io/sessions/dab51d27-13bc-4512-8bd3-161a12916164",    // m02. ユニットテストのアサーション 流れるようなインターフェースのAssertJを添えて 入門者仕立て [内立良介（うちたて　りょうすけ）] debugger eval code:1:108
+"#ccc_m3": "https://jjug-enquete.cfapps.io/sessions/b7dcc9de-c3b4-492a-a063-bcc6a228cddb",    // m03. 次の一歩を踏み出そう！ ーOCJPの知識でちょっといいJavaコーディングー [ぜろゆ] debugger eval code:1:108
+"#ccc_m4": "https://jjug-enquete.cfapps.io/sessions/7f87da74-fc75-4ddf-bce7-c93ea2c1d24c",    // m04. DDD × CQRS - コマンドとクエリでORMを使い分けた話 [松岡 幸一郎] debugger eval code:1:108
+"#ccc_m5": "https://jjug-enquete.cfapps.io/sessions/65a0f91b-c67f-4a2d-8eb6-de3da7086c20",    // m05. 劇的改善 CI４時間から５分へ�〜私がやった１０のこと〜 [aha-oretama] debugger eval code:1:108
+"#ccc_m6": "https://jjug-enquete.cfapps.io/sessions/5392c2c5-a109-45c6-bf07-ebd54503fb6e",    // m06. Docker ではじめる Java EE アプリケーション開発 [齋藤　耕平] debugger eval code:1:108
+"#ccc_m7": "https://jjug-enquete.cfapps.io/sessions/f2e95184-91e9-411b-bd4c-aef49b149b4d",    // m07. Java 8 Stream APIの代わりにEclipse Collectionsを使って開発してみた [Nagahori Shota] debugger eval code:1:108
+"#ccc_m8": "https://jjug-enquete.cfapps.io/sessions/da7388fd-2221-473c-897b-540aff69e358",    // m08. 速いソートアルゴリズムを書こう！！ [松原 正和] debugger eval code:1:108
+"#ccc_m9": "https://jjug-enquete.cfapps.io/sessions/7a9d7ca9-d4b8-4b33-8cb5-5344cba28bde",    // m09. Design Pattern in Presto source code [Shin So（曾臻）] debugger eval code:1:108
+"#ccc_m10": "https://jjug-enquete.cfapps.io/sessions/d1181652-af07-4e9a-b2ae-30f6e3e08bf8",    // m10. Javaで使えるもう一つのコンパイル方式 - AOT [西川 彰広] debugger eval code:1:108
+"#ccc_m11": "https://jjug-enquete.cfapps.io/sessions/780098d8-0a42-4a33-8763-494c60a0e487",    // m11. DBのTCPプロトコルとJDBC [yohei yamana] debugger eval code:1:108
+"#ccc_m12": "https://jjug-enquete.cfapps.io/sessions/7f724cb5-8763-42e9-bac3-8a415d60ed34"    // m12. Java x ArduinoのIoT アーキテクチャパターン [Yusuke Yamamoto] debugger eval code:1:108
     }
 
     for(var session of $("div.session > div")){
@@ -138,7 +129,6 @@ $(document).ready(function () {
             )
         );
     }
-  }
   
   // 見出し長押しによるお気に入り登録・解除
   var pressTimer = null;
