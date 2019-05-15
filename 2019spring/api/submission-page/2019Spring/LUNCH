@@ -1,0 +1,18 @@
+[
+  {
+    "title": "JJUG ランチセッション",
+    "identifier": "6fed2127-8a15-4cab-86be-96cb760f54a6",
+    "speakerName": "鈴木雄介",
+    "time": "12:00 - 12:45",
+    "hashtag": "#ccc_cl",
+    "level": "初心者向け"
+  },
+  {
+    "title": "Cloud Native時代の開発環境とアプリケーション基盤(仮)",
+    "identifier": "4606dbaa-1191-43e1-b923-ac6882880d11",
+    "speakerName": "須江 信洋",
+    "time": "12:00 - 12:45",
+    "hashtag": "#ccc_el",
+    "level": "初級者向け"
+  }
+]

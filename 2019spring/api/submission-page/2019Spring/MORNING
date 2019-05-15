@@ -1,0 +1,138 @@
+[
+  {
+    "title": "初めてのgRPC",
+    "identifier": "b4089bc8-af86-4cfa-9ce6-eb4dd3c8a773",
+    "speakerName": "前多賢太郎",
+    "time": "10:00 - 10:45",
+    "hashtag": "#ccc_a1",
+    "level": "初級者向け"
+  },
+  {
+    "title": "Java Collections Framework + α 入門",
+    "identifier": "84ef8319-c7d5-4d20-b350-48b45f0317f5",
+    "speakerName": "持田真哉",
+    "time": "10:00 - 10:45",
+    "hashtag": "#ccc_c1",
+    "level": "初級者向け"
+  },
+  {
+    "title": "現代に求められるJavaコミュニティとは",
+    "identifier": "",
+    "speakerName": "谷本心",
+    "time": "10:00 - 10:45",
+    "hashtag": "#ccc_e1",
+    "level": "初級者向け"
+  },
+  {
+    "title": "Java11時代のHTTP(S)アクセス再入門",
+    "identifier": "f05a7f3e-6fef-4366-9116-39f1cb62a57c",
+    "speakerName": "Kiyotaka Suzuki (@tamtam180)",
+    "time": "10:00 - 10:45",
+    "hashtag": "#ccc_g1",
+    "level": "初級者向け"
+  },
+  {
+    "title": "OpenCensusで始める分散トレーシングと監視",
+    "identifier": "8b420ee7-94a7-4f5c-9db0-7798f66d05c8",
+    "speakerName": "Yoshida",
+    "time": "10:00 - 10:45",
+    "hashtag": "#ccc_i1",
+    "level": "上級者向け"
+  },
+  {
+    "title": "How to Write Better and Effective Code in Java",
+    "identifier": "779e7eb6-6744-4e43-904f-1225b1dc48cc",
+    "speakerName": "ALTUĞ BİLGİN ALTINTAŞ",
+    "time": "10:00 - 11:45",
+    "hashtag": "#ccc_l1",
+    "level": "初級者向け"
+  },
+  {
+    "title": "Eclipse MicroProfile提供機能に関する考察",
+    "identifier": "6ce15577-8c39-47ba-96da-5fbaac00ff75",
+    "speakerName": "高橋 博実",
+    "time": "10:00 - 10:20",
+    "hashtag": "#ccc_m1a",
+    "level": "初級者向け"
+  },
+  {
+    "title": "Future と ThreadPool",
+    "identifier": "90fe7d15-e030-448f-bedc-a9d92b916fc2",
+    "speakerName": "庄司 重樹",
+    "time": "10:25 - 10:45",
+    "hashtag": "#ccc_m1b",
+    "level": "初級者向け"
+  },
+  {
+    "title": "パッケージ管理していなかった既存システムに後付けで Gradle を導入した話",
+    "identifier": "dfb51550-e81e-4e73-b205-c241433dadf7",
+    "speakerName": "矢崎 聖也",
+    "time": "11:00 - 11:45",
+    "hashtag": "#ccc_a2",
+    "level": "中級者向け"
+  },
+  {
+    "title": "Big Data Exploration with Spark SQL and Java",
+    "identifier": "4bb3d8d5-ad8b-4309-b447-187d15d4ed05",
+    "speakerName": "Fernando Babadopulos",
+    "time": "11:00 - 11:45",
+    "hashtag": "#ccc_c2",
+    "level": "中級者向け"
+  },
+  {
+    "title": "Valhalla, updates and future",
+    "identifier": "8a055532-aa53-4040-b3b1-1b7fb7f733d7",
+    "speakerName": "David Buck",
+    "time": "11:00 - 11:45",
+    "hashtag": "#ccc_e2",
+    "level": "中級者向け"
+  },
+  {
+    "title": "大企業運営の法人向けサービスにおけるOpenJDK移行事例",
+    "identifier": "420aaed4-ae0e-436d-9711-bb5211d4dbb8",
+    "speakerName": "大中浩行",
+    "time": "11:00 - 11:20",
+    "hashtag": "#ccc_g2a",
+    "level": "中級者向け"
+  },
+  {
+    "title": "開発リーダー1年目。メンバーのスキルアップのためにやっていること。",
+    "identifier": "94c0bea5-44d4-45a7-861d-9e8539ee7eea",
+    "speakerName": "丹野 航",
+    "time": "11:20 - 11:45",
+    "hashtag": "#ccc_g2b",
+    "level": "初級者向け"
+  },
+  {
+    "title": "What's new in Jakarta EE and Eclipse GlassFish (May 2019)",
+    "identifier": "966f59c7-4077-4428-9819-5e00dcaf5265",
+    "speakerName": "蓮沼　賢志",
+    "time": "11:00 - 11:20",
+    "hashtag": "#ccc_i2a",
+    "level": "初級者向け"
+  },
+  {
+    "title": "ArchUnit で Java/ Kotlin アプリケーションのアーキテクチャを CI する",
+    "identifier": "2e1e4779-b1ae-4864-a319-2b1262eba09c",
+    "speakerName": "かわなみゆう",
+    "time": "11:20 - 11:45",
+    "hashtag": "#ccc_i2b",
+    "level": "中級者向け"
+  },
+  {
+    "title": "デプロイから考える僕のWEBアプリ開発",
+    "identifier": "c99e922c-a47e-49ad-9c43-348e0a8b464d",
+    "speakerName": "井上 和宏",
+    "time": "11:00 - 11:20",
+    "hashtag": "#ccc_m2a",
+    "level": "中級者向け"
+  },
+  {
+    "title": "売れてる SaaS へのオブジェクトストレージ導入にまつわる泥臭い話",
+    "identifier": "6fed2127-8a15-4cab-86be-96cb760f54a6",
+    "speakerName": "西角知佳",
+    "time": "11:20 - 11:45",
+    "hashtag": "#ccc_m2b",
+    "level": "中級者向け"
+  }
+]

@@ -1,0 +1,274 @@
+[
+  {
+    "title": "Java 11へのマイグレーションガイド ~Apache Hadoopの事例~",
+    "identifier": "8a9d777c-0617-4822-beff-edf1f4d75291",
+    "speakerName": "鯵坂 明／浅沼 孝信",
+    "time": "13:30 - 14:15",
+    "hashtag": "#ccc_a3",
+    "level": "中級者向け"
+  },
+  {
+    "title": "マルチテナントECシステムにおける拡張性と最新性の両立",
+    "identifier": "3f2b7e8d-0fb8-4921-907c-e39ad3f17fc1",
+    "speakerName": "水野謙",
+    "time": "13:30 - 14:15",
+    "hashtag": "#ccc_c3",
+    "level": "中級者向け"
+  },
+  {
+    "title": "先行開発！Javaでクリーンアーキテクチャ -- ゼロから始める新規開発",
+    "identifier": "4ce63414-6e92-4612-91e1-9b84e772cc81",
+    "speakerName": "成瀬　允宣",
+    "time": "13:30 - 14:15",
+    "hashtag": "#ccc_e3",
+    "level": "上級者向け"
+  },
+  {
+    "title": "Catch up Java 12 and Java 13",
+    "identifier": "b4852628-3198-4992-83d4-0cec56718111",
+    "speakerName": "KUBOTA Yuji",
+    "time": "13:30 - 14:15",
+    "hashtag": "#ccc_g3",
+    "level": "中級者向け"
+  },
+  {
+    "title": "DevOps without Measurement is a Fail",
+    "identifier": "cbeaae7d-a7fb-478f-967e-c7d080415454",
+    "speakerName": "Erno Venäläinen",
+    "time": "13:30 - 14:15",
+    "hashtag": "#ccc_i3",
+    "level": "中級者向け"
+  },
+  {
+    "title": "Bulletproof Java Enterprise Applications for The Hard Production Life",
+    "identifier": "e6dd5b96-d31f-4338-a219-af5bef4e8ca5",
+    "speakerName": "Sebastian Daschner",
+    "time": "13:30 - 14:15",
+    "hashtag": "#ccc_l3",
+    "level": "中級者向け"
+  },
+  {
+    "title": "俺たちのドメイン駆動設計はこれからだ！",
+    "identifier": "6dc1ebeb-1c8b-43c9-880e-bc76a9b561d2",
+    "speakerName": "本谷　亮介",
+    "time": "13:30 - 14:50",
+    "hashtag": "#ccc_m3a",
+    "level": "初級者向け"
+  },
+  {
+    "title": "Java開発者のためのWebAuthn入門",
+    "identifier": "d5a97612-ebfd-4730-8389-1a3fd296cddb",
+    "speakerName": "Yoshikazu Nojima",
+    "time": "13:55 - 14:15",
+    "hashtag": "#ccc_m3b",
+    "level": "中級者向け"
+  },
+  {
+    "title": "ドメイン管理サービスにおけるJava活用のご紹介",
+    "identifier": "3b00257e-3400-4acb-b6dc-c0c7e5976ff5",
+    "speakerName": "小田 竜広",
+    "time": "14:30 - 14:50",
+    "hashtag": "#ccc_a4a",
+    "level": "初級者向け"
+  },
+  {
+    "title": "入門: 末尾呼び出し最適化",
+    "identifier": "c3632aed-fa15-4e01-bc4e-6f97a26e50f6",
+    "speakerName": "宮川 拓",
+    "time": "14:55 - 15:15",
+    "hashtag": "#ccc_a4b",
+    "level": "上級者向け"
+  },
+  {
+    "title": "ホットペッパービューティーにおけるモバイルアプリ向けAPIの BFF/Backend分割",
+    "identifier": "7fbef8cc-bf8d-4855-8534-c7fca118fb1d",
+    "speakerName": "索手一平",
+    "time": "14:30 - 15:15",
+    "hashtag": "#ccc_c4",
+    "level": "中級者向け"
+  },
+  {
+    "title": "テストエンジニアが教える　JUnitを書き始める前に考えるべきテスト",
+    "identifier": "0f7a8cf8-4862-477f-81bf-6dc3d47eb450",
+    "speakerName": "風間裕也(@nihonbuson)",
+    "time": "14:30 - 15:15",
+    "hashtag": "#ccc_e4",
+    "level": "初級者向け"
+  },
+  {
+    "title": "Java クライント実装におけるAPIスタイル頂上決戦! 野良REST vs GraphQL vs OData vs OpenAPI (Swagger)",
+    "identifier": "d2e9b342-6473-449e-8ee7-e35ef26bbd85",
+    "speakerName": "杉本和也",
+    "time": "14:30 - 15:15",
+    "hashtag": "#ccc_g4",
+    "level": "中級者向け"
+  },
+  {
+    "title": "Cloud (K)native Java Services -- Deploying your Java services in Serverless World --",
+    "identifier": "2a591b4b-0978-4b98-aa9c-e417fbbcebe4",
+    "speakerName": "Kamesh Sampath",
+    "time": "14:30 - 15:15",
+    "hashtag": "#ccc_i4",
+    "level": "中級者向け"
+  },
+  {
+    "title": "SI現場のテスト自動化挑戦〜フルコンテナ構成のCI/CD環境〜",
+    "identifier": "627ac3c2-8d9e-4483-aa3a-f37aa2fcba2b",
+    "speakerName": "川沼 大輝／横山 夏実",
+    "time": "14:30 - 15:15",
+    "hashtag": "#ccc_m4",
+    "level": "初級者向け"
+  },
+  {
+    "title": "ゴールドマン･サックスにおけるApache Beamを用いたビッグデータ処理の紹介と実例",
+    "identifier": "73438cc3-5add-4764-9cd9-b4415e7d6144",
+    "speakerName": "石井すみれ／Zhang, Xuefeng",
+    "time": "15:45 - 16:30",
+    "hashtag": "#ccc_a5",
+    "level": "初級者向け"
+  },
+  {
+    "title": "Stateless Microservice Security via JWT and MicroProfile",
+    "identifier": "5bc14e78-920f-466a-a438-4c5c47e167ab",
+    "speakerName": "David Blevins",
+    "time": "15:45 - 16:30",
+    "hashtag": "#ccc_c5",
+    "level": "初級者向け"
+  },
+  {
+    "title": "1400万ユーザーのWebサービスを15年運用して考える、Javaである理由",
+    "identifier": "755b3eda-f8db-408c-93d5-35faca8d089d",
+    "speakerName": "鈴木 真生",
+    "time": "15:45 - 16:30",
+    "hashtag": "#ccc_e5",
+    "level": "初級者向け"
+  },
+  {
+    "title": "LINEのBOT Platformの裏側の話",
+    "identifier": "774f52b7-4655-46e3-afe9-78ee1f1a5e67",
+    "speakerName": "長谷部良輔",
+    "time": "15:45 - 16:30",
+    "hashtag": "#ccc_g5",
+    "level": "初級者向け"
+  },
+  {
+    "title": "The 4 Rules of Simple Design In Functional Programming",
+    "identifier": "dcbd5783-fb04-462e-aa4a-df4cbe2af838",
+    "speakerName": "Uberto Barbini",
+    "time": "15:45 - 16:30",
+    "hashtag": "#ccc_i5",
+    "level": "中級者向け"
+  },
+  {
+    "title": "ソフトウェア設計の教育工学的な分析と育成へのアイデア",
+    "identifier": "61c3e49f-0a0f-44f1-b588-c313da2c4d5b",
+    "speakerName": "松下正嗣",
+    "time": "15:45 - 16:05",
+    "hashtag": "#ccc_m5a",
+    "level": "中級者向け"
+  },
+  {
+    "title": "スキマ分野で生き残るための戦略",
+    "identifier": "128e8c77-ec1a-41f9-b1e7-9ae5d6291219",
+    "speakerName": "すずきただし",
+    "time": "16:10 - 16:30",
+    "hashtag": "#ccc_m5b",
+    "level": "初級者向け"
+  },
+  {
+    "title": "Project Loom - 限定継続と軽量スレッド",
+    "identifier": "4751a4de-b02f-4378-b2bc-60c314f121f5",
+    "speakerName": "櫻庭 祐一",
+    "time": "16:45 - 17:30",
+    "hashtag": "#ccc_a6",
+    "level": "中級者向け"
+  },
+  {
+    "title": "Javaで作るオレオレ仮想通貨ウォレット",
+    "identifier": "4eebd369-29b5-462e-a959-fb24953d97cf",
+    "speakerName": "明石　敬",
+    "time": "16:45 - 17:30",
+    "hashtag": "#ccc_c6",
+    "level": "初級者向け"
+  },
+  {
+    "title": "JJUG会長と一緒に考えたSpring Boot x JavaScript x IntelliJ x アジャイルというモダンな新人研修を今まさにやっている話",
+    "identifier": "0d49f105-e79f-44a5-8ad8-1404556df1a2",
+    "speakerName": "多田真敏",
+    "time": "16:45 - 17:30",
+    "hashtag": "#ccc_e6",
+    "level": "初級者向け"
+  },
+  {
+    "title": "ストラングラーパターンによるマイクロサービスマイグレーションの勘所",
+    "identifier": "7cbabbb2-fa77-4963-9a37-7b8ca2160830",
+    "speakerName": "川上徹",
+    "time": "16:45 - 17:30",
+    "hashtag": "#ccc_g6",
+    "level": "中級者向け"
+  },
+  {
+    "title": "Using Microprofile to develop microservices for IoT platform",
+    "identifier": "50fa0379-66b3-4c51-9260-61ad94127980",
+    "speakerName": "skalster",
+    "time": "16:45 - 17:30",
+    "hashtag": "#ccc_i6",
+    "level": "初級者向け"
+  },
+  {
+    "title": "今日から始めるカジュアルなソースコード解析",
+    "identifier": "e244745d-eb75-4f3b-84ff-c7b5b71fc61c",
+    "speakerName": "後藤 祥",
+    "time": "16:45 - 17:05",
+    "hashtag": "#ccc_m6a",
+    "level": "初級者向け"
+  },
+  {
+    "title": "CDIポータブルエクステンションを作ってみよう",
+    "identifier": "f16924f0-ba59-4fe2-99ce-c4be27b8eea6",
+    "speakerName": "Fusayuki Minamoto",
+    "time": "17:10 - 17:30",
+    "hashtag": "#ccc_m6b",
+    "level": "中級者向け"
+  },
+  {
+    "title": "Functional Spring Cookbook",
+    "identifier": "74e9adf1-4338-483e-a0a4-29f60018a91d",
+    "speakerName": "Toshiaki Maki",
+    "time": "17:45 - 18:30",
+    "hashtag": "#ccc_a7",
+    "level": "中級者向け"
+  },
+  {
+    "title": "Serverless Java: Challenges and Triumphs",
+    "identifier": "51cc8f8d-aab7-4fef-986e-e1054aeb6d93",
+    "speakerName": "Shaun Smith",
+    "time": "17:45 - 18:30",
+    "hashtag": "#ccc_c6",
+    "level": "中級者向け"
+  },
+  {
+    "title": "マイクロサービス：４つの分割アプローチの比較",
+    "identifier": "f559d9cd-2495-4327-b2ba-7f89a3115a85",
+    "speakerName": "増田　亨",
+    "time": "17:45 - 18:30",
+    "hashtag": "#ccc_g7",
+    "level": "上級者向け"
+  },
+  {
+    "title": "Tools-in-action: WireMock + RestAssured ",
+    "identifier": "5e436eeb-c735-4196-ad33-2adca10c1172",
+    "speakerName": "Ix-chel",
+    "time": "17:45 - 18:30",
+    "hashtag": "#ccc_i7",
+    "level": "初級者向け"
+  },
+  {
+    "title": "Reladomoを使ったトランザクション履歴管理をプロダクトに適用した際のメリット/デメリット/課題など",
+    "identifier": "72d36ec5-e0b8-4fcc-afa7-eeefae97de9c",
+    "speakerName": "渡邉 一夫",
+    "time": "17:45 - 18:30",
+    "hashtag": "#ccc_m7",
+    "level": "初級者向け"
+  }
+]
