@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Java 11へのマイグレーションガイド ~Apache Hadoopの事例~",
+    "identifier": "8a9d777c-0617-4822-beff-edf1f4d75291",
+    "speakerName": "鯵坂 明／浅沼 孝信",
+    "time": "13:30 - 14:15",
+    "hashtag": "#ccc_a3",
+    "room": "A+B",
+    "level": "中級者向け"
+  },
+  {
+    "title": "マルチテナントECシステムにおける拡張性と最新性の両立",
+    "identifier": "3f2b7e8d-0fb8-4921-907c-e39ad3f17fc1",
+    "speakerName": "水野謙",
+    "time": "13:30 - 14:15",
+    "hashtag": "#ccc_c3",
+    "room": "C+D",
+    "level": "中級者向け"
+  },
+  {
+    "title": "先行開発！Javaでクリーンアーキテクチャ -- ゼロから始める新規開発",
+    "identifier": "4ce63414-6e92-4612-91e1-9b84e772cc81",
+    "speakerName": "成瀬　允宣",
+    "time": "13:30 - 14:15",
+    "hashtag": "#ccc_e3",
+    "room": "E+F",
+    "level": "上級者向け"
+  },
+  {
+    "title": "Catch up Java 12 and Java 13",
+    "identifier": "b4852628-3198-4992-83d4-0cec56718111",
+    "speakerName": "KUBOTA Yuji",
+    "time": "13:30 - 14:15",
+    "hashtag": "#ccc_g3",
+    "room": "G+H",
+    "level": "中級者向け"
+  },
+  {
+    "title": "DevOps without Measurement is a Fail",
+    "identifier": "cbeaae7d-a7fb-478f-967e-c7d080415454",
+    "speakerName": "Erno Venäläinen",
+    "time": "13:30 - 14:15",
+    "hashtag": "#ccc_i3",
+    "room": "I",
+    "level": "中級者向け"
+  },
+  {
+    "title": "Bulletproof Java Enterprise Applications for The Hard Production Life",
+    "identifier": "e6dd5b96-d31f-4338-a219-af5bef4e8ca5",
+    "speakerName": "Sebastian Daschner",
+    "time": "13:30 - 14:15",
+    "hashtag": "#ccc_l3",
+    "room": "L",
+    "level": "中級者向け"
+  },
+  {
+    "title": "俺たちのドメイン駆動設計はこれからだ！",
+    "identifier": "6dc1ebeb-1c8b-43c9-880e-bc76a9b561d2",
+    "speakerName": "本谷　亮介",
+    "time": "13:30 - 14:50",
+    "hashtag": "#ccc_m3a",
+    "room": "M",
+    "level": "初級者向け"
+  },
+  {
+    "title": "Java開発者のためのWebAuthn入門",
+    "identifier": "d5a97612-ebfd-4730-8389-1a3fd296cddb",
+    "speakerName": "Yoshikazu Nojima",
+    "time": "13:55 - 14:15",
+    "hashtag": "#ccc_m3b",
+    "room": "M",
+    "level": "中級者向け"
+  }
+]

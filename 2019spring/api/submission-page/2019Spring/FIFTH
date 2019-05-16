@@ -1,0 +1,65 @@
+[
+  {
+    "title": "ゴールドマン･サックスにおけるApache Beamを用いたビッグデータ処理の紹介と実例",
+    "identifier": "73438cc3-5add-4764-9cd9-b4415e7d6144",
+    "speakerName": "石井すみれ／Zhang, Xuefeng",
+    "time": "15:45 - 16:30",
+    "hashtag": "#ccc_a5",
+    "room": "A+B",
+    "level": "初級者向け"
+  },
+  {
+    "title": "Stateless Microservice Security via JWT and MicroProfile",
+    "identifier": "5bc14e78-920f-466a-a438-4c5c47e167ab",
+    "speakerName": "David Blevins",
+    "time": "15:45 - 16:30",
+    "hashtag": "#ccc_c5",
+    "room": "C+D",
+    "level": "初級者向け"
+  },
+  {
+    "title": "1400万ユーザーのWebサービスを15年運用して考える、Javaである理由",
+    "identifier": "755b3eda-f8db-408c-93d5-35faca8d089d",
+    "speakerName": "鈴木 真生",
+    "time": "15:45 - 16:30",
+    "hashtag": "#ccc_e5",
+    "room": "E+F",
+    "level": "初級者向け"
+  },
+  {
+    "title": "LINEのBOT Platformの裏側の話",
+    "identifier": "774f52b7-4655-46e3-afe9-78ee1f1a5e67",
+    "speakerName": "長谷部良輔",
+    "time": "15:45 - 16:30",
+    "hashtag": "#ccc_g5",
+    "room": "G+H",
+    "level": "初級者向け"
+  },
+  {
+    "title": "The 4 Rules of Simple Design In Functional Programming",
+    "identifier": "dcbd5783-fb04-462e-aa4a-df4cbe2af838",
+    "speakerName": "Uberto Barbini",
+    "time": "15:45 - 16:30",
+    "hashtag": "#ccc_i5",
+    "room": "I",
+    "level": "中級者向け"
+  },
+  {
+    "title": "ソフトウェア設計の教育工学的な分析と育成へのアイデア",
+    "identifier": "61c3e49f-0a0f-44f1-b588-c313da2c4d5b",
+    "speakerName": "松下正嗣",
+    "time": "15:45 - 16:05",
+    "hashtag": "#ccc_m5a",
+    "room": "M",
+    "level": "中級者向け"
+  },
+  {
+    "title": "スキマ分野で生き残るための戦略",
+    "identifier": "128e8c77-ec1a-41f9-b1e7-9ae5d6291219",
+    "speakerName": "すずきただし",
+    "time": "16:10 - 16:30",
+    "hashtag": "#ccc_m5b",
+    "room": "M",
+    "level": "初級者向け"
+  }
+]

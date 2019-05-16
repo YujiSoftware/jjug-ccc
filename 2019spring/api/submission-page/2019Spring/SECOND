@@ -1,0 +1,83 @@
+[
+  {
+    "title": "パッケージ管理していなかった既存システムに後付けで Gradle を導入した話",
+    "identifier": "dfb51550-e81e-4e73-b205-c241433dadf7",
+    "speakerName": "矢崎 聖也",
+    "time": "11:00 - 11:45",
+    "hashtag": "#ccc_a2",
+    "room": "A+B",
+    "level": "中級者向け"
+  },
+  {
+    "title": "Big Data Exploration with Spark SQL and Java",
+    "identifier": "4bb3d8d5-ad8b-4309-b447-187d15d4ed05",
+    "speakerName": "Fernando Babadopulos",
+    "time": "11:00 - 11:45",
+    "hashtag": "#ccc_c2",
+    "room": "C+D",
+    "level": "中級者向け"
+  },
+  {
+    "title": "Valhalla, updates and future",
+    "identifier": "8a055532-aa53-4040-b3b1-1b7fb7f733d7",
+    "speakerName": "David Buck",
+    "time": "11:00 - 11:45",
+    "hashtag": "#ccc_e2",
+    "room": "E+F",
+    "level": "中級者向け"
+  },
+  {
+    "title": "大企業運営の法人向けサービスにおけるOpenJDK移行事例",
+    "identifier": "420aaed4-ae0e-436d-9711-bb5211d4dbb8",
+    "speakerName": "大中浩行",
+    "time": "11:00 - 11:20",
+    "hashtag": "#ccc_g2a",
+    "room": "G+H",
+    "level": "中級者向け"
+  },
+  {
+    "title": "開発リーダー1年目。メンバーのスキルアップのためにやっていること。",
+    "identifier": "94c0bea5-44d4-45a7-861d-9e8539ee7eea",
+    "speakerName": "丹野 航",
+    "time": "11:20 - 11:45",
+    "hashtag": "#ccc_g2b",
+    "room": "G+H",
+    "level": "初級者向け"
+  },
+  {
+    "title": "What's new in Jakarta EE and Eclipse GlassFish (May 2019)",
+    "identifier": "966f59c7-4077-4428-9819-5e00dcaf5265",
+    "speakerName": "蓮沼　賢志",
+    "time": "11:00 - 11:20",
+    "hashtag": "#ccc_i2a",
+    "room": "I",
+    "level": "初級者向け"
+  },
+  {
+    "title": "ArchUnit で Java/ Kotlin アプリケーションのアーキテクチャを CI する",
+    "identifier": "2e1e4779-b1ae-4864-a319-2b1262eba09c",
+    "speakerName": "かわなみゆう",
+    "time": "11:20 - 11:45",
+    "hashtag": "#ccc_i2b",
+    "room": "I",
+    "level": "中級者向け"
+  },
+  {
+    "title": "デプロイから考える僕のWEBアプリ開発",
+    "identifier": "c99e922c-a47e-49ad-9c43-348e0a8b464d",
+    "speakerName": "井上 和宏",
+    "time": "11:00 - 11:20",
+    "hashtag": "#ccc_m2a",
+    "room": "M",
+    "level": "中級者向け"
+  },
+  {
+    "title": "売れてる SaaS へのオブジェクトストレージ導入にまつわる泥臭い話",
+    "identifier": "6fed2127-8a15-4cab-86be-96cb760f54a6",
+    "speakerName": "西角知佳",
+    "time": "11:20 - 11:45",
+    "hashtag": "#ccc_m2b",
+    "room": "M",
+    "level": "中級者向け"
+  }
+]

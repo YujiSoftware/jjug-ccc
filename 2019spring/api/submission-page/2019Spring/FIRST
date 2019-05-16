@@ -1,0 +1,74 @@
+[
+  {
+    "title": "初めてのgRPC",
+    "identifier": "b4089bc8-af86-4cfa-9ce6-eb4dd3c8a773",
+    "speakerName": "前多賢太郎",
+    "time": "10:00 - 10:45",
+    "hashtag": "#ccc_a1",
+    "room": "A+B",
+    "level": "初級者向け"
+  },
+  {
+    "title": "Java Collections Framework + α 入門",
+    "identifier": "84ef8319-c7d5-4d20-b350-48b45f0317f5",
+    "speakerName": "持田真哉",
+    "time": "10:00 - 10:45",
+    "hashtag": "#ccc_c1",
+    "room": "C+D",
+    "level": "初級者向け"
+  },
+  {
+    "title": "現代に求められるJavaコミュニティとは",
+    "identifier": "",
+    "speakerName": "谷本心",
+    "time": "10:00 - 10:45",
+    "hashtag": "#ccc_e1",
+    "room": "E+F",
+    "level": "初級者向け"
+  },
+  {
+    "title": "Java11時代のHTTP(S)アクセス再入門",
+    "identifier": "f05a7f3e-6fef-4366-9116-39f1cb62a57c",
+    "speakerName": "Kiyotaka Suzuki (@tamtam180)",
+    "time": "10:00 - 10:45",
+    "hashtag": "#ccc_g1",
+    "room": "G+H",
+    "level": "初級者向け"
+  },
+  {
+    "title": "OpenCensusで始める分散トレーシングと監視",
+    "identifier": "8b420ee7-94a7-4f5c-9db0-7798f66d05c8",
+    "speakerName": "Yoshida",
+    "time": "10:00 - 10:45",
+    "hashtag": "#ccc_i1",
+    "room": "I",
+    "level": "上級者向け"
+  },
+  {
+    "title": "How to Write Better and Effective Code in Java",
+    "identifier": "779e7eb6-6744-4e43-904f-1225b1dc48cc",
+    "speakerName": "ALTUĞ BİLGİN ALTINTAŞ",
+    "time": "10:00 - 11:45",
+    "hashtag": "#ccc_l1",
+    "room": "L",
+    "level": "初級者向け"
+  },
+  {
+    "title": "Eclipse MicroProfile提供機能に関する考察",
+    "identifier": "6ce15577-8c39-47ba-96da-5fbaac00ff75",
+    "speakerName": "高橋 博実",
+    "time": "10:00 - 10:20",
+    "hashtag": "#ccc_m1a",
+    "room": "M",
+    "level": "初級者向け"
+  },
+  {
+    "title": "Future と ThreadPool",
+    "identifier": "90fe7d15-e030-448f-bedc-a9d92b916fc2",
+    "speakerName": "庄司 重樹",
+    "time": "10:25 - 10:45",
+    "hashtag": "#ccc_m1b",
+    "room": "M",
+    "level": "初級者向け"
+  }
+]

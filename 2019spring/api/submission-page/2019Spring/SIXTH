@@ -1,0 +1,65 @@
+[
+  {
+    "title": "Project Loom - 限定継続と軽量スレッド",
+    "identifier": "4751a4de-b02f-4378-b2bc-60c314f121f5",
+    "speakerName": "櫻庭 祐一",
+    "time": "16:45 - 17:30",
+    "hashtag": "#ccc_a6",
+    "room": "A+B",
+    "level": "中級者向け"
+  },
+  {
+    "title": "Javaで作るオレオレ仮想通貨ウォレット",
+    "identifier": "4eebd369-29b5-462e-a959-fb24953d97cf",
+    "speakerName": "明石　敬",
+    "time": "16:45 - 17:30",
+    "hashtag": "#ccc_c6",
+    "room": "C+D",
+    "level": "初級者向け"
+  },
+  {
+    "title": "JJUG会長と一緒に考えたSpring Boot x JavaScript x IntelliJ x アジャイルというモダンな新人研修を今まさにやっている話",
+    "identifier": "0d49f105-e79f-44a5-8ad8-1404556df1a2",
+    "speakerName": "多田真敏",
+    "time": "16:45 - 17:30",
+    "hashtag": "#ccc_e6",
+    "room": "E+F",
+    "level": "初級者向け"
+  },
+  {
+    "title": "ストラングラーパターンによるマイクロサービスマイグレーションの勘所",
+    "identifier": "7cbabbb2-fa77-4963-9a37-7b8ca2160830",
+    "speakerName": "川上徹",
+    "time": "16:45 - 17:30",
+    "hashtag": "#ccc_g6",
+    "room": "G+H",
+    "level": "中級者向け"
+  },
+  {
+    "title": "Using Microprofile to develop microservices for IoT platform",
+    "identifier": "50fa0379-66b3-4c51-9260-61ad94127980",
+    "speakerName": "skalster",
+    "time": "16:45 - 17:30",
+    "hashtag": "#ccc_i6",
+    "room": "I",
+    "level": "初級者向け"
+  },
+  {
+    "title": "今日から始めるカジュアルなソースコード解析",
+    "identifier": "e244745d-eb75-4f3b-84ff-c7b5b71fc61c",
+    "speakerName": "後藤 祥",
+    "time": "16:45 - 17:05",
+    "hashtag": "#ccc_m6a",
+    "room": "M",
+    "level": "初級者向け"
+  },
+  {
+    "title": "CDIポータブルエクステンションを作ってみよう",
+    "identifier": "f16924f0-ba59-4fe2-99ce-c4be27b8eea6",
+    "speakerName": "Fusayuki Minamoto",
+    "time": "17:10 - 17:30",
+    "hashtag": "#ccc_m6b",
+    "room": "M",
+    "level": "中級者向け"
+  }
+]

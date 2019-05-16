@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Functional Spring Cookbook",
+    "identifier": "74e9adf1-4338-483e-a0a4-29f60018a91d",
+    "speakerName": "Toshiaki Maki",
+    "time": "17:45 - 18:30",
+    "hashtag": "#ccc_a7",
+    "room": "A+B",
+    "level": "中級者向け"
+  },
+  {
+    "title": "Serverless Java: Challenges and Triumphs",
+    "identifier": "51cc8f8d-aab7-4fef-986e-e1054aeb6d93",
+    "speakerName": "Shaun Smith",
+    "time": "17:45 - 18:30",
+    "hashtag": "#ccc_c6",
+    "room": "C+D",
+    "level": "中級者向け"
+  },
+  {
+    "title": "マイクロサービス：４つの分割アプローチの比較",
+    "identifier": "f559d9cd-2495-4327-b2ba-7f89a3115a85",
+    "speakerName": "増田　亨",
+    "time": "17:45 - 18:30",
+    "hashtag": "#ccc_g7",
+    "room": "G+H",
+    "level": "上級者向け"
+  },
+  {
+    "title": "Tools-in-action: WireMock + RestAssured ",
+    "identifier": "5e436eeb-c735-4196-ad33-2adca10c1172",
+    "speakerName": "Ix-chel",
+    "time": "17:45 - 18:30",
+    "hashtag": "#ccc_i7",
+    "room": "I",
+    "level": "初級者向け"
+  },
+  {
+    "title": "Reladomoを使ったトランザクション履歴管理をプロダクトに適用した際のメリット/デメリット/課題など",
+    "identifier": "72d36ec5-e0b8-4fcc-afa7-eeefae97de9c",
+    "speakerName": "渡邉 一夫",
+    "time": "17:45 - 18:30",
+    "hashtag": "#ccc_m7",
+    "room": "M",
+    "level": "初級者向け"
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "title": "ドメイン管理サービスにおけるJava活用のご紹介",
+    "identifier": "3b00257e-3400-4acb-b6dc-c0c7e5976ff5",
+    "speakerName": "小田 竜広",
+    "time": "14:30 - 14:50",
+    "hashtag": "#ccc_a4a",
+    "room": "A+B",
+    "level": "初級者向け"
+  },
+  {
+    "title": "入門: 末尾呼び出し最適化",
+    "identifier": "c3632aed-fa15-4e01-bc4e-6f97a26e50f6",
+    "speakerName": "宮川 拓",
+    "time": "14:55 - 15:15",
+    "hashtag": "#ccc_a4b",
+    "room": "A+B",
+    "level": "上級者向け"
+  },
+  {
+    "title": "ホットペッパービューティーにおけるモバイルアプリ向けAPIの BFF/Backend分割",
+    "identifier": "7fbef8cc-bf8d-4855-8534-c7fca118fb1d",
+    "speakerName": "索手一平",
+    "time": "14:30 - 15:15",
+    "hashtag": "#ccc_c4",
+    "room": "C+D",
+    "level": "中級者向け"
+  },
+  {
+    "title": "テストエンジニアが教える　JUnitを書き始める前に考えるべきテスト",
+    "identifier": "0f7a8cf8-4862-477f-81bf-6dc3d47eb450",
+    "speakerName": "風間裕也(@nihonbuson)",
+    "time": "14:30 - 15:15",
+    "hashtag": "#ccc_e4",
+    "room": "E+F",
+    "level": "初級者向け"
+  },
+  {
+    "title": "Java クライント実装におけるAPIスタイル頂上決戦! 野良REST vs GraphQL vs OData vs OpenAPI (Swagger)",
+    "identifier": "d2e9b342-6473-449e-8ee7-e35ef26bbd85",
+    "speakerName": "杉本和也",
+    "time": "14:30 - 15:15",
+    "hashtag": "#ccc_g4",
+    "room": "G+H",
+    "level": "中級者向け"
+  },
+  {
+    "title": "Cloud (K)native Java Services -- Deploying your Java services in Serverless World --",
+    "identifier": "2a591b4b-0978-4b98-aa9c-e417fbbcebe4",
+    "speakerName": "Kamesh Sampath",
+    "time": "14:30 - 15:15",
+    "hashtag": "#ccc_i4",
+    "room": "I",
+    "level": "中級者向け"
+  },
+  {
+    "title": "SI現場のテスト自動化挑戦〜フルコンテナ構成のCI/CD環境〜",
+    "identifier": "627ac3c2-8d9e-4483-aa3a-f37aa2fcba2b",
+    "speakerName": "川沼 大輝／横山 夏実",
+    "time": "14:30 - 15:15",
+    "hashtag": "#ccc_m4",
+    "room": "M",
+    "level": "初級者向け"
+  }
+]
