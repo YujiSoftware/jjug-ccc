@@ -32,7 +32,7 @@
     "speakerName": "大中浩行",
     "time": "11:00 - 11:20",
     "hashtag": "#ccc_g2a",
-    "room": "G+H",
+    "room": "G+H (前半)",
     "level": "中級者向け"
   },
   {
@@ -41,7 +41,7 @@
     "speakerName": "丹野 航",
     "time": "11:20 - 11:45",
     "hashtag": "#ccc_g2b",
-    "room": "G+H",
+    "room": "G+H (後半)",
     "level": "初級者向け"
   },
   {
@@ -50,7 +50,7 @@
     "speakerName": "蓮沼　賢志",
     "time": "11:00 - 11:20",
     "hashtag": "#ccc_i2a",
-    "room": "I",
+    "room": "I (前半)",
     "level": "初級者向け"
   },
   {
@@ -59,7 +59,7 @@
     "speakerName": "かわなみゆう",
     "time": "11:20 - 11:45",
     "hashtag": "#ccc_i2b",
-    "room": "I",
+    "room": "I (後半)",
     "level": "中級者向け"
   },
   {
@@ -68,7 +68,7 @@
     "speakerName": "井上 和宏",
     "time": "11:00 - 11:20",
     "hashtag": "#ccc_m2a",
-    "room": "M",
+    "room": "M (前半)",
     "level": "中級者向け"
   },
   {
@@ -77,7 +77,7 @@
     "speakerName": "西角知佳",
     "time": "11:20 - 11:45",
     "hashtag": "#ccc_m2b",
-    "room": "M",
+    "room": "M (後半)",
     "level": "中級者向け"
   }
 ]
