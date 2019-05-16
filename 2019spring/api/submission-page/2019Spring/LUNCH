@@ -5,6 +5,7 @@
     "speakerName": "鈴木雄介",
     "time": "12:00 - 12:45",
     "hashtag": "#ccc_cl",
+    "room": "C+D",
     "level": "初心者向け"
   },
   {
@@ -13,6 +14,7 @@
     "speakerName": "須江 信洋",
     "time": "12:00 - 12:45",
     "hashtag": "#ccc_el",
+    "room": "E+F",
     "level": "初級者向け"
   }
 ]
